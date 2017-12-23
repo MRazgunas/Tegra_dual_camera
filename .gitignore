@@ -1,0 +1,9 @@
+#MCU build files
+MCU/build/*
+MCU/dsdlc_generated/*
+
+#Eclipse project files
+MCU/.dep/*
+MCU/.settings/*
+MCU/.cproject
+MCU/.project

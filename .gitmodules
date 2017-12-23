@@ -1,0 +1,6 @@
+[submodule "MCU/modules/ChibiOS"]
+	path = MCU/modules/ChibiOS
+	url = https://github.com/ChibiOS/ChibiOS.git
+[submodule "MCU/modules/libuavcan"]
+	path = MCU/modules/libuavcan
+	url = https://github.com/UAVCAN/libuavcan.git
