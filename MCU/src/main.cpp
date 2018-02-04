@@ -111,6 +111,11 @@ static const ShellCommand commands[] = {
 };
 
 static const ShellConfig shell_cfg1 = {
+  (BaseSequentialStream *)&SD3,
+  commands
+};
+
+static const ShellConfig shell_cfg2 = {
   (BaseSequentialStream *)&SD1,
   commands
 };
@@ -140,10 +145,15 @@ int main(void) {
 
   sdStart(&SD1, NULL);
 
+  sdStart(&SD3, NULL);
+
   adcStart(&ADCD1, NULL);
 
   thread_t *shelltp = chThdCreateFromHeap(NULL, SHELL_WA_SIZE,
       "shell", NORMALPRIO + 1, shellThread, (void *)&shell_cfg1);
+
+  thread_t *shelltp2 = chThdCreateFromHeap(NULL, SHELL_WA_SIZE,
+       "shell", NORMALPRIO + 1, shellThread, (void *)&shell_cfg2);
 
 
   BRD_voltages board_volt;
