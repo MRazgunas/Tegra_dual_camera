@@ -1,0 +1,156 @@
+----------------------------------------------------------------------
+Report for cell top.verilog
+
+Register bits: 121 of 4320 (3%)
+PIC Latch:       0
+I/O cells:       34
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       36       100.0
+                            CLKDIVC        1       100.0
+                           DPR16X4C       16       100.0
+                          ECLKSYNCA        2       100.0
+                            EHXPLLJ        2       100.0
+                            FD1P3AX        1       100.0
+                            FD1P3BX       21       100.0
+                            FD1P3DX       28       100.0
+                            FD1S3AX       21       100.0
+                            FD1S3DX        2       100.0
+                            FD1S3IX       48       100.0
+                                GSR        1       100.0
+                                 IB       18       100.0
+                                INV        6       100.0
+                                 OB       11       100.0
+                                OBZ        5       100.0
+                            ODDRX4B        5       100.0
+                           ORCALUT4      128       100.0
+                                PUR        1       100.0
+                           ROM16X1A        2       100.0
+                                VHI        5       100.0
+                                VLO        8       100.0
+                        crc16_4lane        1       100.0
+                    packetheader_4s        1       100.0
+             parallel2byte_8s_4s_30        1       100.0
+SUB MODULES 
+          BYTE_PACKETIZER_8s_4s_30_1s_1s        1       100.0
+                       DPHY_TX_INST        1       100.0
+                   IO_Controller_TX        1       100.0
+                  LP_HS_DELAY_CNTRL        1       100.0
+                             oDDRx4        1       100.0
+          pll_pix2byte_YUV422_8bit_4lane        1       100.0
+          pll_sony_block_cam_interface        1       100.0
+           sony_block_to_yuv422_csi        1       100.0
+                            
+                         TOTAL           379           
+----------------------------------------------------------------------
+Report for cell DPHY_TX_INST.netlist
+     Instance path:  u_DPHY_TX_INST
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                            CLKDIVC        1       100.0
+                          ECLKSYNCA        2       100.0
+                            FD1P3BX        1         4.8
+                            FD1P3DX        3        10.7
+                            ODDRX4B        5       100.0
+                           ORCALUT4        4         3.1
+                           ROM16X1A        2       100.0
+                                VHI        1        20.0
+                                VLO        2        25.0
+SUB MODULES 
+                   IO_Controller_TX        1       100.0
+                             oDDRx4        1       100.0
+                            
+                         TOTAL            23           
+----------------------------------------------------------------------
+Report for cell IO_Controller_TX.netlist
+     Instance path:  u_DPHY_TX_INST.u_IO_Controller_TX
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                           ORCALUT4        4         3.1
+                                VLO        1        12.5
+                            
+                         TOTAL             5           
+----------------------------------------------------------------------
+Report for cell oDDRx4.netlist
+     Instance path:  u_DPHY_TX_INST.u_oDDRx4
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                            CLKDIVC        1       100.0
+                          ECLKSYNCA        2       100.0
+                            FD1P3BX        1         4.8
+                            FD1P3DX        3        10.7
+                            ODDRX4B        5       100.0
+                           ROM16X1A        2       100.0
+                                VHI        1        20.0
+                                VLO        1        12.5
+                            
+                         TOTAL            16           
+----------------------------------------------------------------------
+Report for cell sony_block_to_yuv422_csi.netlist
+     Instance path:  u_sony_block_to_yuv422_csi
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       12        33.3
+                            EHXPLLJ        1        50.0
+                            FD1P3AX        1       100.0
+                            FD1S3AX       16        76.2
+                            FD1S3IX       16        33.3
+                           ORCALUT4       40        31.3
+                                VHI        1        20.0
+                                VLO        2        25.0
+SUB MODULES 
+          pll_sony_block_cam_interface        1       100.0
+                            
+                         TOTAL            90           
+----------------------------------------------------------------------
+Report for cell pll_sony_block_cam_interface.netlist
+     Instance path:  u_sony_block_to_yuv422_csi.plldoubler
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                            EHXPLLJ        1        50.0
+                                VLO        1        12.5
+                            
+                         TOTAL             2           
+----------------------------------------------------------------------
+Report for cell LP_HS_DELAY_CNTRL.netlist
+     Instance path:  u_LP_HS_DELAY_CNTRL
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       24        66.7
+                           DPR16X4C       16       100.0
+                            FD1P3BX       20        95.2
+                            FD1P3DX       24        85.7
+                            FD1S3AX        5        23.8
+                            FD1S3DX        1        50.0
+                            FD1S3IX       32        66.7
+                                INV        4        66.7
+                           ORCALUT4       81        63.3
+                                VHI        1        20.0
+                                VLO        1        12.5
+                            
+                         TOTAL           209           
+----------------------------------------------------------------------
+Report for cell BYTE_PACKETIZER_8s_4s_30_1s_1s.netlist
+     Instance path:  u_BYTE_PACKETIZER
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                            FD1P3DX        1         3.6
+                            FD1S3DX        1        50.0
+                                INV        1        16.7
+                           ORCALUT4        3         2.3
+                                VHI        1        20.0
+                                VLO        1        12.5
+                        crc16_4lane        1       100.0
+                    packetheader_4s        1       100.0
+             parallel2byte_8s_4s_30        1       100.0
+                            
+                         TOTAL            11           
+----------------------------------------------------------------------
+Report for cell pll_pix2byte_YUV422_8bit_4lane.netlist
+     Instance path:  u_pll_pix2byte_YUV422_8bit_4lane
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                            EHXPLLJ        1        50.0
+                                VLO        1        12.5
+                            
+                         TOTAL             2           

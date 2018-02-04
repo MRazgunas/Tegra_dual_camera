@@ -1,0 +1,9 @@
+#Start recording tcl command: 1/16/2018 20:04:47
+#Project Location: X:/Parallel2CSI2_YUV422_8bit_4lane_XO2_V6/Parallel2CSI2_YUV422_8bit_4lane_XO2/impl; Project name: Parallel2CSI2
+prj_project open "X:/Parallel2CSI2_YUV422_8bit_4lane_XO2_V6/Parallel2CSI2_YUV422_8bit_4lane_XO2/impl/Parallel2CSI2.ldf"
+prj_run Export -impl Parallel2CSI2 -task Jedecgen
+prj_run Export -impl Parallel2CSI2 -task Jedecgen
+prj_run Export -impl Parallel2CSI2 -task Jedecgen
+prj_run Export -impl Parallel2CSI2 -task Jedecgen
+prj_run Export -impl Parallel2CSI2 -task Jedecgen
+#Stop recording: 1/16/2018 20:26:21

@@ -1,0 +1,18 @@
+[Deployment Project]
+version=Lattice Diamond 3.10.0.111.2
+EncryptionVer=1.0
+functionIdx=2
+typeIdx=11
+isRequiredXCFFile=0
+xcfFileName=
+optionList=Operation;Compress Embedded Files;Generate Hex (.c) File
+valueList=Slave SPI Erase,Program,Verify;On;Off
+
+[Input File Info]
+inputFileList=X:/Parallel2CSI2_YUV422_8bit_4lane_XO2_V6/Parallel2CSI2_YUV422_8bit_4lane_XO2/impl/Parallel2CSI2/Parallel2CSI2_Parallel2CSI2.jed
+familyList=MachXO2
+deviceList=LCMXO2-4000HC
+outputFileList=X://Parallel2CSI2_Parallel2CSI2_algo.sea;X://Parallel2CSI2_Parallel2CSI2_data.sed
+
+[Command Line]
+Command="C:/lscc/Programmer/3.10_x64/bin/nt64/ddtcmd" -oft -sspi -if "X:/Parallel2CSI2_YUV422_8bit_4lane_XO2_V6/Parallel2CSI2_YUV422_8bit_4lane_XO2/impl/Parallel2CSI2/Parallel2CSI2_Parallel2CSI2.jed" -op "Slave SPI Erase,Program,Verify" -ofa "X://Parallel2CSI2_Parallel2CSI2_algo.sea" -ofd "X://Parallel2CSI2_Parallel2CSI2_data.sed"

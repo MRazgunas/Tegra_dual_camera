@@ -1,0 +1,1 @@
+C:/lscc/diamond/3.4_x64/bin/nt64/moduleparser.exe -PROJ simulation -pf C:/lscc/diamond/3.4_x64/cae_library/synthesis/vhdl/machxo2.vhd -lib machxo2 -pkg C:/lscc/diamond/3.4_x64/cae_library/vhdl_packages/vdbs -lst D:/mipi_modified/SEND_DIRECTLY/CSI2_TX/XO2/Parallel2CSI2_YUV422_8bit_4lane_XO2_V6/Parallel2CSI2_YUV422_8bit_4lane_XO2/sim/simulation/source_files.lst

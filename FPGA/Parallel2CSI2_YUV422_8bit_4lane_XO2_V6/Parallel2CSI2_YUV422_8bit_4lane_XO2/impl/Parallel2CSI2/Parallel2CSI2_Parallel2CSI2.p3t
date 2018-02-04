@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "Parallel2CSI2_Parallel2CSI2.log"
+-o "Parallel2CSI2_Parallel2CSI2.csv"
+-pr "Parallel2CSI2_Parallel2CSI2.prf"
