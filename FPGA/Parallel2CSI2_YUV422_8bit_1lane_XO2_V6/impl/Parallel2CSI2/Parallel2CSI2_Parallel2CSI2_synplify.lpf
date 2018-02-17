@@ -1,0 +1,29 @@
+#
+# Logical Preferences generated for Lattice by Synplify maplat, Build 1498R.
+#
+
+# Period Constraints 
+#FREQUENCY NET "w_pixclk" 7.0 MHz;
+#FREQUENCY NET "u_DPHY_TX_INST/u_oDDRx4/sclk" 1.0 MHz;
+#FREQUENCY NET "u_pll_pix2byte_YUV422_8bit_1lane/byte_clk" 1.0 MHz;
+
+
+# Output Constraints 
+
+# Input Constraints 
+
+# Point-to-point Delay Constraints 
+
+
+
+# Block Path Constraints 
+#BLOCK PATH FROM CLKNET "u_DPHY_TX_INST/u_oDDRx4/sclk" TO CLKNET "u_pll_pix2byte_YUV422_8bit_1lane/byte_clk";
+#BLOCK PATH FROM CLKNET "u_DPHY_TX_INST/u_oDDRx4/sclk" TO CLKNET "w_pixclk";
+#BLOCK PATH FROM CLKNET "u_pll_pix2byte_YUV422_8bit_1lane/byte_clk" TO CLKNET "u_DPHY_TX_INST/u_oDDRx4/sclk";
+#BLOCK PATH FROM CLKNET "u_pll_pix2byte_YUV422_8bit_1lane/byte_clk" TO CLKNET "w_pixclk";
+#BLOCK PATH FROM CLKNET "w_pixclk" TO CLKNET "u_DPHY_TX_INST/u_oDDRx4/sclk";
+#BLOCK PATH FROM CLKNET "w_pixclk" TO CLKNET "u_pll_pix2byte_YUV422_8bit_1lane/byte_clk";
+
+BLOCK ASYNCPATHS;
+
+# End of generated Logical Preferences.

@@ -1,0 +1,488 @@
+
+map -a "MachXO2" -p LCMXO2-4000HC -t CABGA256 -s 6 -oc Commercial   "Parallel2CSI2_Parallel2CSI2.ngd" -o "Parallel2CSI2_Parallel2CSI2_map.ncd" -pr "Parallel2CSI2_Parallel2CSI2.prf" -mp "Parallel2CSI2_Parallel2CSI2.mrp" "C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_4lane_XO2_V6_SONY_RGB/Parallel2CSI2_YUV422_8bit_4lane_XO2/impl/Parallel2CSI2.lpf" -c 0            
+map:  version Diamond (64-bit) 3.8.0.115.3
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
+   Process the file: Parallel2CSI2_Parallel2CSI2.ngd
+   Picdevice="LCMXO2-4000HC"
+
+   Pictype="CABGA256"
+
+   Picspeed=6
+
+   Remove unused logic
+
+   Do not produce over sized NCDs.
+
+Part used: LCMXO2-4000HCCABGA256, Performance used: 6.
+
+    <postMsg mid="1100523" type="Warning" dynamic="2" navigation="2" arg0="C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_4lane_XO2_V6_SONY_RGB/Parallel2CSI2_YUV422_8bit_4lane_XO2/impl/Parallel2CSI2.lpf(16): Semantic error in &quot;FREQUENCY NET &quot;byte_clk_c&quot; 37.500000 MHz ;&quot;: " arg1="byte_clk_c matches no clock nets in the design. " arg2="C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_4lane_XO2_V6_SONY_RGB/Parallel2CSI2_YUV422_8bit_4lane_XO2/impl/Parallel2CSI2.lpf" arg3="16"  />
+Loading device for application baspr from file 'xo2c4000.nph' in environment: D:/FPGA/Lattice/diamond/3.8_x64/ispfpga.
+    <postMsg mid="1104062" type="Warning" dynamic="2" navigation="0" arg0="" arg1="1 semantic error"  />
+Package Status:                     Final          Version 1.44.
+
+Running general design DRC...
+
+Removing unused logic...
+
+Optimizing...
+
+3 CCU2 constant inputs absorbed.
+
+    <postMsg mid="51001027" type="Warning" dynamic="1" navigation="0" arg0="reset_n_c_i"  />
+
+
+
+Design Summary:
+   Number of registers:    379 out of  4941 (8%)
+      PFU registers:          379 out of  4320 (9%)
+      PIO registers:            0 out of   621 (0%)
+   Number of SLICEs:       344 out of  2160 (16%)
+      SLICEs as Logic/ROM:    272 out of  2160 (13%)
+      SLICEs as RAM:           72 out of  1620 (4%)
+      SLICEs as Carry:         73 out of  2160 (3%)
+   Number of LUT4s:        686 out of  4320 (16%)
+      Number used as logic LUTs:        396
+      Number used as distributed RAM:   144
+      Number used as ripple logic:      146
+      Number used as shift registers:     0
+   Number of PIO sites used: 38 + 4(JTAG) out of 207 (20%)
+      Number of PIO sites used for single ended IOs: 32
+      Number of PIO sites used for differential IOs: 10 (represented by 5 PIO comps in NCD)
+   Number of IDDR/ODDR/TDDR cells used: 5 out of 621 (1%)
+      Number of IDDR cells:   0
+      Number of ODDR cells:   5
+      Number of TDDR cells:   0
+   Number of PIO using at least one IDDR/ODDR/TDDR: 5 (5 differential)
+      Number of PIO using IDDR only:        0 (0 differential)
+      Number of PIO using ODDR only:        5 (5 differential)
+      Number of PIO using TDDR only:        0 (0 differential)
+      Number of PIO using IDDR/ODDR:        0 (0 differential)
+      Number of PIO using IDDR/TDDR:        0 (0 differential)
+      Number of PIO using ODDR/TDDR:        0 (0 differential)
+      Number of PIO using IDDR/ODDR/TDDR:   0 (0 differential)
+   Number of block RAMs:  2 out of 10 (20%)
+   Number of GSRs:  0 out of 1 (0%)
+   EFB used :       No
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  No
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  2 out of 2 (100%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  1 out of 4 (25%)
+   Number of ECLKSYNCA:  2 out of 4 (50%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and ripple logic.
+   Number of clocks:  8
+     Net u_DPHY_TX_INST/u_oDDRx4/eclkc: 1 loads, 1 rising, 0 falling (Driver: u_DPHY_TX_INST/u_oDDRx4/Inst4_ECLKSYNCA )
+     Net u_DPHY_TX_INST/u_oDDRx4/sclk: 7 loads, 7 rising, 0 falling (Driver: u_DPHY_TX_INST/u_oDDRx4/Inst3_CLKDIVC )
+     Net u_DPHY_TX_INST/u_oDDRx4/eclkd: 5 loads, 5 rising, 0 falling (Driver: u_DPHY_TX_INST/u_oDDRx4/Inst2_ECLKSYNCA )
+     Net CLKOS: 1 loads, 1 rising, 0 falling (Driver: u_pll_pix2byte_YUV422_8bit_4lane/PLLInst_0 )
+     Net CLKOP: 2 loads, 2 rising, 0 falling (Driver: u_pll_pix2byte_YUV422_8bit_4lane/PLLInst_0 )
+     Net PIXCLK_c: 19 loads, 19 rising, 0 falling (Driver: PIO PIXCLK )
+     Net w_pixclk: 12 loads, 12 rising, 0 falling (Driver: u_sony_block_to_yuv422_csi/plldoubler/PLLInst_0 )
+     Net byte_clk: 227 loads, 227 rising, 0 falling (Driver: u_pll_pix2byte_YUV422_8bit_4lane/PLLInst_0 )
+   Number of Clock Enables:  23
+     Net u_DPHY_TX_INST/u_oDDRx4/FF_0_Q: 2 loads, 2 LSLICEs
+     Net u_sony_block_to_yuv422_csi/N_100: 1 loads, 1 LSLICEs
+     Net u_sony_block_to_yuv422_csi/N_7: 1 loads, 1 LSLICEs
+     Net u_LP_HS_DELAY_CNTRL/N_105_i: 9 loads, 9 LSLICEs
+     Net u_LP_HS_DELAY_CNTRL/N_18: 1 loads, 1 LSLICEs
+     Net u_LP_HS_DELAY_CNTRL/N_22: 1 loads, 1 LSLICEs
+     Net u_LP_HS_DELAY_CNTRL/N_28: 1 loads, 1 LSLICEs
+     Net u_LP_HS_DELAY_CNTRL/hs_extendede: 3 loads, 3 LSLICEs
+     Net u_LP_HS_DELAY_CNTRL/N_108_i: 9 loads, 9 LSLICEs
+     Net u_LP_HS_DELAY_CNTRL/N_26: 1 loads, 1 LSLICEs
+     Net u_LP_HS_DELAY_CNTRL/hs_clk_en58_i_0: 1 loads, 1 LSLICEs
+     Net u_BYTE_PACKETIZER/w_edge_detect: 1 loads, 1 LSLICEs
+     Net u_BYTE_PACKETIZER/u_parallel2byte/q_lv: 2 loads, 0 LSLICEs
+     Net u_BYTE_PACKETIZER/u_parallel2byte/un1_read_0_c4: 4 loads, 0 LSLICEs
+     Net u_BYTE_PACKETIZER/byte_en: 8 loads, 8 LSLICEs
+     Net u_BYTE_PACKETIZER/u_packetheader/N_196: 5 loads, 5 LSLICEs
+     Net u_BYTE_PACKETIZER/u_packetheader/N_98: 1 loads, 1 LSLICEs
+     Net u_BYTE_PACKETIZER/chksum_rdy: 8 loads, 8 LSLICEs
+     Net u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/wren_i: 6 loads, 6 LSLICEs
+     Net u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/rden_i: 22 loads, 22 LSLICEs
+     Net u_BYTE_PACKETIZER/u_packetheader/N_347_i: 8 loads, 8 LSLICEs
+     Net u_BYTE_PACKETIZER/u_packetheader/un5_q_ECC_0: 3 loads, 3 LSLICEs
+     Net u_BYTE_PACKETIZER/u_packetheader/N_91: 1 loads, 1 LSLICEs
+   Number of LSRs:  8
+     Net reset_n_c: 127 loads, 118 LSLICEs
+     Net reset_n_c_i: 2 loads, 0 LSLICEs
+     Net u_sony_block_to_yuv422_csi/pixcounter13: 5 loads, 5 LSLICEs
+     Net u_sony_block_to_yuv422_csi/un1_fv_del_counter11_i: 5 loads, 5 LSLICEs
+     Net u_sony_block_to_yuv422_csi/FV8: 1 loads, 1 LSLICEs
+     Net hs_en: 16 loads, 16 LSLICEs
+     Net u_BYTE_PACKETIZER/un1_w_edge_detect: 9 loads, 9 LSLICEs
+     Net u_BYTE_PACKETIZER/u_packetheader/un1_q_bytepkt_en_0: 38 loads, 38 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net reset_n_c: 128 loads
+     Net u_LP_HS_DELAY_CNTRL/tmp1_i[0]: 64 loads
+     Net u_LP_HS_DELAY_CNTRL/tmp3[1]: 64 loads
+     Net u_LP_HS_DELAY_CNTRL/tmp3[2]: 64 loads
+     Net u_LP_HS_DELAY_CNTRL/tmp3[3]: 64 loads
+     Net u_BYTE_PACKETIZER/u_packetheader/lpkt_cnt: 51 loads
+     Net u_BYTE_PACKETIZER/u_packetheader/WC_1_En: 49 loads
+     Net u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/VCC: 40 loads
+     Net u_BYTE_PACKETIZER/u_packetheader/un1_q_bytepkt_en_0: 38 loads
+     Net u_LP_HS_DELAY_CNTRL/tmp1[4]: 34 loads
+    <postMsg mid="51001230" type="Warning" dynamic="1" navigation="0" arg0="C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_4lane_XO2_V6_SONY_RGB/Parallel2CSI2_YUV422_8bit_4lane_XO2/impl/Parallel2CSI2.lpf"  />
+ 
+
+   Number of warnings:  4
+   Number of errors:    0
+
+
+
+Total CPU Time: 0 secs  
+Total REAL Time: 0 secs  
+Peak Memory Usage: 55 MB
+
+Dumping design to file Parallel2CSI2_Parallel2CSI2_map.ncd.
+
+mpartrce -p "Parallel2CSI2_Parallel2CSI2.p2t" -f "Parallel2CSI2_Parallel2CSI2.p3t" -tf "Parallel2CSI2_Parallel2CSI2.pt" "Parallel2CSI2_Parallel2CSI2_map.ncd" "Parallel2CSI2_Parallel2CSI2.ncd"
+
+---- MParTrce Tool ----
+Removing old design directory at request of -rem command line option to this program.
+Running par. Please wait . . .
+
+Lattice Place and Route Report for Design "Parallel2CSI2_Parallel2CSI2_map.ncd"
+Fri Feb 09 16:13:56 2018
+
+PAR: Place And Route Diamond (64-bit) 3.8.0.115.3.
+Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_4lane_XO2_V6_SONY_RGB/Parallel2CSI2_YUV422_8bit_4lane_XO2/impl/promote.xml -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF:parHold=0 Parallel2CSI2_Parallel2CSI2_map.ncd Parallel2CSI2_Parallel2CSI2.dir/5_1.ncd Parallel2CSI2_Parallel2CSI2.prf
+Preference file: Parallel2CSI2_Parallel2CSI2.prf.
+Placement level-cost: 5-1.
+Routing Iterations: 6
+
+Loading design for application par from file Parallel2CSI2_Parallel2CSI2_map.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CABGA256
+Performance: 6
+Loading device for application par from file 'xo2c4000.nph' in environment: D:/FPGA/Lattice/diamond/3.8_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+License checked out.
+
+
+Ignore Preference Error(s):  True
+Device utilization summary:
+
+   PIO (prelim)   38+4(JTAG)/280     15% used
+                  38+4(JTAG)/207     20% bonded
+   IOLOGIC            5/280           1% used
+
+   SLICE            344/2160         15% used
+
+   CLKDIV             1/4            25% used
+   EBR                2/10           20% used
+   PLL                2/2           100% used
+   ECLKSYNC           2/4            50% used
+
+
+INFO: Design contains EBR with ASYNC Reset Mode that has a limitation: The use of the EBR block asynchronous reset requires that certain timing be met between the clock and the reset within the memory block. See the device specific data sheet for additional details.
+Based on the preference: FREQUENCY NET "CLKOP" 150.000000 MHz ;
+A new generated preference: FREQUENCY NET "u_DPHY_TX_INST/u_oDDRx4/sclk" 37.500000 MHz ;
+Number of Signals: 1291
+Number of Connections: 3498
+    <postMsg mid="61061045" type="Warning" dynamic="0" navigation="0"  />
+
+Pin Constraint Summary:
+   33 out of 33 pins locked (100% locked).
+
+    <postMsg mid="61091062" type="Warning" dynamic="0" navigation="0"  />
+The following 5 signals are selected to use the primary clock routing resources:
+    PIXCLK_c (driver: PIXCLK, clk load #: 19)
+    CLKOP (driver: u_pll_pix2byte_YUV422_8bit_4lane/PLLInst_0, clk load #: 0)
+    w_pixclk (driver: u_sony_block_to_yuv422_csi/plldoubler/PLLInst_0, clk load #: 12)
+    u_DPHY_TX_INST/u_oDDRx4/sclk (driver: u_DPHY_TX_INST/u_oDDRx4/Inst3_CLKDIVC, clk load #: 7)
+    byte_clk (driver: u_pll_pix2byte_YUV422_8bit_4lane/PLLInst_0, clk load #: 227)
+
+
+The following 4 signals are selected to use the secondary clock routing resources:
+    reset_n_c (driver: reset_n, clk load #: 0, sr load #: 127, ce load #: 0)
+    u_BYTE_PACKETIZER/u_packetheader/un1_q_bytepkt_en_0 (driver: SLICE_374, clk load #: 0, sr load #: 38, ce load #: 0)
+    u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/rden_i (driver: SLICE_275, clk load #: 0, sr load #: 0, ce load #: 22)
+    hs_en (driver: u_BYTE_PACKETIZER/u_packetheader/SLICE_163, clk load #: 0, sr load #: 16, ce load #: 0)
+
+    <postMsg mid="61061008" type="Warning" dynamic="5" navigation="0" arg0="reset_n_c" arg1="Secondary" arg2="reset_n" arg3="R5" arg4="Secondary"  />
+No signal is selected as Global Set/Reset.
+Starting Placer Phase 0.
+...........
+Finished Placer Phase 0.  REAL time: 3 secs 
+
+Starting Placer Phase 1.
+....................
+Placer score = 167896.
+Finished Placer Phase 1.  REAL time: 12 secs 
+
+Starting Placer Phase 2.
+.
+Placer score =  166903
+Finished Placer Phase 2.  REAL time: 12 secs 
+
+
+------------------ Clock Report ------------------
+
+Global Clock Resources:
+  CLK_PIN    : 1 out of 8 (12%)
+  General PIO: 1 out of 280 (0%)
+  PLL        : 2 out of 2 (100%)
+  DCM        : 0 out of 2 (0%)
+  DCC        : 0 out of 8 (0%)
+
+Quadrants All (TL, TR, BL, BR) - Global Clocks:
+  PRIMARY "PIXCLK_c" from comp "PIXCLK" on CLK_PIN site "H14 (PR10A)", clk load = 19
+  PRIMARY "CLKOP" from CLKOP on comp "u_pll_pix2byte_YUV422_8bit_4lane/PLLInst_0" on PLL site "LPLL", clk load = 0
+  PRIMARY "w_pixclk" from CLKOP on comp "u_sony_block_to_yuv422_csi/plldoubler/PLLInst_0" on PLL site "RPLL", clk load = 12
+  PRIMARY "u_DPHY_TX_INST/u_oDDRx4/sclk" from CDIVX on comp "u_DPHY_TX_INST/u_oDDRx4/Inst3_CLKDIVC" on CLKDIV site "TCLKDIV0", clk load = 7
+  PRIMARY "byte_clk" from CLKOS2 on comp "u_pll_pix2byte_YUV422_8bit_4lane/PLLInst_0" on PLL site "LPLL", clk load = 227
+  SECONDARY "reset_n_c" from comp "reset_n" on PIO site "R5 (PB4A)", clk load = 0, ce load = 0, sr load = 127
+  SECONDARY "u_BYTE_PACKETIZER/u_packetheader/un1_q_bytepkt_en_0" from F1 on comp "SLICE_374" on site "R12C15D", clk load = 0, ce load = 0, sr load = 38
+  SECONDARY "u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/rden_i" from F0 on comp "SLICE_275" on site "R12C15A", clk load = 0, ce load = 22, sr load = 0
+  SECONDARY "hs_en" from Q0 on comp "u_BYTE_PACKETIZER/u_packetheader/SLICE_163" on site "R12C17A", clk load = 0, ce load = 0, sr load = 16
+
+  PRIMARY  : 5 out of 8 (62%)
+  SECONDARY: 4 out of 8 (50%)
+
+Edge Clocks:
+  ECLK "u_DPHY_TX_INST/u_oDDRx4/eclkd": TECLK0
+    - From GPLL_CLKOP "LPLL".CLKOP, driver "u_pll_pix2byte_YUV422_8bit_4lane/PLLInst_0".
+  ECLK "u_DPHY_TX_INST/u_oDDRx4/eclkc": TECLK1
+    - From GPLL_CLKOS "LPLL".CLKOS, driver "u_pll_pix2byte_YUV422_8bit_4lane/PLLInst_0".
+
+--------------- End of Clock Report ---------------
+
+
+I/O Usage Summary (final):
+   38 + 4(JTAG) out of 280 (15.0%) PIO sites used.
+   38 + 4(JTAG) out of 207 (20.3%) bonded PIO sites used.
+   Number of PIO comps: 33; differential: 5.
+   Number of Vref pins used: 0.
+
+I/O Bank Usage Summary:
++----------+----------------+------------+-----------+
+| I/O Bank | Usage          | Bank Vccio | Bank Vref |
++----------+----------------+------------+-----------+
+| 0        | 10 / 51 ( 19%) | 2.5V       | -         |
+| 1        | 17 / 52 ( 32%) | 3.3V       | -         |
+| 2        | 1 / 52 (  1%)  | 2.5V       | -         |
+| 3        | 0 / 16 (  0%)  | -          | -         |
+| 4        | 0 / 16 (  0%)  | -          | -         |
+| 5        | 10 / 20 ( 50%) | 1.2V       | -         |
++----------+----------------+------------+-----------+
+
+Total placer CPU time: 10 secs 
+
+Dumping design to file Parallel2CSI2_Parallel2CSI2.dir/5_1.ncd.
+
+0 connections routed; 3498 unrouted.
+Starting router resource preassignment
+
+Completed router resource preassignment. Real time: 14 secs 
+
+Start NBR router at 16:14:10 02/09/18
+
+*****************************************************************
+Info: NBR allows conflicts(one node used by more than one signal)
+      in the earlier iterations. In each iteration, it tries to  
+      solve the conflicts while keeping the critical connections 
+      routed as short as possible. The routing process is said to
+      be completed when no conflicts exist and all connections   
+      are routed.                                                
+Note: NBR uses a different method to calculate timing slacks. The
+      worst slack and total negative slack may not be the same as
+      that in TRCE report. You should always run TRCE to verify  
+      your design.                                               
+*****************************************************************
+
+Start NBR special constraint process at 16:14:10 02/09/18
+
+Start NBR section for initial routing at 16:14:11 02/09/18
+Level 1, iteration 1
+0(0.00%) conflict; 2414(69.01%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 4.093ns/0.000ns; real time: 15 secs 
+Level 2, iteration 1
+0(0.00%) conflict; 2414(69.01%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 4.093ns/0.000ns; real time: 15 secs 
+Level 3, iteration 1
+0(0.00%) conflict; 2404(68.72%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 3.719ns/0.000ns; real time: 16 secs 
+Level 4, iteration 1
+105(0.04%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 3.719ns/0.000ns; real time: 17 secs 
+
+Info: Initial congestion level at 75% usage is 0
+Info: Initial congestion area  at 75% usage is 0 (0.00%)
+
+Start NBR section for normal routing at 16:14:13 02/09/18
+Level 1, iteration 1
+0(0.00%) conflict; 184(5.26%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 3.719ns/0.000ns; real time: 17 secs 
+Level 4, iteration 1
+48(0.02%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 3.719ns/0.000ns; real time: 18 secs 
+Level 4, iteration 2
+15(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 3.719ns/0.000ns; real time: 18 secs 
+Level 4, iteration 3
+5(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 3.719ns/0.000ns; real time: 19 secs 
+Level 4, iteration 4
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 3.719ns/0.000ns; real time: 19 secs 
+Level 4, iteration 5
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 3.719ns/0.000ns; real time: 19 secs 
+
+Start NBR section for re-routing at 16:14:15 02/09/18
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 3.719ns/0.000ns; real time: 19 secs 
+
+Start NBR section for post-routing at 16:14:15 02/09/18
+
+End NBR router with 0 unrouted connection
+
+NBR Summary
+-----------
+  Number of unrouted connections : 0 (0.00%)
+  Number of connections with timing violations : 0 (0.00%)
+  Estimated worst slack<setup> : 3.719ns
+  Timing score<setup> : 0
+-----------
+Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
+
+
+
+Total CPU time 20 secs 
+Total REAL time: 23 secs 
+Completely routed.
+End of route.  3498 routed (100.00%); 0 unrouted.
+
+Timing score: 0 
+
+Dumping design to file Parallel2CSI2_Parallel2CSI2.dir/5_1.ncd.
+
+
+PAR_SUMMARY::Run status = completed
+PAR_SUMMARY::Number of unrouted conns = 0
+PAR_SUMMARY::Worst  slack<setup/<ns>> = 3.719
+PAR_SUMMARY::Timing score<setup/<ns>> = 0.000
+PAR_SUMMARY::Worst  slack<hold /<ns>> = <n/a>
+PAR_SUMMARY::Timing score<hold /<ns>> = <n/a>
+PAR_SUMMARY::Number of errors = 0
+
+Total CPU  time to completion: 20 secs 
+Total REAL time to completion: 23 secs 
+
+par done!
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
+Exiting par with exit code 0
+Exiting mpartrce with exit code 0
+
+bitgen -f "Parallel2CSI2_Parallel2CSI2.t2b" -w "Parallel2CSI2_Parallel2CSI2.ncd" -jedec "Parallel2CSI2_Parallel2CSI2.prf"
+
+
+BITGEN: Bitstream Generator Diamond (64-bit) 3.8.0.115.3
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
+
+
+Loading design for application Bitgen from file Parallel2CSI2_Parallel2CSI2.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CABGA256
+Performance: 6
+Loading device for application Bitgen from file 'xo2c4000.nph' in environment: D:/FPGA/Lattice/diamond/3.8_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+
+Running DRC.
+INFO: Design contains EBR with ASYNC Reset Mode that has a limitation: The use of the EBR block asynchronous reset requires that certain timing be met between the clock and the reset within the memory block. See the device specific data sheet for additional details.
+DRC detected 0 errors and 0 warnings.
+Reading Preference File from Parallel2CSI2_Parallel2CSI2.prf.
+
+Preference Summary:
++---------------------------------+---------------------------------+
+|  Preference                     |  Current Setting                |
++---------------------------------+---------------------------------+
+|                         RamCfg  |                        Reset**  |
++---------------------------------+---------------------------------+
+|                     MCCLK_FREQ  |                         2.08**  |
++---------------------------------+---------------------------------+
+|                  CONFIG_SECURE  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                      JTAG_PORT  |                       ENABLE**  |
++---------------------------------+---------------------------------+
+|                       SDM_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                 SLAVE_SPI_PORT  |                         ENABLE  |
++---------------------------------+---------------------------------+
+|                MASTER_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                       I2C_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|        MUX_CONFIGURATION_PORTS  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  CONFIGURATION  |                          CFG**  |
++---------------------------------+---------------------------------+
+|                COMPRESS_CONFIG  |                           ON**  |
++---------------------------------+---------------------------------+
+|                        MY_ASSP  |                          OFF**  |
++---------------------------------+---------------------------------+
+|               ONE_TIME_PROGRAM  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                 ENABLE_TRANSFR  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  SHAREDEBRINIT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|            BACKGROUND_RECONFIG  |                          OFF**  |
++---------------------------------+---------------------------------+
+ *  Default setting.
+ ** The specified setting matches the default setting.
+
+
+Creating bit map...
+ 
+Bitstream Status: Final           Version 1.92.
+ 
+Saving bit stream in "Parallel2CSI2_Parallel2CSI2.jed".
+ 
+===========
+UFM Summary.
+===========
+UFM Size:        767 Pages (128*767 Bits).
+UFM Utilization: General Purpose Flash Memory.
+ 
+Available General Purpose Flash Memory:  767 Pages (Page 0 to Page 766).
+Initialized UFM Pages:                     0 Page.
+ 

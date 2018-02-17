@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *************************************************************************************
+FILE DESCRIPTION
+Max Top 5 critical clocks will be reported. For rest user needs to refer to Detailed report
+*******************************************************************************************-->
+<report_table display_priority="2" name="Timing Summary">
+<report_link name="Detailed report">
+<data>C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\impl\Parallel2CSI2\synlog\Parallel2CSI2_Parallel2CSI2_fpga_mapper.srr</data>
+<title>START OF TIMING REPORT</title>
+</report_link>
+<row>
+<data tcl_name="clock_name">Clock Name</data>
+<data tcl_name="req_freq">Req Freq</data>
+<data tcl_name="est_freq">Est Freq</data>
+<data tcl_name="slack">Slack</data>
+</row>
+<row>
+<data>oDDRx4|sclk_inferred_clock</data>
+<data>1.0 MHz</data>
+<data>360.7 MHz</data>
+<data>997.228</data>
+</row>
+<row>
+<data>pll_pix2byte_YUV422_8bit_1lane|CLKOS2_inferred_clock</data>
+<data>1.0 MHz</data>
+<data>129.6 MHz</data>
+<data>992.284</data>
+</row>
+<row>
+<data>top|w_pixclk_inferred_clock</data>
+<data>7.0 MHz</data>
+<data>103.7 MHz</data>
+<data>133.217</data>
+</row>
+<row>
+<data>System</data>
+<data>1.0 MHz</data>
+<data>362.9 MHz</data>
+<data>997.244</data>
+</row>
+</report_table>

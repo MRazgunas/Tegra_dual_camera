@@ -1,0 +1,310 @@
+Synopsys Lattice Technology Mapper, Version maplat, Build 1498R, Built Jul  5 2016 10:30:31
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.03L-1
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 112MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 114MB)
+
+@N: MF203 |Set autoconstraint_io 
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+
+@W: BN114 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_2lane_xo2_v6_astrohn_astir2\rtl\oddrx4.v":112:12:112:25|Removing instance u_oDDRx4.Inst5_ODDRX4B2 (in view: work.DPHY_TX_INST(verilog)) of black box view:work.ODDRX4B(verilog) because it does not drive other instances.
+@W: BN114 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_2lane_xo2_v6_astrohn_astir2\rtl\oddrx4.v":108:12:108:25|Removing instance u_oDDRx4.Inst5_ODDRX4B3 (in view: work.DPHY_TX_INST(verilog)) of black box view:work.ODDRX4B(verilog) because it does not drive other instances.
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+
+@W: BN132 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_2lane_xo2_v6_astrohn_astir2\rtl\byte_packetizer.v":104:5:104:10|Removing instance u_BYTE_PACKETIZER.q_WC[9] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[8]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_2lane_xo2_v6_astrohn_astir2\rtl\byte_packetizer.v":104:5:104:10|Removing instance u_BYTE_PACKETIZER.q_WC[15] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[14]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_2lane_xo2_v6_astrohn_astir2\rtl\byte_packetizer.v":104:5:104:10|Removing instance u_BYTE_PACKETIZER.q_WC[14] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[13]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_2lane_xo2_v6_astrohn_astir2\rtl\byte_packetizer.v":104:5:104:10|Removing instance u_BYTE_PACKETIZER.q_WC[13] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[12]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_2lane_xo2_v6_astrohn_astir2\rtl\byte_packetizer.v":104:5:104:10|Removing instance u_BYTE_PACKETIZER.q_WC[12] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_2lane_xo2_v6_astrohn_astir2\rtl\byte_packetizer.v":104:5:104:10|Removing instance u_BYTE_PACKETIZER.q_WC[11] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_2lane_xo2_v6_astrohn_astir2\rtl\byte_packetizer.v":104:5:104:10|Removing instance u_BYTE_PACKETIZER.q_WC[7] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_2lane_xo2_v6_astrohn_astir2\rtl\byte_packetizer.v":104:5:104:10|Removing instance u_BYTE_PACKETIZER.q_WC[6] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_2lane_xo2_v6_astrohn_astir2\rtl\byte_packetizer.v":104:5:104:10|Removing instance u_BYTE_PACKETIZER.q_WC[5] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_2lane_xo2_v6_astrohn_astir2\rtl\byte_packetizer.v":104:5:104:10|Removing instance u_BYTE_PACKETIZER.q_WC[4] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@N: BN362 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_2lane_xo2_v6_astrohn_astir2\rtl\byte_packetizer.v":104:5:104:10|Removing sequential instance u_BYTE_PACKETIZER.q_WC[0] (in view: work.top(verilog)) because it does not drive other instances.
+@A: BN291 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_2lane_xo2_v6_astrohn_astir2\rtl\byte_packetizer.v":104:5:104:10|Boundary register u_BYTE_PACKETIZER.q_WC[0] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_2lane_xo2_v6_astrohn_astir2\rtl\lp_hs_dly_ctrl.v":112:4:112:9|Removing sequential instance hold_data_0_[31] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_2lane_xo2_v6_astrohn_astir2\rtl\lp_hs_dly_ctrl.v":112:4:112:9|Removing sequential instance hold_data_0_[30] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_2lane_xo2_v6_astrohn_astir2\rtl\lp_hs_dly_ctrl.v":112:4:112:9|Removing sequential instance hold_data_0_[29] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_2lane_xo2_v6_astrohn_astir2\rtl\lp_hs_dly_ctrl.v":112:4:112:9|Removing sequential instance hold_data_0_[28] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_2lane_xo2_v6_astrohn_astir2\rtl\lp_hs_dly_ctrl.v":112:4:112:9|Removing sequential instance hold_data_0_[27] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_2lane_xo2_v6_astrohn_astir2\rtl\lp_hs_dly_ctrl.v":112:4:112:9|Removing sequential instance hold_data_0_[26] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_2lane_xo2_v6_astrohn_astir2\rtl\lp_hs_dly_ctrl.v":112:4:112:9|Removing sequential instance hold_data_0_[25] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_2lane_xo2_v6_astrohn_astir2\rtl\lp_hs_dly_ctrl.v":112:4:112:9|Removing sequential instance hold_data_0_[24] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_2lane_xo2_v6_astrohn_astir2\rtl\lp_hs_dly_ctrl.v":112:4:112:9|Removing sequential instance hold_data_0_[23] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_2lane_xo2_v6_astrohn_astir2\rtl\lp_hs_dly_ctrl.v":112:4:112:9|Removing sequential instance hold_data_0_[22] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_2lane_xo2_v6_astrohn_astir2\rtl\lp_hs_dly_ctrl.v":112:4:112:9|Removing sequential instance hold_data_0_[21] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_2lane_xo2_v6_astrohn_astir2\rtl\lp_hs_dly_ctrl.v":112:4:112:9|Removing sequential instance hold_data_0_[20] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_2lane_xo2_v6_astrohn_astir2\rtl\lp_hs_dly_ctrl.v":112:4:112:9|Removing sequential instance hold_data_0_[19] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_2lane_xo2_v6_astrohn_astir2\rtl\lp_hs_dly_ctrl.v":112:4:112:9|Removing sequential instance hold_data_0_[18] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_2lane_xo2_v6_astrohn_astir2\rtl\lp_hs_dly_ctrl.v":112:4:112:9|Removing sequential instance hold_data_0_[17] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_2lane_xo2_v6_astrohn_astir2\rtl\lp_hs_dly_ctrl.v":112:4:112:9|Removing sequential instance hold_data_0_[16] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N:"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_2lane_xo2_v6_astrohn_astir2\rtl\lp_hs_dly_ctrl.v":107:16:107:21|Found counter in view:work.LP_HS_DELAY_CNTRL(verilog) inst data_dly\[20\]\.hold_data_CF4[4:0]
+@N:"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_2lane_xo2_v6_astrohn_astir2\rtl\lp_hs_dly_ctrl.v":118:4:118:9|Found counter in view:work.LP_HS_DELAY_CNTRL(verilog) inst hs_en_low_cnt[15:0]
+@N:"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_2lane_xo2_v6_astrohn_astir2\rtl\lp_hs_dly_ctrl.v":118:4:118:9|Found counter in view:work.LP_HS_DELAY_CNTRL(verilog) inst hs_en_high_cnt[15:0]
+@N:"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_2lane_xo2_v6_astrohn_astir2\rtl\lp_hs_dly_ctrl.v":118:4:118:9|Found counter in view:work.LP_HS_DELAY_CNTRL(verilog) inst hs_extended[4:0]
+@N:"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_2lane_xo2_v6_astrohn_astir2\rtl\colorbar_gen.v":112:1:112:6|Found counter in view:work.colorbar_gen_768_1200_288_450_40_44_148_5_5_0s(verilog) inst color_cntr[11:0]
+@N:"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_2lane_xo2_v6_astrohn_astir2\rtl\colorbar_gen.v":76:4:76:9|Found counter in view:work.colorbar_gen_768_1200_288_450_40_44_148_5_5_0s(verilog) inst rstn_cnt[7:0]
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 142MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 143MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 143MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 143MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 143MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 143MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 143MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 143MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 145MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:00s		   991.85ns		  93 /       110
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 145MB)
+
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+@N: FO126 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_2lane_xo2_v6_astrohn_astir2\rtl\lp_hs_dly_ctrl.v":107:16:107:21|Generating RAM u_LP_HS_DELAY_CNTRL.data_dly\[20\]\.hold_data_CR31[15:0]
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 145MB)
+
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+1 non-gated/non-generated clock tree(s) driving 42 clock pin(s) of sequential element(s)
+2 gated/generated clock tree(s) driving 80 clock pin(s) of sequential element(s)
+0 instances converted, 80 sequential instances remain driven by gated/generated clocks
+
+================================== Non-Gated/Non-Generated Clocks ===================================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance              
+-----------------------------------------------------------------------------------------------------
+@K:CKID0003       PIXCLK              port                   42         u_colorbar_gen.color_cntr[11]
+=====================================================================================================
+=============================================================================================================================== Gated/Generated Clocks ================================================================================================================================
+Clock Tree ID     Driving Element                                Drive Element Type     Fanout     Sample Instance                                       Explanation                                                                                                                   
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       u_pll_pix2byte_YUV422_8bit_2lane.PLLInst_0     EHXPLLJ                76         u_LP_HS_DELAY_CNTRL.data_dly[20].hold_data_CF4[4]     Gating structure creates improper gating logic. See the Gated Clocks description in the user guide for conversion requirements
+@K:CKID0002       u_DPHY_TX_INST.u_oDDRx4.Inst3_CLKDIVC          CLKDIVC                4          u_DPHY_TX_INST.u_oDDRx4.FF_0                          No gated clock conversion method for cell cell:LUCENT.FD1P3DX                                                                 
+=======================================================================================================================================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 110MB peak: 145MB)
+
+Writing Analyst data base C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_2lane_XO2_V6_Astrohn_Astir2\impl\Parallel2CSI2\synwork\Parallel2CSI2_Parallel2CSI2_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 143MB peak: 145MB)
+
+Writing EDIF Netlist and constraint files
+@N: FX1056 |Writing EDF file: C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_2lane_XO2_V6_Astrohn_Astir2\impl\Parallel2CSI2\Parallel2CSI2_Parallel2CSI2.edi
+L-2016.03L-1
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 147MB peak: 149MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 147MB peak: 149MB)
+
+@W: MT246 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_2lane_xo2_v6_astrohn_astir2\rtl\oddrx4.v":132:14:132:28|Blackbox ECLKSYNCA is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT246 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_2lane_xo2_v6_astrohn_astir2\rtl\oddrx4.v":129:12:129:24|Blackbox CLKDIVC is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT246 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_2lane_xo2_v6_astrohn_astir2\rtl\oddrx4.v":120:12:120:25|Blackbox ODDRX4B is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT246 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_2lane_xo2_v6_astrohn_astir2\rtl\byte_packetizer.v":150:26:150:32|Blackbox crc16_2lane is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT246 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_2lane_xo2_v6_astrohn_astir2\rtl\byte_packetizer.v":119:5:119:18|Blackbox packetheader_2s is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT246 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_2lane_xo2_v6_astrohn_astir2\rtl\byte_packetizer.v":87:8:87:22|Blackbox parallel2byte_8s_2s_30 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT246 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_2lane_xo2_v6_astrohn_astir2\rtl\ipexpress\pll_pix2byte_yuv422_8bit_2lane.v":70:12:70:20|Blackbox EHXPLLJ is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT420 |Found inferred clock top|PIXCLK with period 1000.00ns. Please declare a user-defined clock on object "p:PIXCLK"
+@W: MT420 |Found inferred clock oDDRx4|sclk_inferred_clock with period 1000.00ns. Please declare a user-defined clock on object "n:u_DPHY_TX_INST.u_oDDRx4.sclk"
+@W: MT420 |Found inferred clock pll_pix2byte_YUV422_8bit_2lane|CLKOS2_inferred_clock with period 1000.00ns. Please declare a user-defined clock on object "n:u_pll_pix2byte_YUV422_8bit_2lane.CLKOS2"
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Sat Feb 10 09:51:59 2018
+#
+
+
+Top view:               top
+Requested Frequency:    1.0 MHz
+Wire load mode:         top
+Paths requested:        3
+Constraint File(s):    
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: 990.479
+
+                                                         Requested     Estimated     Requested     Estimated                 Clock        Clock              
+Starting Clock                                           Frequency     Frequency     Period        Period        Slack       Type         Group              
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+oDDRx4|sclk_inferred_clock                               1.0 MHz       360.7 MHz     1000.000      2.772         997.228     inferred     Inferred_clkgroup_0
+pll_pix2byte_YUV422_8bit_2lane|CLKOS2_inferred_clock     1.0 MHz       129.6 MHz     1000.000      7.716         992.284     inferred     Inferred_clkgroup_2
+top|PIXCLK                                               1.0 MHz       105.0 MHz     1000.000      9.521         990.479     inferred     Inferred_clkgroup_1
+System                                                   1.0 MHz       362.9 MHz     1000.000      2.756         997.244     system       system_clkgroup    
+=============================================================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                                                                      |    rise  to  rise     |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                                              Ending                                                |  constraint  slack    |  constraint  slack  |  constraint  slack  |  constraint  slack
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                                System                                                |  1000.000    997.244  |  No paths    -      |  No paths    -      |  No paths    -    
+System                                                pll_pix2byte_YUV422_8bit_2lane|CLKOS2_inferred_clock  |  1000.000    993.392  |  No paths    -      |  No paths    -      |  No paths    -    
+oDDRx4|sclk_inferred_clock                            System                                                |  1000.000    997.875  |  No paths    -      |  No paths    -      |  No paths    -    
+oDDRx4|sclk_inferred_clock                            oDDRx4|sclk_inferred_clock                            |  1000.000    997.228  |  No paths    -      |  No paths    -      |  No paths    -    
+top|PIXCLK                                            System                                                |  1000.000    996.048  |  No paths    -      |  No paths    -      |  No paths    -    
+top|PIXCLK                                            top|PIXCLK                                            |  1000.000    990.479  |  No paths    -      |  No paths    -      |  No paths    -    
+top|PIXCLK                                            pll_pix2byte_YUV422_8bit_2lane|CLKOS2_inferred_clock  |  Diff grp    -        |  No paths    -      |  No paths    -      |  No paths    -    
+pll_pix2byte_YUV422_8bit_2lane|CLKOS2_inferred_clock  System                                                |  1000.000    995.449  |  No paths    -      |  No paths    -      |  No paths    -    
+pll_pix2byte_YUV422_8bit_2lane|CLKOS2_inferred_clock  pll_pix2byte_YUV422_8bit_2lane|CLKOS2_inferred_clock  |  1000.000    992.284  |  No paths    -      |  No paths    -      |  No paths    -    
+====================================================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+
+
+Input Ports: 
+
+Port           Starting            User           Arrival     Required            
+Name           Reference           Constraint     Time        Time         Slack  
+               Clock                                                              
+----------------------------------------------------------------------------------
+PIXCLK         NA                  NA             NA          NA           NA     
+PIXDATA[0]     NA                  NA             NA          NA           NA     
+PIXDATA[1]     NA                  NA             NA          NA           NA     
+PIXDATA[2]     NA                  NA             NA          NA           NA     
+PIXDATA[3]     NA                  NA             NA          NA           NA     
+PIXDATA[4]     NA                  NA             NA          NA           NA     
+PIXDATA[5]     NA                  NA             NA          NA           NA     
+PIXDATA[6]     NA                  NA             NA          NA           NA     
+PIXDATA[7]     NA                  NA             NA          NA           NA     
+reset_n        System (rising)     NA             0.000       997.244      997.244
+==================================================================================
+
+
+Output Ports: 
+
+Port         Starting                                                          User           Arrival     Required            
+Name         Reference                                                         Constraint     Time        Time         Slack  
+             Clock                                                                                                            
+------------------------------------------------------------------------------------------------------------------------------
+D0           pll_pix2byte_YUV422_8bit_2lane|CLKOS2_inferred_clock (rising)     NA             4.551       1000.000     995.449
+D1           pll_pix2byte_YUV422_8bit_2lane|CLKOS2_inferred_clock (rising)     NA             4.551       1000.000     995.449
+DCK          pll_pix2byte_YUV422_8bit_2lane|CLKOS2_inferred_clock (rising)     NA             4.479       1000.000     995.521
+FV           top|PIXCLK (rising)                                               NA             3.720       1000.000     996.280
+LP0[0]       pll_pix2byte_YUV422_8bit_2lane|CLKOS2_inferred_clock (rising)     NA             4.233       1000.000     995.767
+LP0[1]       pll_pix2byte_YUV422_8bit_2lane|CLKOS2_inferred_clock (rising)     NA             4.233       1000.000     995.767
+LP1[0]       pll_pix2byte_YUV422_8bit_2lane|CLKOS2_inferred_clock (rising)     NA             4.233       1000.000     995.767
+LP1[1]       pll_pix2byte_YUV422_8bit_2lane|CLKOS2_inferred_clock (rising)     NA             4.233       1000.000     995.767
+LPCLK[0]     pll_pix2byte_YUV422_8bit_2lane|CLKOS2_inferred_clock (rising)     NA             4.233       1000.000     995.767
+LPCLK[1]     pll_pix2byte_YUV422_8bit_2lane|CLKOS2_inferred_clock (rising)     NA             4.233       1000.000     995.767
+LV           top|PIXCLK (rising)                                               NA             3.952       1000.000     996.048
+==============================================================================================================================
+
+
+##### END OF TIMING REPORT #####]
+
+Constraints that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 148MB peak: 149MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 148MB peak: 149MB)
+
+---------------------------------------
+Resource Usage Report
+Part: lcmxo2_4000hc-6
+
+Register bits: 114 of 4320 (3%)
+PIC Latch:       0
+I/O cells:       13
+
+
+Details:
+CCU2D:          47
+CLKDIVC:        1
+DPR16X4C:       8
+ECLKSYNCA:      2
+EHXPLLJ:        1
+FD1P3BX:        21
+FD1P3DX:        35
+FD1S3AX:        5
+FD1S3DX:        37
+FD1S3IX:        16
+GSR:            1
+IB:             2
+INV:            9
+OB:             8
+OBZ:            3
+ODDRX4B:        3
+ORCALUT4:       102
+PUR:            1
+ROM16X1A:       2
+VHI:            5
+VLO:            7
+false:          1
+true:           3
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 32MB peak: 149MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat Feb 10 09:51:59 2018
+
+###########################################################]

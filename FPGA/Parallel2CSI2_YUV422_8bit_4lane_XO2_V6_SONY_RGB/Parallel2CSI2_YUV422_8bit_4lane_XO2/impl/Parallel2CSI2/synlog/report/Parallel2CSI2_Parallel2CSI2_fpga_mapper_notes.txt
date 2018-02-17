@@ -1,0 +1,12 @@
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+@N: MF203 |Set autoconstraint_io 
+@N: BN362 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_4lane_xo2_v6_sony_rgb\rtl\byte_packetizer.v":104:5:104:10|Removing sequential instance u_BYTE_PACKETIZER.q_WC[0] (in view: work.top(verilog)) because it does not drive other instances.
+@N: MO225 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_4lane_xo2_v6_sony_rgb\rtl\sony_block_cam_interface.v":22:0:22:5|There are no possible illegal states for state machine state[3:0] (in view: work.sony_block_to_yuv422_csi(verilog)); safe FSM implementation is not required.
+@N: MO225 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_4lane_xo2_v6_sony_rgb\rtl\sony_block_cam_interface.v":22:0:22:5|There are no possible illegal states for state machine frame_state[3:0] (in view: work.sony_block_to_yuv422_csi(verilog)); safe FSM implementation is not required.
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+@N: FO126 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_4lane_xo2_v6_sony_rgb\rtl\lp_hs_dly_ctrl.v":107:16:107:21|Generating RAM u_LP_HS_DELAY_CNTRL.data_dly\[17\]\.hold_data_CR31[31:0]
+@N: FX1056 |Writing EDF file: C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_4lane_XO2_V6_SONY_RGB\Parallel2CSI2_YUV422_8bit_4lane_XO2\impl\Parallel2CSI2\Parallel2CSI2_Parallel2CSI2.edi
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.

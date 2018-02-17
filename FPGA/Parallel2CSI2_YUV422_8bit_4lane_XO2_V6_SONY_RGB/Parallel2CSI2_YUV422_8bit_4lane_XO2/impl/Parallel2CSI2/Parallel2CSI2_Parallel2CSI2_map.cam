@@ -1,0 +1,177 @@
+[ START MERGED ]
+hs_clk_en_i hs_clk_en
+u_DPHY_TX_INST/u_oDDRx4/opensync_cken u_DPHY_TX_INST/u_oDDRx4/FF_0_Q
+hs_data_en_i hs_data_en
+u_BYTE_PACKETIZER/u_parallel2byte/reset_n_i reset_n_c
+u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/invout_0 u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/Empty
+u_LP_HS_DELAY_CNTRL/tmp1_i[4] u_LP_HS_DELAY_CNTRL/tmp1[4]
+hs_en_i hs_en
+u_BYTE_PACKETIZER/u_packetheader/reset_n_i reset_n_c
+u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/dec0_wre3 u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/wren_i
+u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/rRst u_BYTE_PACKETIZER/u_packetheader/un1_q_bytepkt_en_0
+u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/invout_1 u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/Full
+[ END MERGED ]
+[ START CLIPPED ]
+u_BYTE_PACKETIZER/u_packetheader/un2_EoTp_En_0[0]
+u_pll_pix2byte_YUV422_8bit_4lane/GND
+u_BYTE_PACKETIZER/GND
+u_BYTE_PACKETIZER/u_packetheader/GND
+u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/GND
+u_BYTE_PACKETIZER/data_type[5]
+u_BYTE_PACKETIZER/u_parallel2byte/u_fifo/VCC
+u_BYTE_PACKETIZER/u_parallel2byte/u_fifo/GND
+u_LP_HS_DELAY_CNTRL/GND
+u_sony_block_to_yuv422_csi/GND
+u_sony_block_to_yuv422_csi/plldoubler/GND
+u_DPHY_TX_INST/u_oDDRx4/GND
+u_DPHY_TX_INST/u_oDDRx4/VCC
+u_BYTE_PACKETIZER/genblk3.u_crc16/VCC
+u_BYTE_PACKETIZER/u_parallel2byte/VCC
+VCC
+u_pll_pix2byte_YUV422_8bit_4lane/CLKINTFB_0
+u_pll_pix2byte_YUV422_8bit_4lane/DPHSRC_0
+u_pll_pix2byte_YUV422_8bit_4lane/PLLACK_0
+u_pll_pix2byte_YUV422_8bit_4lane/PLLDATO0_0
+u_pll_pix2byte_YUV422_8bit_4lane/PLLDATO1_0
+u_pll_pix2byte_YUV422_8bit_4lane/PLLDATO2_0
+u_pll_pix2byte_YUV422_8bit_4lane/PLLDATO3_0
+u_pll_pix2byte_YUV422_8bit_4lane/PLLDATO4_0
+u_pll_pix2byte_YUV422_8bit_4lane/PLLDATO5_0
+u_pll_pix2byte_YUV422_8bit_4lane/PLLDATO6_0
+u_pll_pix2byte_YUV422_8bit_4lane/PLLDATO7_0
+u_pll_pix2byte_YUV422_8bit_4lane/REFCLK_0
+u_pll_pix2byte_YUV422_8bit_4lane/INTLOCK_0
+u_pll_pix2byte_YUV422_8bit_4lane/LOCK
+u_pll_pix2byte_YUV422_8bit_4lane/CLKOS3_0
+u_BYTE_PACKETIZER/u_packetheader/lpkt_cnt_s_0_S1[15]
+u_BYTE_PACKETIZER/u_packetheader/lpkt_cnt_s_0_COUT[15]
+u_BYTE_PACKETIZER/u_packetheader/q_wc_i[2]
+u_BYTE_PACKETIZER/u_packetheader/un2_wc_end_flag.un2_wc_end_flag_cry_0_0_S0
+u_BYTE_PACKETIZER/u_packetheader/N_2
+u_BYTE_PACKETIZER/u_packetheader/un2_wc_end_flag.un2_wc_end_flag_cry_13_0_COUT
+u_BYTE_PACKETIZER/u_packetheader/un10_wc_end_flag_0_N_40
+u_BYTE_PACKETIZER/u_packetheader/un10_wc_end_flag_0_I_1_0_S0
+u_BYTE_PACKETIZER/u_packetheader/N_3
+u_BYTE_PACKETIZER/u_packetheader/un10_wc_end_flag_0_I_21_0_S1
+u_BYTE_PACKETIZER/u_packetheader/un10_wc_end_flag_0_I_21_0_S0
+u_BYTE_PACKETIZER/u_packetheader/un10_wc_end_flag_0_I_45_0_S1
+u_BYTE_PACKETIZER/u_packetheader/un10_wc_end_flag_0_I_45_0_S0
+u_BYTE_PACKETIZER/u_packetheader/un10_wc_end_flag_0_I_15_0_S1
+u_BYTE_PACKETIZER/u_packetheader/un10_wc_end_flag_0_I_15_0_S0
+u_BYTE_PACKETIZER/u_packetheader/un10_wc_end_flag_0_I_33_0_S1
+u_BYTE_PACKETIZER/u_packetheader/un10_wc_end_flag_0_I_33_0_S0
+u_BYTE_PACKETIZER/u_packetheader/un10_wc_end_flag_0_I_51_0_S1
+u_BYTE_PACKETIZER/u_packetheader/un10_wc_end_flag_0_I_51_0_COUT
+u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/full_cmp_ci_a_S1
+u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/full_cmp_ci_a_S0
+u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/a0_S1
+u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/a0_COUT
+u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/empty_cmp_ci_a_S1
+u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/empty_cmp_ci_a_S0
+u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/r_gctr_cia_S1
+u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/r_gctr_cia_S0
+u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/co1
+u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/w_gctr_cia_S1
+u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/w_gctr_cia_S0
+u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/a1_S1
+u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/a1_COUT
+u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/co1_1
+u_BYTE_PACKETIZER/u_packetheader/lpkt_cnt_cry_0_S0[0]
+u_BYTE_PACKETIZER/u_packetheader/N_1
+u_BYTE_PACKETIZER/u_parallel2byte/u_fifo/FF
+u_BYTE_PACKETIZER/u_parallel2byte/u_fifo/AFF
+u_BYTE_PACKETIZER/u_parallel2byte/u_fifo/AEF
+u_BYTE_PACKETIZER/u_parallel2byte/u_fifo/EF
+u_BYTE_PACKETIZER/u_parallel2byte/u_fifo/DO17
+u_BYTE_PACKETIZER/u_parallel2byte/u_fifo/DO8
+u_BYTE_PACKETIZER/u_parallel2byte/u_fifo/AlmostFull
+u_BYTE_PACKETIZER/u_parallel2byte/u_fifo/AlmostEmpty
+u_BYTE_PACKETIZER/u_parallel2byte/u_fifo/DO17_0
+u_BYTE_PACKETIZER/u_parallel2byte/u_fifo/DO8_0
+u_LP_HS_DELAY_CNTRL/hs_extended_cry_0_COUT[3]
+u_LP_HS_DELAY_CNTRL/hs_en_high_cnt_cry_0_S0[0]
+u_LP_HS_DELAY_CNTRL/N_2
+u_LP_HS_DELAY_CNTRL/hs_en_high_cnt_s_0_S1[15]
+u_LP_HS_DELAY_CNTRL/hs_en_high_cnt_s_0_COUT[15]
+u_LP_HS_DELAY_CNTRL/hs_en_low_cnt_cry_0_S0[0]
+u_LP_HS_DELAY_CNTRL/N_3
+u_LP_HS_DELAY_CNTRL/hs_en_low_cnt_s_0_S1[15]
+u_LP_HS_DELAY_CNTRL/hs_en_low_cnt_s_0_COUT[15]
+u_LP_HS_DELAY_CNTRL/hold_data_CF4_cry_0_S0[0]
+u_LP_HS_DELAY_CNTRL/N_4
+u_LP_HS_DELAY_CNTRL/hold_data_CF4_cry_0_COUT[3]
+u_LP_HS_DELAY_CNTRL/hs_extended_cry_0_S0[0]
+u_LP_HS_DELAY_CNTRL/N_1
+u_sony_block_to_yuv422_csi/un1_fv_del_counter_3_cry_0_0_S0
+u_sony_block_to_yuv422_csi/N_1
+u_sony_block_to_yuv422_csi/un1_fv_del_counter_3_s_7_0_S1
+u_sony_block_to_yuv422_csi/un1_fv_del_counter_3_s_7_0_COUT
+u_sony_block_to_yuv422_csi/un1_pixcounter_7_cry_0_0_S0
+u_sony_block_to_yuv422_csi/N_2
+u_sony_block_to_yuv422_csi/un1_pixcounter_7_s_11_0_S1
+u_sony_block_to_yuv422_csi/un1_pixcounter_7_s_11_0_COUT
+u_sony_block_to_yuv422_csi/plldoubler/CLKINTFB
+u_sony_block_to_yuv422_csi/plldoubler/DPHSRC
+u_sony_block_to_yuv422_csi/plldoubler/PLLACK
+u_sony_block_to_yuv422_csi/plldoubler/PLLDATO0
+u_sony_block_to_yuv422_csi/plldoubler/PLLDATO1
+u_sony_block_to_yuv422_csi/plldoubler/PLLDATO2
+u_sony_block_to_yuv422_csi/plldoubler/PLLDATO3
+u_sony_block_to_yuv422_csi/plldoubler/PLLDATO4
+u_sony_block_to_yuv422_csi/plldoubler/PLLDATO5
+u_sony_block_to_yuv422_csi/plldoubler/PLLDATO6
+u_sony_block_to_yuv422_csi/plldoubler/PLLDATO7
+u_sony_block_to_yuv422_csi/plldoubler/REFCLK
+u_sony_block_to_yuv422_csi/plldoubler/INTLOCK
+u_sony_block_to_yuv422_csi/plldoubler/LOCK
+u_sony_block_to_yuv422_csi/plldoubler/CLKOS3
+u_sony_block_to_yuv422_csi/plldoubler/CLKOS2
+u_DPHY_TX_INST/u_oDDRx4/cdiv1
+[ END CLIPPED ]
+[ START DESIGN PREFS ]
+SCHEMATIC START ;
+# map:  version Diamond (64-bit) 3.8.0.115.3 -- WARNING: Map write only section -- Fri Feb 09 16:13:55 2018
+
+SYSCONFIG SDM_PORT=DISABLE SLAVE_SPI_PORT=ENABLE I2C_PORT=DISABLE MASTER_SPI_PORT=DISABLE COMPRESS_CONFIG=ON CONFIGURATION=CFG MY_ASSP=OFF ONE_TIME_PROGRAM=OFF CONFIG_SECURE=OFF MCCLK_FREQ=2.08 JTAG_PORT=ENABLE ENABLE_TRANSFR=DISABLE SHAREDEBRINIT=DISABLE MUX_CONFIGURATION_PORTS=DISABLE BACKGROUND_RECONFIG=OFF ;
+LOCATE COMP "DCK" SITE "C8" ;
+LOCATE COMP "LPCLK[0]" SITE "C1" ;
+LOCATE COMP "reset_n" SITE "R5" ;
+LOCATE COMP "PIXDATA[15]" SITE "L16" ;
+LOCATE COMP "PIXDATA[14]" SITE "M15" ;
+LOCATE COMP "PIXDATA[13]" SITE "M16" ;
+LOCATE COMP "PIXDATA[12]" SITE "N15" ;
+LOCATE COMP "PIXDATA[11]" SITE "N16" ;
+LOCATE COMP "PIXDATA[10]" SITE "N14" ;
+LOCATE COMP "PIXDATA[9]" SITE "P15" ;
+LOCATE COMP "PIXDATA[8]" SITE "R16" ;
+LOCATE COMP "PIXDATA[7]" SITE "E15" ;
+LOCATE COMP "PIXDATA[6]" SITE "E16" ;
+LOCATE COMP "PIXDATA[5]" SITE "F15" ;
+LOCATE COMP "PIXDATA[4]" SITE "F16" ;
+LOCATE COMP "PIXDATA[3]" SITE "G15" ;
+LOCATE COMP "PIXDATA[2]" SITE "G16" ;
+LOCATE COMP "PIXDATA[1]" SITE "H15" ;
+LOCATE COMP "PIXDATA[0]" SITE "H16" ;
+LOCATE COMP "PIXCLK" SITE "H14" ;
+LOCATE COMP "LP0[1]" SITE "E1" ;
+LOCATE COMP "LP0[0]" SITE "D2" ;
+LOCATE COMP "LP1[1]" SITE "C2" ;
+LOCATE COMP "LP1[0]" SITE "B1" ;
+LOCATE COMP "LP2[1]" SITE "G2" ;
+LOCATE COMP "LP2[0]" SITE "F2" ;
+LOCATE COMP "LP3[1]" SITE "F3" ;
+LOCATE COMP "LP3[0]" SITE "E2" ;
+LOCATE COMP "LPCLK[1]" SITE "D1" ;
+LOCATE COMP "D0" SITE "A5" ;
+LOCATE COMP "D1" SITE "B9" ;
+LOCATE COMP "D2" SITE "A3" ;
+LOCATE COMP "D3" SITE "A4" ;
+FREQUENCY NET "u_sony_block_to_yuv422_csi/plldoubler/CLKOS" 150.000000 MHz ;
+FREQUENCY NET "w_pixclk" 150.000000 MHz ;
+FREQUENCY NET "byte_clk" 37.500000 MHz ;
+USE PRIMARY NET "PIXCLK_c" ;
+FREQUENCY NET "CLKOP" 150.000000 MHz ;
+FREQUENCY NET "CLKOS" 150.000000 MHz ;
+FREQUENCY NET "PIXCLK_c" 75.000000 MHz ;
+SCHEMATIC END ;
+[ END DESIGN PREFS ]

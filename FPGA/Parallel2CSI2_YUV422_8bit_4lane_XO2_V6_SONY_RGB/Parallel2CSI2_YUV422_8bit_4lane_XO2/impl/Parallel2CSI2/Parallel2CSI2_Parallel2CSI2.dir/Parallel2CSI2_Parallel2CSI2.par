@@ -1,0 +1,27 @@
+PAR: Place And Route Diamond (64-bit) 3.8.0.115.3.
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
+Fri Feb 09 16:13:56 2018
+
+D:/FPGA/Lattice/diamond/3.8_x64/ispfpga\bin\nt64\par -f
+Parallel2CSI2_Parallel2CSI2.p2t Parallel2CSI2_Parallel2CSI2_map.ncd
+Parallel2CSI2_Parallel2CSI2.dir Parallel2CSI2_Parallel2CSI2.prf -gui -msgset
+C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_4lane_XO2_V6_SONY_RGB/Parallel2CSI2_YUV422_8bit_4lane_XO2/impl/promote.xml
+
+
+Preference file: Parallel2CSI2_Parallel2CSI2.prf.
+
+Level/       Number       Worst        Timing       Worst        Timing       Run          NCD
+Cost [ncd]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Time         Status
+----------   --------     -----        ------       -----------  -----------  ----         ------
+5_1   *      0            3.719        0            -            -            23           Complete
+
+
+* : Design saved.
+
+Total (real) run time for 1-seed: 23 secs 
+
+par done!

@@ -1,0 +1,13 @@
+#Start recording tcl command: 2/9/2018 23:28:35
+#Project Location: C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_2lane_XO2_V6_Astrohn_Astir2/impl; Project name: Parallel2CSI2
+prj_project open "C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_2lane_XO2_V6_Astrohn_Astir2/impl/Parallel2CSI2.ldf"
+prj_run Export -impl Parallel2CSI2 -task Jedecgen
+prj_run Export -impl Parallel2CSI2 -task Jedecgen
+prj_run Export -impl Parallel2CSI2 -task Jedecgen
+prj_run Export -impl Parallel2CSI2 -task Jedecgen
+prj_run Export -impl Parallel2CSI2 -task Jedecgen
+prj_run Export -impl Parallel2CSI2 -task Jedecgen
+prj_run Export -impl Parallel2CSI2 -task Jedecgen
+prj_run Export -impl Parallel2CSI2 -task Jedecgen
+prj_run Export -impl Parallel2CSI2 -task Jedecgen
+#Stop recording: 2/10/2018 00:25:08

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DiamondModule name="pll_pix2byte_YUV422_8bit_1lane" module="pll_pix2byte_YUV422_8bit_1lane" VendorName="Lattice Semiconductor Corporation" generator="IPexpress" date="2018 02 18 00:16:27.233" version="5.8" type="Module" synthesis="synplify" source_format="Verilog HDL">
+  <Package>
+		<File name="pll_pix2byte_YUV422_8bit_1lane.lpc" type="lpc" modified="2018 02 18 00:16:25.619"/>
+		<File name="pll_pix2byte_YUV422_8bit_1lane.v" type="top_level_verilog" modified="2018 02 18 00:16:25.700"/>
+		<File name="pll_pix2byte_YUV422_8bit_1lane_tmpl.v" type="template_verilog" modified="2018 02 18 00:16:25.704"/>
+  </Package>
+</DiamondModule>

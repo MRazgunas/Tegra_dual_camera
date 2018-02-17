@@ -1,0 +1,36 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N: CG364 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\parallel2byte_bb.v":49:7:49:19|Synthesizing module parallel2byte in library work.
+@N: CG364 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\packetheader_bb.v":49:7:49:18|Synthesizing module packetheader in library work.
+@N: CG364 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\BYTE_PACKETIZER.v":49:7:49:21|Synthesizing module BYTE_PACKETIZER in library work.
+@N: CG179 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\BYTE_PACKETIZER.v":112:53:112:56|Removing redundant assignment.
+@N: CG179 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\BYTE_PACKETIZER.v":113:53:113:56|Removing redundant assignment.
+@N: CG364 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\crc16_1lane_bb.v":49:7:49:17|Synthesizing module crc16_1lane in library work.
+@N: CG364 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\LP_HS_dly_ctrl.v":47:7:47:23|Synthesizing module LP_HS_DELAY_CNTRL in library work.
+@N: CG179 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\LP_HS_dly_ctrl.v":153:78:153:86|Removing redundant assignment.
+@N: CG179 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\LP_HS_dly_ctrl.v":156:78:156:88|Removing redundant assignment.
+@N: CG179 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\LP_HS_dly_ctrl.v":159:78:159:87|Removing redundant assignment.
+@N: CG179 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\LP_HS_dly_ctrl.v":163:78:163:83|Removing redundant assignment.
+@N: CG179 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\LP_HS_dly_ctrl.v":167:78:167:84|Removing redundant assignment.
+@N: CG364 :"D:\FPGA\Lattice\diamond\3.8_x64\synpbase\lib\lucent\machxo2.v":1051:7:1051:14|Synthesizing module ROM16X1A in library work.
+@N: CG364 :"D:\FPGA\Lattice\diamond\3.8_x64\synpbase\lib\lucent\machxo2.v":176:7:176:13|Synthesizing module FD1P3BX in library work.
+@N: CG364 :"D:\FPGA\Lattice\diamond\3.8_x64\synpbase\lib\lucent\machxo2.v":187:7:187:13|Synthesizing module FD1P3DX in library work.
+@N: CG364 :"D:\FPGA\Lattice\diamond\3.8_x64\synpbase\lib\lucent\machxo2.v":1120:7:1120:9|Synthesizing module VHI in library work.
+@N: CG364 :"D:\FPGA\Lattice\diamond\3.8_x64\synpbase\lib\lucent\machxo2.v":1615:7:1615:13|Synthesizing module ODDRX4B in library work.
+@N: CG364 :"D:\FPGA\Lattice\diamond\3.8_x64\synpbase\lib\lucent\machxo2.v":1525:7:1525:15|Synthesizing module ECLKSYNCA in library work.
+@N: CG364 :"D:\FPGA\Lattice\diamond\3.8_x64\synpbase\lib\lucent\machxo2.v":1124:7:1124:9|Synthesizing module VLO in library work.
+@N: CG364 :"D:\FPGA\Lattice\diamond\3.8_x64\synpbase\lib\lucent\machxo2.v":1512:7:1512:13|Synthesizing module CLKDIVC in library work.
+@N: CG364 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\oDDRx4.v":8:7:8:12|Synthesizing module oDDRx4 in library work.
+@N: CG364 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\IO_Controller_TX.v":48:7:48:22|Synthesizing module IO_Controller_TX in library work.
+@N: CG364 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\DPHY_TX_INST.v":50:7:50:18|Synthesizing module DPHY_TX_INST in library work.
+@N: CG364 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\top.v":50:7:50:9|Synthesizing module top in library work.
+@N: CG364 :"D:\FPGA\Lattice\diamond\3.8_x64\synpbase\lib\lucent\machxo2.v":1730:7:1730:13|Synthesizing module EHXPLLJ in library work.
+@N: CG364 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\IPExpress\pll_pix2byte_YUV422_8bit_1lane.v":8:7:8:36|Synthesizing module pll_pix2byte_YUV422_8bit_1lane in library work.
+@N: CG364 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\colorbar_gen.v":47:7:47:18|Synthesizing module colorbar_gen in library work.
+@N: CG364 :"D:\FPGA\Lattice\diamond\3.8_x64\synpbase\lib\lucent\machxo2.v":1793:7:1793:10|Synthesizing module OSCH in library work.
+@N: CL159 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\top.v":97:28:97:33|Input PIXCLK is unused.
+@N: CL159 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\top.v":100:28:100:34|Input PIXDATA is unused.
+@N: CL159 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\IO_Controller_TX.v":49:11:49:17|Input reset_n is unused.
+@N: CL135 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\LP_HS_dly_ctrl.v":108:16:108:21|Found seqShift data_dly[26].hold_data, depth=26, width=32
+@N|Running in 64-bit mode
+

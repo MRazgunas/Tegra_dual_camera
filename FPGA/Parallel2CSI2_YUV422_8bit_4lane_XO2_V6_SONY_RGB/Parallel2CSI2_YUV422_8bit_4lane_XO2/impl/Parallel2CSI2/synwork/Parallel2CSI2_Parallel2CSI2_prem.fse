@@ -1,0 +1,24 @@
+
+fsm_encoding {20220221} sequential
+
+fsm_state_encoding {20220221} 00 {00}
+
+fsm_state_encoding {20220221} 01 {01}
+
+fsm_state_encoding {20220221} 10 {10}
+
+fsm_state_encoding {20220221} 11 {11}
+
+fsm_registers {20220221} {state[1]}  {state[0]} 
+
+fsm_encoding {20220222} sequential
+
+fsm_state_encoding {20220222} 00 {00}
+
+fsm_state_encoding {20220222} 01 {01}
+
+fsm_state_encoding {20220222} 10 {10}
+
+fsm_state_encoding {20220222} 11 {11}
+
+fsm_registers {20220222} {frame_state[1]}  {frame_state[0]} 

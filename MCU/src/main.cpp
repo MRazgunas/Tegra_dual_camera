@@ -178,7 +178,7 @@ int main(void) {
           palClearPad(GPIOC, GPIOC_RESET_OUT);
       }
 
-      if(chVTGetSystemTime() > time_since_recov_req + MS2ST(2000) && time_since_recov_req != 0) {
+      if(chVTGetSystemTime() > time_since_recov_req + MS2ST(2500) && time_since_recov_req != 0) {
           palSetPad(GPIOB, GPIOB_FORCE_RECOV);
           time_since_recov_req = 0;
       }
@@ -242,7 +242,7 @@ int main(void) {
       case POWER_REQUESTED_RECOVERY:
           palClearPad(GPIOB, GPIOB_FORCE_RECOV);
           palClearPad(GPIOC, GPIOC_RESET_IN);
-          chibios_rt::BaseThread::sleep(MS2ST(200));
+          chibios_rt::BaseThread::sleep(MS2ST(400));
           palSetPad(GPIOC, GPIOC_RESET_IN);
           state = POWER_REQUESTED_POWERDOWN;
           time_since_recov_req = chVTGetSystemTime();

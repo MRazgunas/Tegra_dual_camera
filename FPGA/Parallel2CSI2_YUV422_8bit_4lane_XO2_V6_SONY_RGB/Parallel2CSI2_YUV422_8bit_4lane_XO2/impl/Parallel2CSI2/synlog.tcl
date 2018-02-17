@@ -1,0 +1,1 @@
+run_tcl -fg Parallel2CSI2_Parallel2CSI2_synplify.tcl

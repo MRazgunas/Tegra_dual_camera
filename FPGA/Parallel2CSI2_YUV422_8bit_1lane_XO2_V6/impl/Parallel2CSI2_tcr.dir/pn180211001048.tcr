@@ -1,0 +1,43 @@
+#Start recording tcl command: 2/10/2018 23:07:32
+#Project Location: C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_1lane_XO2_V6/impl; Project name: Parallel2CSI2
+prj_project open "C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_1lane_XO2_V6/impl/Parallel2CSI2.ldf"
+pgr_project save "C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_1lane_XO2_V6/impl/Parallel2CSI2/Parallel2CSI2.xcf"
+prj_src add -exclude "C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_1lane_XO2_V6/impl/Parallel2CSI2/Parallel2CSI2.xcf"
+prj_src enable "C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_1lane_XO2_V6/impl/Parallel2CSI2/Parallel2CSI2.xcf"
+pgr_program run
+pgr_program run
+pgr_project close
+pgr_project save "C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_1lane_XO2_V6/impl/Parallel2CSI2/Parallel2CSI2.xcf"
+pgr_program run
+pgr_program run
+pgr_project close
+pgr_project save "C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_1lane_XO2_V6/impl/Parallel2CSI2/Parallel2CSI2.xcf"
+pgr_program run
+pgr_project save "C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_1lane_XO2_V6/impl/Parallel2CSI2/Parallel2CSI2.xcf"
+pgr_project close
+prj_run Export -impl Parallel2CSI2 -task Jedecgen
+prj_dev set -part LCMXO2-4000HC-6BG256C
+prj_run Export -impl Parallel2CSI2 -task Jedecgen
+prj_src add "C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_1lane_XO2_V6/rtl/astrohn_astir2.v"
+prj_run Export -impl Parallel2CSI2 -task Jedecgen
+pgr_project open "C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_1lane_XO2_V6/impl/Parallel2CSI2/Parallel2CSI2.xcf"
+pgr_program run
+pgr_program run
+pgr_program run
+pgr_program run
+pgr_program run
+pgr_program run
+pgr_program run
+pgr_program run
+pgr_project save "C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_1lane_XO2_V6/impl/Parallel2CSI2/Parallel2CSI2.xcf"
+pgr_program run
+pgr_program run
+pgr_program run
+pgr_program run
+prj_run Export -impl Parallel2CSI2 -task Jedecgen
+pgr_project save "C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_1lane_XO2_V6/impl/Parallel2CSI2/Parallel2CSI2.xcf"
+pgr_project close
+prj_run Export -impl Parallel2CSI2 -task Jedecgen
+prj_run Export -impl Parallel2CSI2 -task Jedecgen
+prj_run Export -impl Parallel2CSI2 -task Jedecgen
+#Stop recording: 2/11/2018 00:10:48

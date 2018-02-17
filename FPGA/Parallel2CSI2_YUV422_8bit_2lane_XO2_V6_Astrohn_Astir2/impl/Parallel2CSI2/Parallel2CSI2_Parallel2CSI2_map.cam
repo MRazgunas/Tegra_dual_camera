@@ -1,0 +1,126 @@
+[ START MERGED ]
+hs_clk_en_i hs_clk_en
+u_DPHY_TX_INST/u_oDDRx4/opensync_cken u_DPHY_TX_INST/u_oDDRx4/FF_0_Q
+u_colorbar_gen/rstn_cnt_i[7] u_colorbar_gen/rstn_cnt[7]
+u_LP_HS_DELAY_CNTRL/tmp1_i[4] u_LP_HS_DELAY_CNTRL/tmp1[4]
+hs_en_i hs_en
+hs_data_en_i hs_data_en
+u_BYTE_PACKETIZER/u_parallel2byte/reset_n_i reset_n_c
+u_BYTE_PACKETIZER/u_packetheader/reset_n_i reset_n_c
+u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/dec0_wre3 u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/wren_i
+u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/rRst u_BYTE_PACKETIZER/u_packetheader/un1_q_bytepkt_en_0
+u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/invout_0 u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/Empty
+u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/invout_1 u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/Full
+[ END MERGED ]
+[ START CLIPPED ]
+u_BYTE_PACKETIZER/u_packetheader/un2_EoTp_En_0[0]
+u_pll_pix2byte_YUV422_8bit_2lane/GND
+u_BYTE_PACKETIZER/GND
+u_BYTE_PACKETIZER/byte_D2[0]
+u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/GND
+u_BYTE_PACKETIZER/byte_data[16]
+u_BYTE_PACKETIZER/u_parallel2byte/u_fifo/VCC
+u_BYTE_PACKETIZER/u_parallel2byte/u_fifo/GND
+u_LP_HS_DELAY_CNTRL/GND
+u_colorbar_gen/GND
+u_DPHY_TX_INST/u_oDDRx4/GND
+u_DPHY_TX_INST/u_oDDRx4/VCC
+u_BYTE_PACKETIZER/genblk2.u_crc16/VCC
+u_BYTE_PACKETIZER/u_parallel2byte/VCC
+VCC
+u_pll_pix2byte_YUV422_8bit_2lane/CLKINTFB
+u_pll_pix2byte_YUV422_8bit_2lane/DPHSRC
+u_pll_pix2byte_YUV422_8bit_2lane/PLLACK
+u_pll_pix2byte_YUV422_8bit_2lane/PLLDATO0
+u_pll_pix2byte_YUV422_8bit_2lane/PLLDATO1
+u_pll_pix2byte_YUV422_8bit_2lane/PLLDATO2
+u_pll_pix2byte_YUV422_8bit_2lane/PLLDATO3
+u_pll_pix2byte_YUV422_8bit_2lane/PLLDATO4
+u_pll_pix2byte_YUV422_8bit_2lane/PLLDATO5
+u_pll_pix2byte_YUV422_8bit_2lane/PLLDATO6
+u_pll_pix2byte_YUV422_8bit_2lane/PLLDATO7
+u_pll_pix2byte_YUV422_8bit_2lane/REFCLK
+u_pll_pix2byte_YUV422_8bit_2lane/INTLOCK
+u_pll_pix2byte_YUV422_8bit_2lane/LOCK
+u_pll_pix2byte_YUV422_8bit_2lane/CLKOS3
+u_BYTE_PACKETIZER/u_packetheader/lpkt_cnt_s_0_S1[15]
+u_BYTE_PACKETIZER/u_packetheader/lpkt_cnt_s_0_COUT[15]
+u_BYTE_PACKETIZER/u_packetheader/un9_wc_end_flag_a_4_cry_0_0_S1
+u_BYTE_PACKETIZER/u_packetheader/un9_wc_end_flag_a_4_cry_0_0_S0
+u_BYTE_PACKETIZER/u_packetheader/N_2
+u_BYTE_PACKETIZER/u_packetheader/un9_wc_end_flag_a_4_cry_15_0_COUT
+u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/full_cmp_ci_a_S1
+u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/full_cmp_ci_a_S0
+u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/a0_S1
+u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/a0_COUT
+u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/empty_cmp_ci_a_S1
+u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/empty_cmp_ci_a_S0
+u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/r_gctr_cia_S1
+u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/r_gctr_cia_S0
+u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/co1
+u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/w_gctr_cia_S1
+u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/w_gctr_cia_S0
+u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/a1_S1
+u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/a1_COUT
+u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/co1_1
+u_BYTE_PACKETIZER/u_packetheader/lpkt_cnt_cry_0_S0[0]
+u_BYTE_PACKETIZER/u_packetheader/N_1
+u_BYTE_PACKETIZER/u_parallel2byte/u_fifo/AFF
+u_BYTE_PACKETIZER/u_parallel2byte/u_fifo/AEF
+u_BYTE_PACKETIZER/u_parallel2byte/u_fifo/DO17
+u_BYTE_PACKETIZER/u_parallel2byte/u_fifo/DO8
+u_LP_HS_DELAY_CNTRL/hs_extended_cry_0_COUT[3]
+u_LP_HS_DELAY_CNTRL/hs_en_high_cnt_cry_0_S0[0]
+u_LP_HS_DELAY_CNTRL/N_2
+u_LP_HS_DELAY_CNTRL/hs_en_high_cnt_s_0_S1[15]
+u_LP_HS_DELAY_CNTRL/hs_en_high_cnt_s_0_COUT[15]
+u_LP_HS_DELAY_CNTRL/hs_en_low_cnt_cry_0_S0[0]
+u_LP_HS_DELAY_CNTRL/N_3
+u_LP_HS_DELAY_CNTRL/hs_en_low_cnt_s_0_S1[15]
+u_LP_HS_DELAY_CNTRL/hs_en_low_cnt_s_0_COUT[15]
+u_LP_HS_DELAY_CNTRL/hold_data_CF4_cry_0_S0[0]
+u_LP_HS_DELAY_CNTRL/N_4
+u_LP_HS_DELAY_CNTRL/hold_data_CF4_cry_0_COUT[3]
+u_LP_HS_DELAY_CNTRL/hs_extended_cry_0_S0[0]
+u_LP_HS_DELAY_CNTRL/N_1
+u_colorbar_gen/rstn_cnt_cry_0_S0[0]
+u_colorbar_gen/N_3
+u_colorbar_gen/rstn_cnt_s_0_S1[7]
+u_colorbar_gen/rstn_cnt_s_0_COUT[7]
+u_colorbar_gen/color_cntr_cry_0_S0[0]
+u_colorbar_gen/N_4
+u_colorbar_gen/color_cntr_s_0_S1[11]
+u_colorbar_gen/color_cntr_s_0_COUT[11]
+u_colorbar_gen/un2_linecnt_cry_0_0_S0
+u_colorbar_gen/N_5
+u_colorbar_gen/un2_linecnt_cry_7_0_COUT
+u_colorbar_gen/un7_pixcnt_cry_0_0_S1
+u_colorbar_gen/un7_pixcnt_cry_0_0_S0
+u_colorbar_gen/N_6
+u_colorbar_gen/un7_pixcnt_cry_9_0_COUT
+u_DPHY_TX_INST/u_oDDRx4/cdiv1
+[ END CLIPPED ]
+[ START DESIGN PREFS ]
+SCHEMATIC START ;
+# map:  version Diamond (64-bit) 3.8.0.115.3 -- WARNING: Map write only section -- Sat Feb 10 09:52:03 2018
+
+SYSCONFIG SDM_PORT=DISABLE SLAVE_SPI_PORT=ENABLE I2C_PORT=DISABLE MASTER_SPI_PORT=DISABLE COMPRESS_CONFIG=ON CONFIGURATION=CFG MY_ASSP=OFF ONE_TIME_PROGRAM=OFF CONFIG_SECURE=OFF MCCLK_FREQ=2.08 JTAG_PORT=ENABLE ENABLE_TRANSFR=DISABLE SHAREDEBRINIT=DISABLE MUX_CONFIGURATION_PORTS=DISABLE BACKGROUND_RECONFIG=OFF ;
+LOCATE COMP "DCK" SITE "C8" ;
+LOCATE COMP "LPCLK[0]" SITE "F1" ;
+LOCATE COMP "reset_n" SITE "R16" ;
+LOCATE COMP "LV" SITE "F15" ;
+LOCATE COMP "FV" SITE "E15" ;
+LOCATE COMP "PIXCLK" SITE "H14" ;
+LOCATE COMP "LP0[1]" SITE "E2" ;
+LOCATE COMP "LP0[0]" SITE "E1" ;
+LOCATE COMP "LP1[1]" SITE "D1" ;
+LOCATE COMP "LP1[0]" SITE "G2" ;
+LOCATE COMP "LPCLK[1]" SITE "F2" ;
+LOCATE COMP "D0" SITE "A3" ;
+LOCATE COMP "D1" SITE "B9" ;
+FREQUENCY NET "byte_clk" 13.500000 MHz ;
+FREQUENCY NET "CLKOP" 200.000000 MHz ;
+FREQUENCY NET "CLKOS" 200.000000 MHz ;
+FREQUENCY NET "PIXCLK_c" 100.000000 MHz ;
+SCHEMATIC END ;
+[ END DESIGN PREFS ]
