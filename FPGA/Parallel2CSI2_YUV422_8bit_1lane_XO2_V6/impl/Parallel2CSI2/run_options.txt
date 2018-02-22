@@ -1,7 +1,7 @@
 #--  Synopsys, Inc.
 #--  Version L-2016.03L-1
 #--  Project file C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\impl\Parallel2CSI2\run_options.txt
-#--  Written on Sun Feb 18 00:18:41 2018
+#--  Written on Thu Feb 22 19:05:53 2018
 
 
 #project files

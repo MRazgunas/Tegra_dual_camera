@@ -3,11 +3,14 @@ Current Flow=Generic
 VCS=0
 version=3
 Current Config=compile
+
 [Configurations]
 compile=work
+
 [Library]
 sim=.\sim\sim.lib
 work=.\work\work.lib
+
 [Settings]
 AccessRead=1
 AccessReadWrite=1
@@ -20,51 +23,61 @@ ENABLE_ADV_DATAFLOW=0
 FLOW_TYPE=HDL
 LANGUAGE=VHDL
 REFRESH_FLOW=1
+
 [LocalVerilogSets]
 EnableSLP=1
 EnableDebug=0
 PriorityLibNames=pmi_work
 LibNames=ovi_machxo2
+
 [LocalVhdlSets]
 CompileWithDebug=0
+
 [$LibMap$]
 sim=.
 work=.
+
 [LocalVerilogDirs]
 Count=0
+
 [DefineMacro]
 Global=
-[Files]
-/..\..\..\tb\parallel2byte_8s_1s_43.vo=-1
-/..\..\..\tb\packetheader_1s.vo=-1
-/..\..\..\tb\crc16_1lane.vo=-1
-/..\..\..\..\rtl\colorbar_gen.v=-1
-/..\..\..\..\rtl\IO_Controller_TX.v=-1
-/..\..\..\..\rtl\oDDRx4.v=-1
-/..\..\..\..\rtl\DPHY_TX_INST.v=-1
-/..\..\..\..\rtl\LP_HS_dly_ctrl.v=-1
-/..\..\..\..\rtl\BYTE_PACKETIZER.v=-1
-/..\..\..\..\rtl\IPExpress\pll_pix2byte_YUV422_8bit_1lane.v=-1
-/..\..\..\..\rtl\top.v=-1
-/..\..\..\tb\Parallel2CSI2_tb_1lane.v=-1
-/..\..\..\..\rtl\compiler_directives.v=-1
-[Files.Data]
-.\..\..\tb\parallel2byte_8s_1s_43.vo=Verilog Source Code
-.\..\..\tb\packetheader_1s.vo=Verilog Source Code
-.\..\..\tb\crc16_1lane.vo=Verilog Source Code
-.\..\..\..\rtl\colorbar_gen.v=Verilog Source Code
-.\..\..\..\rtl\IO_Controller_TX.v=Verilog Source Code
-.\..\..\..\rtl\oDDRx4.v=Verilog Source Code
-.\..\..\..\rtl\DPHY_TX_INST.v=Verilog Source Code
-.\..\..\..\rtl\LP_HS_dly_ctrl.v=Verilog Source Code
-.\..\..\..\rtl\BYTE_PACKETIZER.v=Verilog Source Code
-.\..\..\..\rtl\IPExpress\pll_pix2byte_YUV422_8bit_1lane.v=Verilog Source Code
-.\..\..\..\rtl\top.v=Verilog Source Code
-.\..\..\tb\Parallel2CSI2_tb_1lane.v=Verilog Source Code
-.\..\..\..\rtl\compiler_directives.v=Verilog Source Code
+
 [SpecTracer]
 WindowVisible=0
+
 [HierarchyViewer]
 HierarchyInformation=
 ShowHide=ShowTopLevel
 Selected=
+
+[Files]
+/..\..\..\tb\parallel2byte_8s_1s_43.vo=-1
+/..\..\..\tb\packetheader_1s.vo=-1
+/..\..\..\tb\crc16_1lane.vo=-1
+/..\..\..\rtl\colorbar_gen.v=-1
+/..\..\..\rtl\IO_Controller_TX.v=-1
+/..\..\..\rtl\oDDRx4.v=-1
+/..\..\..\rtl\DPHY_TX_INST.v=-1
+/..\..\..\rtl\LP_HS_dly_ctrl.v=-1
+/..\..\..\rtl\BYTE_PACKETIZER.v=-1
+/..\..\..\rtl\IPExpress\pll_pix2byte_YUV422_8bit_1lane.v=-1
+/..\..\..\rtl\top.v=-1
+/..\..\..\tb\Parallel2CSI2_tb_1lane.v=-1
+/..\..\..\rtl\compiler_directives.v=-1
+
+[Files.Data]
+.\..\..\tb\parallel2byte_8s_1s_43.vo=Verilog Source Code
+.\..\..\tb\packetheader_1s.vo=Verilog Source Code
+.\..\..\tb\crc16_1lane.vo=Verilog Source Code
+.\..\..\rtl\colorbar_gen.v=Verilog Source Code
+.\..\..\rtl\IO_Controller_TX.v=Verilog Source Code
+.\..\..\rtl\oDDRx4.v=Verilog Source Code
+.\..\..\rtl\DPHY_TX_INST.v=Verilog Source Code
+.\..\..\rtl\LP_HS_dly_ctrl.v=Verilog Source Code
+.\..\..\rtl\BYTE_PACKETIZER.v=Verilog Source Code
+.\..\..\rtl\IPExpress\pll_pix2byte_YUV422_8bit_1lane.v=Verilog Source Code
+.\..\..\rtl\top.v=Verilog Source Code
+.\..\..\tb\Parallel2CSI2_tb_1lane.v=Verilog Source Code
+.\..\..\rtl\compiler_directives.v=Verilog Source Code
+

@@ -13,7 +13,7 @@ The file contains the job information from mapper to be displayed as part of the
 </job_status>
 <job_info>
 <info name="Notes">
-<data>5</data>
+<data>4</data>
 <report_link name="more">
 <data>C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\impl\Parallel2CSI2\synlog\report\Parallel2CSI2_Parallel2CSI2_premap_notes.txt</data>
 </report_link>
@@ -40,7 +40,7 @@ The file contains the job information from mapper to be displayed as part of the
 <data>142MB</data>
 </info>
 <info name="Date &amp; Time">
-<data type="timestamp">1518905923</data>
+<data type="timestamp">1519319155</data>
 </info>
 </job_info>
 </job_run_status>

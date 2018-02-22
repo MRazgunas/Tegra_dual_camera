@@ -26,10 +26,8 @@
 @N: CG364 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\top.v":50:7:50:9|Synthesizing module top in library work.
 @N: CG364 :"D:\FPGA\Lattice\diamond\3.8_x64\synpbase\lib\lucent\machxo2.v":1730:7:1730:13|Synthesizing module EHXPLLJ in library work.
 @N: CG364 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\IPExpress\pll_pix2byte_YUV422_8bit_1lane.v":8:7:8:36|Synthesizing module pll_pix2byte_YUV422_8bit_1lane in library work.
-@N: CG364 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\colorbar_gen.v":47:7:47:18|Synthesizing module colorbar_gen in library work.
-@N: CG364 :"D:\FPGA\Lattice\diamond\3.8_x64\synpbase\lib\lucent\machxo2.v":1793:7:1793:10|Synthesizing module OSCH in library work.
-@N: CL159 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\top.v":97:28:97:33|Input PIXCLK is unused.
-@N: CL159 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\top.v":100:28:100:34|Input PIXDATA is unused.
+@N: CG364 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\astrohn_astir2.v":2:7:2:20|Synthesizing module astrohn_astir2 in library work.
+@N: CL201 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\astrohn_astir2.v":18:0:18:5|Trying to extract state machine for register state.
 @N: CL159 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\IO_Controller_TX.v":49:11:49:17|Input reset_n is unused.
 @N: CL135 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\LP_HS_dly_ctrl.v":108:16:108:21|Found seqShift data_dly[26].hold_data, depth=26, width=32
 @N|Running in 64-bit mode

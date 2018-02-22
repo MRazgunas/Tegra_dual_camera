@@ -2,153 +2,12 @@
 <BaliMessageLog>
     <Task name="Map">
         <Message>
-            <ID>1100523</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_1lane_XO2_V6/impl/Parallel2CSI2.lpf(19): Semantic error in &quot;FREQUENCY NET &quot;PIXCLK_c&quot; 50.000000 MHz ;&quot;: </Dynamic>
-            <Dynamic>PIXCLK_c matches no clock nets in the design. </Dynamic>
-            <Navigation>C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_1lane_XO2_V6/impl/Parallel2CSI2.lpf</Navigation>
-            <Navigation>19</Navigation>
-        </Message>
-        <Message>
-            <ID>1104062</ID>
-            <Severity>Warning</Severity>
-            <Dynamic></Dynamic>
-            <Dynamic>1 semantic error</Dynamic>
-        </Message>
-        <Message>
-            <ID>52111110</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>EHXPLLJ</Dynamic>
-            <Dynamic>u_pll_pix2byte_YUV422_8bit_1lane/PLLInst_0</Dynamic>
-            <Dynamic>CLKOP</Dynamic>
-            <Dynamic>108.000</Dynamic>
-            <Dynamic>7.000</Dynamic>
-            <Dynamic>1</Dynamic>
-            <Dynamic>4</Dynamic>
-            <Dynamic>CLKOP</Dynamic>
-            <Dynamic>5</Dynamic>
-        </Message>
-        <Message>
-            <ID>52111110</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>EHXPLLJ</Dynamic>
-            <Dynamic>u_pll_pix2byte_YUV422_8bit_1lane/PLLInst_0</Dynamic>
-            <Dynamic>CLKOS</Dynamic>
-            <Dynamic>108.000</Dynamic>
-            <Dynamic>7.000</Dynamic>
-            <Dynamic>1</Dynamic>
-            <Dynamic>4</Dynamic>
-            <Dynamic>CLKOS</Dynamic>
-            <Dynamic>5</Dynamic>
-        </Message>
-        <Message>
-            <ID>52111110</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>EHXPLLJ</Dynamic>
-            <Dynamic>u_pll_pix2byte_YUV422_8bit_1lane/PLLInst_0</Dynamic>
-            <Dynamic>CLKOS2</Dynamic>
-            <Dynamic>27.000</Dynamic>
-            <Dynamic>7.000</Dynamic>
-            <Dynamic>1</Dynamic>
-            <Dynamic>4</Dynamic>
-            <Dynamic>CLKOS2</Dynamic>
-            <Dynamic>20</Dynamic>
-        </Message>
-        <Message>
             <ID>51001027</ID>
             <Severity>Warning</Severity>
             <Dynamic>reset_n_c_i</Dynamic>
         </Message>
-        <Message>
-            <ID>51001046</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>PIXCLK</Dynamic>
-        </Message>
-        <Message>
-            <ID>51001046</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>PIXDATA[7:0](7)</Dynamic>
-        </Message>
-        <Message>
-            <ID>51001046</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>PIXDATA[7:0](6)</Dynamic>
-        </Message>
-        <Message>
-            <ID>51001046</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>PIXDATA[7:0](5)</Dynamic>
-        </Message>
-        <Message>
-            <ID>51001046</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>PIXDATA[7:0](4)</Dynamic>
-        </Message>
-        <Message>
-            <ID>51001046</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>PIXDATA[7:0](3)</Dynamic>
-        </Message>
-        <Message>
-            <ID>51001046</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>PIXDATA[7:0](2)</Dynamic>
-        </Message>
-        <Message>
-            <ID>51001046</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>PIXDATA[7:0](1)</Dynamic>
-        </Message>
-        <Message>
-            <ID>51001046</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>PIXDATA[7:0](0)</Dynamic>
-        </Message>
-        <Message>
-            <ID>51001230</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_1lane_XO2_V6/impl/Parallel2CSI2.lpf</Dynamic>
-        </Message>
     </Task>
     <Task name="PAR">
-        <Message>
-            <ID>70061014</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>u_pll_pix2byte_YUV422_8bit_1lane/PLLInst_0</Dynamic>
-        </Message>
-        <Message>
-            <ID>70061018</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>CLKOP</Dynamic>
-            <Dynamic>u_pll_pix2byte_YUV422_8bit_1lane/PLLInst_0</Dynamic>
-            <Dynamic> 200.0</Dynamic>
-            <Dynamic>   5.0</Dynamic>
-            <Dynamic>1000.0</Dynamic>
-            <Dynamic> 200.0</Dynamic>
-            <Dynamic>   5.0</Dynamic>
-        </Message>
-        <Message>
-            <ID>70061018</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>CLKOS</Dynamic>
-            <Dynamic>u_pll_pix2byte_YUV422_8bit_1lane/PLLInst_0</Dynamic>
-            <Dynamic> 200.0</Dynamic>
-            <Dynamic>   5.0</Dynamic>
-            <Dynamic>1000.0</Dynamic>
-            <Dynamic> 200.0</Dynamic>
-            <Dynamic>   5.0</Dynamic>
-        </Message>
-        <Message>
-            <ID>70061018</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>CLKOS2</Dynamic>
-            <Dynamic>u_pll_pix2byte_YUV422_8bit_1lane/PLLInst_0</Dynamic>
-            <Dynamic>  50.0</Dynamic>
-            <Dynamic>  20.0</Dynamic>
-            <Dynamic>1000.0</Dynamic>
-            <Dynamic>  50.0</Dynamic>
-            <Dynamic>  20.0</Dynamic>
-        </Message>
         <Message>
             <ID>61061045</ID>
             <Severity>Warning</Severity>
@@ -188,56 +47,6 @@
             <ID>1121028</ID>
             <Severity>Warning</Severity>
             <Dynamic>poly</Dynamic>
-        </Message>
-        <Message>
-            <ID>1121028</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>mode</Dynamic>
-        </Message>
-        <Message>
-            <ID>1121028</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>V_SYNCH</Dynamic>
-        </Message>
-        <Message>
-            <ID>1121028</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>V_FRONT_PORCH</Dynamic>
-        </Message>
-        <Message>
-            <ID>1121028</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>H_BACK_PORCH</Dynamic>
-        </Message>
-        <Message>
-            <ID>1121028</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>H_SYNCH</Dynamic>
-        </Message>
-        <Message>
-            <ID>1121028</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>H_FRONT_PORCH</Dynamic>
-        </Message>
-        <Message>
-            <ID>1121028</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>v_total</Dynamic>
-        </Message>
-        <Message>
-            <ID>1121028</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>v_active</Dynamic>
-        </Message>
-        <Message>
-            <ID>1121028</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>h_total</Dynamic>
-        </Message>
-        <Message>
-            <ID>1121028</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>h_active</Dynamic>
         </Message>
         <Message>
             <ID>1121028</ID>
@@ -432,51 +241,6 @@
         <Message>
             <ID>1121028</ID>
             <Severity>Warning</Severity>
-            <Dynamic>h_active</Dynamic>
-        </Message>
-        <Message>
-            <ID>1121028</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>h_total</Dynamic>
-        </Message>
-        <Message>
-            <ID>1121028</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>v_active</Dynamic>
-        </Message>
-        <Message>
-            <ID>1121028</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>v_total</Dynamic>
-        </Message>
-        <Message>
-            <ID>1121028</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>H_FRONT_PORCH</Dynamic>
-        </Message>
-        <Message>
-            <ID>1121028</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>H_SYNCH</Dynamic>
-        </Message>
-        <Message>
-            <ID>1121028</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>V_FRONT_PORCH</Dynamic>
-        </Message>
-        <Message>
-            <ID>1121028</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>V_SYNCH</Dynamic>
-        </Message>
-        <Message>
-            <ID>1121028</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>mode</Dynamic>
-        </Message>
-        <Message>
-            <ID>1121028</ID>
-            <Severity>Warning</Severity>
             <Dynamic>lane_width</Dynamic>
         </Message>
         <Message>
@@ -525,85 +289,36 @@
             <ID>1166052</ID>
             <Severity>Warning</Severity>
             <Dynamic>logical</Dynamic>
-            <Dynamic>u_colorbar_gen/un7_pixcnt_cry_9_0_COUT</Dynamic>
-            <Navigation>u_colorbar_gen/un7_pixcnt_cry_9_0_COUT</Navigation>
+            <Dynamic>u_astrohn_astir2/un1_pixcounter_5_s_11_0_COUT</Dynamic>
+            <Navigation>u_astrohn_astir2/un1_pixcounter_5_s_11_0_COUT</Navigation>
         </Message>
         <Message>
             <ID>1166052</ID>
             <Severity>Warning</Severity>
             <Dynamic>logical</Dynamic>
-            <Dynamic>u_colorbar_gen/un7_pixcnt_cry_0_0_S0</Dynamic>
-            <Navigation>u_colorbar_gen/un7_pixcnt_cry_0_0_S0</Navigation>
+            <Dynamic>u_astrohn_astir2/un1_pixcounter_5_s_11_0_S1</Dynamic>
+            <Navigation>u_astrohn_astir2/un1_pixcounter_5_s_11_0_S1</Navigation>
         </Message>
         <Message>
             <ID>1166052</ID>
             <Severity>Warning</Severity>
             <Dynamic>logical</Dynamic>
-            <Dynamic>u_colorbar_gen/un7_pixcnt_cry_0_0_S1</Dynamic>
-            <Navigation>u_colorbar_gen/un7_pixcnt_cry_0_0_S1</Navigation>
+            <Dynamic>u_astrohn_astir2/un1_pixcounter_5_cry_0_0_S0</Dynamic>
+            <Navigation>u_astrohn_astir2/un1_pixcounter_5_cry_0_0_S0</Navigation>
         </Message>
         <Message>
             <ID>1166052</ID>
             <Severity>Warning</Severity>
             <Dynamic>logical</Dynamic>
-            <Dynamic>u_colorbar_gen/un2_linecnt_s_9_0_COUT</Dynamic>
-            <Navigation>u_colorbar_gen/un2_linecnt_s_9_0_COUT</Navigation>
+            <Dynamic>u_astrohn_astir2/un1_linecount_1_cry_7_0_COUT</Dynamic>
+            <Navigation>u_astrohn_astir2/un1_linecount_1_cry_7_0_COUT</Navigation>
         </Message>
         <Message>
             <ID>1166052</ID>
             <Severity>Warning</Severity>
             <Dynamic>logical</Dynamic>
-            <Dynamic>u_colorbar_gen/un2_linecnt_s_9_0_S1</Dynamic>
-            <Navigation>u_colorbar_gen/un2_linecnt_s_9_0_S1</Navigation>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>u_colorbar_gen/un2_linecnt_cry_0_0_S0</Dynamic>
-            <Navigation>u_colorbar_gen/un2_linecnt_cry_0_0_S0</Navigation>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>u_colorbar_gen/color_cntr_s_0_COUT[11]</Dynamic>
-            <Navigation>u_colorbar_gen/color_cntr_s_0_COUT[11]</Navigation>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>u_colorbar_gen/color_cntr_s_0_S1[11]</Dynamic>
-            <Navigation>u_colorbar_gen/color_cntr_s_0_S1[11]</Navigation>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>u_colorbar_gen/color_cntr_cry_0_S0[0]</Dynamic>
-            <Navigation>u_colorbar_gen/color_cntr_cry_0_S0[0]</Navigation>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>u_colorbar_gen/rstn_cnt_s_0_COUT[7]</Dynamic>
-            <Navigation>u_colorbar_gen/rstn_cnt_s_0_COUT[7]</Navigation>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>u_colorbar_gen/rstn_cnt_s_0_S1[7]</Dynamic>
-            <Navigation>u_colorbar_gen/rstn_cnt_s_0_S1[7]</Navigation>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>u_colorbar_gen/rstn_cnt_cry_0_S0[0]</Dynamic>
-            <Navigation>u_colorbar_gen/rstn_cnt_cry_0_S0[0]</Navigation>
+            <Dynamic>u_astrohn_astir2/un1_linecount_1_cry_0_0_S0</Dynamic>
+            <Navigation>u_astrohn_astir2/un1_linecount_1_cry_0_0_S0</Navigation>
         </Message>
         <Message>
             <ID>1166052</ID>
@@ -679,76 +394,6 @@
             <ID>1166052</ID>
             <Severity>Warning</Severity>
             <Dynamic>logical</Dynamic>
-            <Dynamic>u_OSCH_SEDSTDBY</Dynamic>
-            <Navigation>u_OSCH_SEDSTDBY</Navigation>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>PIXCLK</Dynamic>
-            <Navigation>PIXCLK</Navigation>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>PIXDATA[0]</Dynamic>
-            <Navigation>PIXDATA[0]</Navigation>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>PIXDATA[1]</Dynamic>
-            <Navigation>PIXDATA[1]</Navigation>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>PIXDATA[2]</Dynamic>
-            <Navigation>PIXDATA[2]</Navigation>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>PIXDATA[3]</Dynamic>
-            <Navigation>PIXDATA[3]</Navigation>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>PIXDATA[4]</Dynamic>
-            <Navigation>PIXDATA[4]</Navigation>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>PIXDATA[5]</Dynamic>
-            <Navigation>PIXDATA[5]</Navigation>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>PIXDATA[6]</Dynamic>
-            <Navigation>PIXDATA[6]</Navigation>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>PIXDATA[7]</Dynamic>
-            <Navigation>PIXDATA[7]</Navigation>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
             <Dynamic>u_BYTE_PACKETIZER/u_packetheader/un6_wc_end_flag_a_4_cry_0_0_S1</Dynamic>
             <Navigation>u_BYTE_PACKETIZER/u_packetheader/un6_wc_end_flag_a_4_cry_0_0_S1</Navigation>
         </Message>
@@ -790,7 +435,7 @@
         <Message>
             <ID>1163101</ID>
             <Severity>Warning</Severity>
-            <Dynamic>39</Dynamic>
+            <Dynamic>22</Dynamic>
         </Message>
     </Task>
     <Task name="Synplify_Synthesis">
@@ -957,50 +602,38 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL169 :&quot;C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\colorbar_gen.v&quot;:95:4:95:9|Pruning unused register fv_cnt[10:0]. Make sure that there are no unused intermediate registers.</Dynamic>
+            <Dynamic>CL169 :&quot;C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\astrohn_astir2.v&quot;:18:0:18:5|Pruning unused register w_fv. Make sure that there are no unused intermediate registers.</Dynamic>
             <Navigation>CL169</Navigation>
-            <Navigation>C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\colorbar_gen.v</Navigation>
-            <Navigation>95</Navigation>
-            <Navigation>4</Navigation>
-            <Navigation>95</Navigation>
-            <Navigation>9</Navigation>
-            <Navigation>Pruning unused register fv_cnt[10:0]. Make sure that there are no unused intermediate registers.</Navigation>
+            <Navigation>C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\astrohn_astir2.v</Navigation>
+            <Navigation>18</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>18</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning unused register w_fv. Make sure that there are no unused intermediate registers.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL169 :&quot;C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\colorbar_gen.v&quot;:95:4:95:9|Pruning unused register q_fv. Make sure that there are no unused intermediate registers.</Dynamic>
+            <Dynamic>CL169 :&quot;C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\astrohn_astir2.v&quot;:18:0:18:5|Pruning unused register fv_del_counter[7:0]. Make sure that there are no unused intermediate registers.</Dynamic>
             <Navigation>CL169</Navigation>
-            <Navigation>C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\colorbar_gen.v</Navigation>
-            <Navigation>95</Navigation>
-            <Navigation>4</Navigation>
-            <Navigation>95</Navigation>
-            <Navigation>9</Navigation>
-            <Navigation>Pruning unused register q_fv. Make sure that there are no unused intermediate registers.</Navigation>
+            <Navigation>C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\astrohn_astir2.v</Navigation>
+            <Navigation>18</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>18</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning unused register fv_del_counter[7:0]. Make sure that there are no unused intermediate registers.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CS263 :&quot;C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\top.v&quot;:294:25:294:33|Port-width mismatch for port data. Formal has width 24, Actual 8</Dynamic>
-            <Navigation>CS263</Navigation>
-            <Navigation>C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\top.v</Navigation>
-            <Navigation>294</Navigation>
-            <Navigation>25</Navigation>
-            <Navigation>294</Navigation>
-            <Navigation>33</Navigation>
-            <Navigation>Port-width mismatch for port data. Formal has width 24, Actual 8</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>CS263 :&quot;C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\top.v&quot;:312:48:312:48|Port-width mismatch for port STDBY. Formal has width 1, Actual 32</Dynamic>
-            <Navigation>CS263</Navigation>
-            <Navigation>C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\top.v</Navigation>
-            <Navigation>312</Navigation>
-            <Navigation>48</Navigation>
-            <Navigation>312</Navigation>
-            <Navigation>48</Navigation>
-            <Navigation>Port-width mismatch for port STDBY. Formal has width 1, Actual 32</Navigation>
+            <Dynamic>CL169 :&quot;C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\astrohn_astir2.v&quot;:18:0:18:5|Pruning unused register frame_state[1:0]. Make sure that there are no unused intermediate registers.</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\astrohn_astir2.v</Navigation>
+            <Navigation>18</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>18</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning unused register frame_state[1:0]. Make sure that there are no unused intermediate registers.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
@@ -1017,62 +650,14 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\colorbar_gen.v&quot;:95:4:95:9|Optimizing register bit pixcnt[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
-            <Navigation>CL190</Navigation>
-            <Navigation>C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\colorbar_gen.v</Navigation>
-            <Navigation>95</Navigation>
-            <Navigation>4</Navigation>
-            <Navigation>95</Navigation>
-            <Navigation>9</Navigation>
-            <Navigation>Optimizing register bit pixcnt[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\colorbar_gen.v&quot;:95:4:95:9|Optimizing register bit linecnt[10] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
-            <Navigation>CL190</Navigation>
-            <Navigation>C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\colorbar_gen.v</Navigation>
-            <Navigation>95</Navigation>
-            <Navigation>4</Navigation>
-            <Navigation>95</Navigation>
-            <Navigation>9</Navigation>
-            <Navigation>Optimizing register bit linecnt[10] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\colorbar_gen.v&quot;:95:4:95:9|Optimizing register bit linecnt[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
-            <Navigation>CL190</Navigation>
-            <Navigation>C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\colorbar_gen.v</Navigation>
-            <Navigation>95</Navigation>
-            <Navigation>4</Navigation>
-            <Navigation>95</Navigation>
-            <Navigation>9</Navigation>
-            <Navigation>Optimizing register bit linecnt[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>CL279 :&quot;C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\colorbar_gen.v&quot;:95:4:95:9|Pruning register bits 11 to 10 of linecnt[11:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
-            <Navigation>CL279</Navigation>
-            <Navigation>C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\colorbar_gen.v</Navigation>
-            <Navigation>95</Navigation>
-            <Navigation>4</Navigation>
-            <Navigation>95</Navigation>
-            <Navigation>9</Navigation>
-            <Navigation>Pruning register bits 11 to 10 of linecnt[11:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>CL260 :&quot;C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\colorbar_gen.v&quot;:95:4:95:9|Pruning register bit 11 of pixcnt[11:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
-            <Navigation>CL260</Navigation>
-            <Navigation>C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\colorbar_gen.v</Navigation>
-            <Navigation>95</Navigation>
-            <Navigation>4</Navigation>
-            <Navigation>95</Navigation>
-            <Navigation>9</Navigation>
-            <Navigation>Pruning register bit 11 of pixcnt[11:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+            <Dynamic>CL249 :&quot;C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\astrohn_astir2.v&quot;:18:0:18:5|Initial value is not supported on state machine state</Dynamic>
+            <Navigation>CL249</Navigation>
+            <Navigation>C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\astrohn_astir2.v</Navigation>
+            <Navigation>18</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>18</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Initial value is not supported on state machine state</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
@@ -1317,14 +902,14 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>MT529 :&quot;c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\colorbar_gen.v&quot;:95:4:95:9|Found inferred clock top|w_pixclk_inferred_clock which controls 43 sequential elements including u_colorbar_gen.linecnt[9:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
+            <Dynamic>MT529 :&quot;c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\astrohn_astir2.v&quot;:18:0:18:5|Found inferred clock top|PIXCLK which controls 27 sequential elements including u_astrohn_astir2.linecount[8:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
             <Navigation>MT529</Navigation>
-            <Navigation>c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\colorbar_gen.v</Navigation>
-            <Navigation>95</Navigation>
-            <Navigation>4</Navigation>
-            <Navigation>95</Navigation>
-            <Navigation>9</Navigation>
-            <Navigation>Found inferred clock top|w_pixclk_inferred_clock which controls 43 sequential elements including u_colorbar_gen.linecnt[9:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
+            <Navigation>c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\astrohn_astir2.v</Navigation>
+            <Navigation>18</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>18</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Found inferred clock top|PIXCLK which controls 27 sequential elements including u_astrohn_astir2.linecount[8:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
@@ -1377,6 +962,18 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
+            <Dynamic>BN132 :&quot;c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\byte_packetizer.v&quot;:104:5:104:10|Removing instance u_BYTE_PACKETIZER.q_WC[9] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[8]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>BN132</Navigation>
+            <Navigation>c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\byte_packetizer.v</Navigation>
+            <Navigation>104</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>104</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>Removing instance u_BYTE_PACKETIZER.q_WC[9] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[8]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
             <Dynamic>BN132 :&quot;c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\byte_packetizer.v&quot;:104:5:104:10|Removing instance u_BYTE_PACKETIZER.q_WC[15] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[14]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>BN132</Navigation>
             <Navigation>c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\byte_packetizer.v</Navigation>
@@ -1425,74 +1022,62 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\byte_packetizer.v&quot;:104:5:104:10|Removing instance u_BYTE_PACKETIZER.q_WC[9] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>BN132 :&quot;c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\byte_packetizer.v&quot;:104:5:104:10|Removing instance u_BYTE_PACKETIZER.q_WC[11] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>BN132</Navigation>
             <Navigation>c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\byte_packetizer.v</Navigation>
             <Navigation>104</Navigation>
             <Navigation>5</Navigation>
             <Navigation>104</Navigation>
             <Navigation>10</Navigation>
-            <Navigation>Removing instance u_BYTE_PACKETIZER.q_WC[9] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+            <Navigation>Removing instance u_BYTE_PACKETIZER.q_WC[11] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\byte_packetizer.v&quot;:104:5:104:10|Removing instance u_BYTE_PACKETIZER.q_WC[7] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>BN132 :&quot;c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\byte_packetizer.v&quot;:104:5:104:10|Removing instance u_BYTE_PACKETIZER.q_WC[7] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>BN132</Navigation>
             <Navigation>c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\byte_packetizer.v</Navigation>
             <Navigation>104</Navigation>
             <Navigation>5</Navigation>
             <Navigation>104</Navigation>
             <Navigation>10</Navigation>
-            <Navigation>Removing instance u_BYTE_PACKETIZER.q_WC[7] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+            <Navigation>Removing instance u_BYTE_PACKETIZER.q_WC[7] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\byte_packetizer.v&quot;:104:5:104:10|Removing instance u_BYTE_PACKETIZER.q_WC[6] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>BN132 :&quot;c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\byte_packetizer.v&quot;:104:5:104:10|Removing instance u_BYTE_PACKETIZER.q_WC[6] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>BN132</Navigation>
             <Navigation>c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\byte_packetizer.v</Navigation>
             <Navigation>104</Navigation>
             <Navigation>5</Navigation>
             <Navigation>104</Navigation>
             <Navigation>10</Navigation>
-            <Navigation>Removing instance u_BYTE_PACKETIZER.q_WC[6] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+            <Navigation>Removing instance u_BYTE_PACKETIZER.q_WC[6] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\byte_packetizer.v&quot;:104:5:104:10|Removing instance u_BYTE_PACKETIZER.q_WC[5] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>BN132 :&quot;c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\byte_packetizer.v&quot;:104:5:104:10|Removing instance u_BYTE_PACKETIZER.q_WC[5] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>BN132</Navigation>
             <Navigation>c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\byte_packetizer.v</Navigation>
             <Navigation>104</Navigation>
             <Navigation>5</Navigation>
             <Navigation>104</Navigation>
             <Navigation>10</Navigation>
-            <Navigation>Removing instance u_BYTE_PACKETIZER.q_WC[5] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+            <Navigation>Removing instance u_BYTE_PACKETIZER.q_WC[5] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\byte_packetizer.v&quot;:104:5:104:10|Removing instance u_BYTE_PACKETIZER.q_WC[4] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>BN132 :&quot;c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\byte_packetizer.v&quot;:104:5:104:10|Removing instance u_BYTE_PACKETIZER.q_WC[4] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>BN132</Navigation>
             <Navigation>c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\byte_packetizer.v</Navigation>
             <Navigation>104</Navigation>
             <Navigation>5</Navigation>
             <Navigation>104</Navigation>
             <Navigation>10</Navigation>
-            <Navigation>Removing instance u_BYTE_PACKETIZER.q_WC[4] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\byte_packetizer.v&quot;:104:5:104:10|Removing instance u_BYTE_PACKETIZER.q_WC[3] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
-            <Navigation>BN132</Navigation>
-            <Navigation>c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\byte_packetizer.v</Navigation>
-            <Navigation>104</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>104</Navigation>
-            <Navigation>10</Navigation>
-            <Navigation>Removing instance u_BYTE_PACKETIZER.q_WC[3] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+            <Navigation>Removing instance u_BYTE_PACKETIZER.q_WC[4] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
@@ -1581,9 +1166,9 @@
         <Message>
             <ID>2019993</ID>
             <Severity>Warning</Severity>
-            <Dynamic>MT420 |Found inferred clock top|w_pixclk_inferred_clock with period 142.86ns. Please declare a user-defined clock on object &quot;n:w_pixclk&quot;</Dynamic>
+            <Dynamic>MT420 |Found inferred clock top|PIXCLK with period 1000.00ns. Please declare a user-defined clock on object &quot;p:PIXCLK&quot;</Dynamic>
             <Navigation>MT420</Navigation>
-            <Navigation>Found inferred clock top|w_pixclk_inferred_clock with period 142.86ns. Please declare a user-defined clock on object &quot;n:w_pixclk&quot;</Navigation>
+            <Navigation>Found inferred clock top|PIXCLK with period 1000.00ns. Please declare a user-defined clock on object &quot;p:PIXCLK&quot;</Navigation>
         </Message>
         <Message>
             <ID>2019993</ID>

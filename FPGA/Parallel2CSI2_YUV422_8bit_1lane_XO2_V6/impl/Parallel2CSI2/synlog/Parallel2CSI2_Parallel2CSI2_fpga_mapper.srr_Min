@@ -1,7 +1,7 @@
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Sun Feb 18 00:18:45 2018
+# Timing Report written on Thu Feb 22 19:05:57 2018
 #
 
 
@@ -24,7 +24,7 @@ Starting Clock                                           Frequency     Frequency
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 oDDRx4|sclk_inferred_clock                               1.0 MHz       360.7 MHz     1000.000      2.772         997.228     inferred     Inferred_clkgroup_0
 pll_pix2byte_YUV422_8bit_1lane|CLKOS2_inferred_clock     1.0 MHz       129.6 MHz     1000.000      7.716         992.284     inferred     Inferred_clkgroup_2
-top|w_pixclk_inferred_clock                              7.0 MHz       103.7 MHz     142.857       9.640         133.217     inferred     Inferred_clkgroup_1
+top|PIXCLK                                               1.0 MHz       169.6 MHz     1000.000      5.896         994.104     inferred     Inferred_clkgroup_1
 System                                                   1.0 MHz       362.9 MHz     1000.000      2.756         997.244     system       system_clkgroup    
 =============================================================================================================================================================
 
@@ -38,12 +38,13 @@ Clocks                                                                          
 Starting                                              Ending                                                |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 System                                                System                                                |  0.000       0.000   |  No paths    -      |  No paths    -      |  No paths    -    
+System                                                top|PIXCLK                                            |  0.000       1.861   |  No paths    -      |  No paths    -      |  No paths    -    
 System                                                pll_pix2byte_YUV422_8bit_1lane|CLKOS2_inferred_clock  |  0.000       -0.562  |  No paths    -      |  No paths    -      |  No paths    -    
 oDDRx4|sclk_inferred_clock                            System                                                |  0.000       1.443   |  No paths    -      |  No paths    -      |  No paths    -    
 oDDRx4|sclk_inferred_clock                            oDDRx4|sclk_inferred_clock                            |  0.000       0.606   |  No paths    -      |  No paths    -      |  No paths    -    
-top|w_pixclk_inferred_clock                           System                                                |  0.000       0.731   |  No paths    -      |  No paths    -      |  No paths    -    
-top|w_pixclk_inferred_clock                           top|w_pixclk_inferred_clock                           |  0.000       0.445   |  No paths    -      |  No paths    -      |  No paths    -    
-top|w_pixclk_inferred_clock                           pll_pix2byte_YUV422_8bit_1lane|CLKOS2_inferred_clock  |  Diff grp    -       |  No paths    -      |  No paths    -      |  No paths    -    
+top|PIXCLK                                            System                                                |  0.000       0.776   |  No paths    -      |  No paths    -      |  No paths    -    
+top|PIXCLK                                            top|PIXCLK                                            |  0.000       1.320   |  No paths    -      |  No paths    -      |  No paths    -    
+top|PIXCLK                                            pll_pix2byte_YUV422_8bit_1lane|CLKOS2_inferred_clock  |  Diff grp    -       |  No paths    -      |  No paths    -      |  No paths    -    
 pll_pix2byte_YUV422_8bit_1lane|CLKOS2_inferred_clock  System                                                |  0.000       0.731   |  No paths    -      |  No paths    -      |  No paths    -    
 pll_pix2byte_YUV422_8bit_1lane|CLKOS2_inferred_clock  pll_pix2byte_YUV422_8bit_1lane|CLKOS2_inferred_clock  |  0.000       0.731   |  No paths    -      |  No paths    -      |  No paths    -    
 ===================================================================================================================================================================================================
@@ -64,14 +65,14 @@ Name           Reference           Constraint     Time        Time         Slack
                Clock                                                            
 --------------------------------------------------------------------------------
 PIXCLK         NA                  NA             NA          NA           NA   
-PIXDATA[0]     NA                  NA             NA          NA           NA   
-PIXDATA[1]     NA                  NA             NA          NA           NA   
-PIXDATA[2]     NA                  NA             NA          NA           NA   
-PIXDATA[3]     NA                  NA             NA          NA           NA   
-PIXDATA[4]     NA                  NA             NA          NA           NA   
-PIXDATA[5]     NA                  NA             NA          NA           NA   
-PIXDATA[6]     NA                  NA             NA          NA           NA   
-PIXDATA[7]     NA                  NA             NA          NA           NA   
+PIXDATA[0]     System (rising)     NA             0.000       -1.509       1.509
+PIXDATA[1]     System (rising)     NA             0.000       -1.531       1.531
+PIXDATA[2]     System (rising)     NA             0.000       -1.509       1.509
+PIXDATA[3]     System (rising)     NA             0.000       -1.509       1.509
+PIXDATA[4]     System (rising)     NA             0.000       -1.509       1.509
+PIXDATA[5]     System (rising)     NA             0.000       -1.537       1.537
+PIXDATA[6]     System (rising)     NA             0.000       -1.531       1.531
+PIXDATA[7]     System (rising)     NA             0.000       -1.531       1.531
 reset_n        System (rising)     NA             0.000       -1.481       1.481
 ================================================================================
 
@@ -84,12 +85,12 @@ Name         Reference                                                         C
 ----------------------------------------------------------------------------------------------------------------------------
 D0           System (rising)                                                   NA             1.873       0.000        1.873
 DCK          System (rising)                                                   NA             1.873       0.000        1.873
-FV           top|w_pixclk_inferred_clock (rising)                              NA             2.604       0.000        2.604
+FV           top|PIXCLK (rising)                                               NA             2.649       0.000        2.649
 LP0[0]       pll_pix2byte_YUV422_8bit_1lane|CLKOS2_inferred_clock (rising)     NA             2.868       0.000        2.868
 LP0[1]       pll_pix2byte_YUV422_8bit_1lane|CLKOS2_inferred_clock (rising)     NA             2.868       0.000        2.868
 LPCLK[0]     pll_pix2byte_YUV422_8bit_1lane|CLKOS2_inferred_clock (rising)     NA             2.868       0.000        2.868
 LPCLK[1]     pll_pix2byte_YUV422_8bit_1lane|CLKOS2_inferred_clock (rising)     NA             2.868       0.000        2.868
-LV           top|w_pixclk_inferred_clock (rising)                              NA             2.767       0.000        2.767
+LV           top|PIXCLK (rising)                                               NA             2.727       0.000        2.727
 ============================================================================================================================
 
 

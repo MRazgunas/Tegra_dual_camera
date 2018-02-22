@@ -1,11 +1,14 @@
-E:/mipi_check/Parallel2CSI2_YUV422_8bit_1lane_XO2_V5/rtl/colorbar_gen.v
-E:/mipi_check/Parallel2CSI2_YUV422_8bit_1lane_XO2_V5/rtl/IO_Controller_TX.v
-E:/mipi_check/Parallel2CSI2_YUV422_8bit_1lane_XO2_V5/rtl/oDDRx4.v
-E:/mipi_check/Parallel2CSI2_YUV422_8bit_1lane_XO2_V5/rtl/DPHY_TX_INST.v
-E:/mipi_check/Parallel2CSI2_YUV422_8bit_1lane_XO2_V5/rtl/LP_HS_dly_ctrl.v
+C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_1lane_XO2_V6/rtl/colorbar_gen.v
+C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_1lane_XO2_V6/rtl/IO_Controller_TX.v
+C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_1lane_XO2_V6/rtl/oDDRx4.v
+C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_1lane_XO2_V6/rtl/DPHY_TX_INST.v
+C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_1lane_XO2_V6/rtl/LP_HS_dly_ctrl.v
 
-E:/mipi_check/Parallel2CSI2_YUV422_8bit_1lane_XO2_V5/rtl/BYTE_PACKETIZER.v
-E:/mipi_check/Parallel2CSI2_YUV422_8bit_1lane_XO2_V5/rtl/IPExpress/pll_pix2byte_YUV422_8bit_1lane.v
-E:/mipi_check/Parallel2CSI2_YUV422_8bit_1lane_XO2_V5/rtl/top.v
-E:/mipi_check/Parallel2CSI2_YUV422_8bit_1lane_XO2_V5/Parallel2CSI2_XO2/tb/Parallel2CSI2_tb_1lane.v
-E:/mipi_check/Parallel2CSI2_YUV422_8bit_1lane_XO2_V5/rtl/compiler_directives.v
+C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_1lane_XO2_V6/rtl/crc16_1lane_bb.v
+C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_1lane_XO2_V6/rtl/packetheader_bb.v
+C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_1lane_XO2_V6/rtl/parallel2byte_bb.v
+C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_1lane_XO2_V6/rtl/BYTE_PACKETIZER.v
+C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_1lane_XO2_V6/rtl/IPExpress/pll_pix2byte_YUV422_8bit_1lane.v
+C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_1lane_XO2_V6/rtl/top.v
+C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_1lane_XO2_V6/tb/Parallel2CSI2_tb_1lane.v
+C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_1lane_XO2_V6/rtl/compiler_directives.v

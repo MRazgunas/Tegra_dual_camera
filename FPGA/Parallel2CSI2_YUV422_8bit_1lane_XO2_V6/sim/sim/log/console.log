@@ -1,0 +1,701 @@
+designverincludedir -clear
+designverlibrarysim -PL -clear
+designverlibrarysim -L -clear
+designverlibrarysim -PL pmi_work
+designverlibrarysim ovi_machxo2
+designverdefinemacro -clear
+removefile -Y -D *
+addfile C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_1lane_XO2_V6/tb/parallel2byte_8s_1s_43.vo
+# Adding file C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\tb\parallel2byte_8s_1s_43.vo ... Done
+addfile C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_1lane_XO2_V6/tb/packetheader_1s.vo
+# Adding file C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\tb\packetheader_1s.vo ... Done
+addfile C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_1lane_XO2_V6/tb/crc16_1lane.vo
+# Adding file C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\tb\crc16_1lane.vo ... Done
+addfile C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_1lane_XO2_V6/rtl/colorbar_gen.v
+# Adding file C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\colorbar_gen.v ... Done
+addfile C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_1lane_XO2_V6/rtl/IO_Controller_TX.v
+# Adding file C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\IO_Controller_TX.v ... Done
+addfile C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_1lane_XO2_V6/rtl/oDDRx4.v
+# Adding file C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\oDDRx4.v ... Done
+addfile C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_1lane_XO2_V6/rtl/DPHY_TX_INST.v
+# Adding file C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\DPHY_TX_INST.v ... Done
+addfile C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_1lane_XO2_V6/rtl/LP_HS_dly_ctrl.v
+# Adding file C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\LP_HS_dly_ctrl.v ... Done
+addfile C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_1lane_XO2_V6/rtl/BYTE_PACKETIZER.v
+# Adding file C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\BYTE_PACKETIZER.v ... Done
+addfile C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_1lane_XO2_V6/rtl/IPExpress/pll_pix2byte_YUV422_8bit_1lane.v
+# Adding file C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\IPExpress\pll_pix2byte_YUV422_8bit_1lane.v ... Done
+addfile C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_1lane_XO2_V6/rtl/top.v
+# Adding file C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\top.v ... Done
+addfile C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_1lane_XO2_V6/tb/Parallel2CSI2_tb_1lane.v
+# Adding file C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\tb\Parallel2CSI2_tb_1lane.v ... Done
+addfile C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_1lane_XO2_V6/rtl/compiler_directives.v
+# Adding file C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\compiler_directives.v ... Done
+vlib C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_1lane_XO2_V6/sim/sim/work
+# Warning: Library work already exists
+adel -all
+# Library contents cleared.
+vlog -dbg C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_1lane_XO2_V6/tb/parallel2byte_8s_1s_43.vo
+# Pass 1. Scanning modules hierarchy.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# ELB/DAG code generating.
+# Unit top modules: parallel2byte.
+# $root top modules: parallel2byte.
+# Compile success 0 Errors 0 Warnings  Analysis time: 1[s].
+# done
+vlog -dbg C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_1lane_XO2_V6/tb/packetheader_1s.vo
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: packetheader.
+# $root top modules: parallel2byte packetheader.
+# Compile success 0 Errors 0 Warnings  Analysis time: 1[s].
+# done
+vlog -dbg C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_1lane_XO2_V6/tb/crc16_1lane.vo
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: crc16_1lane.
+# $root top modules: parallel2byte packetheader crc16_1lane.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+vlog -dbg -work work C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_1lane_XO2_V6/rtl/colorbar_gen.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: colorbar_gen.
+# $root top modules: parallel2byte packetheader crc16_1lane colorbar_gen.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+vlog -dbg -work work C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_1lane_XO2_V6/rtl/IO_Controller_TX.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: IO_Controller_TX.
+# $root top modules: parallel2byte packetheader crc16_1lane colorbar_gen IO_Controller_TX.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+vlog -dbg -work work C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_1lane_XO2_V6/rtl/oDDRx4.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2876 ../rtl/oDDRx4.v : (99, 18): Implicit net declaration, symbol clk0 has not been declared in module oDDRx4.
+# Info: VCP2876 ../rtl/oDDRx4.v : (100, 18): Implicit net declaration, symbol clk2 has not been declared in module oDDRx4.
+# Info: VCP2876 ../rtl/oDDRx4.v : (101, 18): Implicit net declaration, symbol clk4 has not been declared in module oDDRx4.
+# Info: VCP2876 ../rtl/oDDRx4.v : (102, 18): Implicit net declaration, symbol clk6 has not been declared in module oDDRx4.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: oDDRx4.
+# $root top modules: parallel2byte packetheader crc16_1lane colorbar_gen IO_Controller_TX oDDRx4.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+vlog -dbg -work work C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_1lane_XO2_V6/rtl/DPHY_TX_INST.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2876 ../rtl/DPHY_TX_INST.v : (122, 31): Implicit net declaration, symbol bit_clk has not been declared in module DPHY_TX_INST.
+# Info: VCP2876 ../rtl/DPHY_TX_INST.v : (123, 31): Implicit net declaration, symbol bit_clk_90 has not been declared in module DPHY_TX_INST.
+# Info: VCP2113 Module oDDRx4 found in current working library.
+# Info: VCP2113 Module IO_Controller_TX found in current working library.
+# Pass 2. Processing instantiations.
+# Info: VCP2876 ../rtl/DPHY_TX_INST.v : (127, 34): Implicit net declaration, symbol sclk has not been declared in module DPHY_TX_INST.
+# Info: VCP2876 ../rtl/DPHY_TX_INST.v : (127, 88): Implicit net declaration, symbol hs_clk has not been declared in module DPHY_TX_INST.
+# Info: VCP2876 ../rtl/DPHY_TX_INST.v : (127, 170): Implicit net declaration, symbol byte_D3 has not been declared in module DPHY_TX_INST.
+# Info: VCP2876 ../rtl/DPHY_TX_INST.v : (127, 179): Implicit net declaration, symbol byte_D2 has not been declared in module DPHY_TX_INST.
+# Info: VCP2876 ../rtl/DPHY_TX_INST.v : (127, 188): Implicit net declaration, symbol byte_D1 has not been declared in module DPHY_TX_INST.
+# Info: VCP2876 ../rtl/DPHY_TX_INST.v : (127, 213): Implicit net declaration, symbol hs_D3 has not been declared in module DPHY_TX_INST.
+# Info: VCP2876 ../rtl/DPHY_TX_INST.v : (127, 219): Implicit net declaration, symbol hs_D2 has not been declared in module DPHY_TX_INST.
+# Info: VCP2876 ../rtl/DPHY_TX_INST.v : (127, 225): Implicit net declaration, symbol hs_D1 has not been declared in module DPHY_TX_INST.
+# Info: VCP2876 ../rtl/DPHY_TX_INST.v : (127, 231): Implicit net declaration, symbol hs_D0 has not been declared in module DPHY_TX_INST.
+# Info: VCP2876 ../rtl/DPHY_TX_INST.v : (138, 23): Implicit net declaration, symbol D1 has not been declared in module DPHY_TX_INST.
+# Info: VCP2876 ../rtl/DPHY_TX_INST.v : (139, 23): Implicit net declaration, symbol D2 has not been declared in module DPHY_TX_INST.
+# Info: VCP2876 ../rtl/DPHY_TX_INST.v : (140, 23): Implicit net declaration, symbol D3 has not been declared in module DPHY_TX_INST.
+# Info: VCP2876 ../rtl/DPHY_TX_INST.v : (150, 28): Implicit net declaration, symbol lp1_dir has not been declared in module DPHY_TX_INST.
+# Info: VCP2876 ../rtl/DPHY_TX_INST.v : (151, 28): Implicit net declaration, symbol lp2_dir has not been declared in module DPHY_TX_INST.
+# Info: VCP2876 ../rtl/DPHY_TX_INST.v : (152, 28): Implicit net declaration, symbol lp3_dir has not been declared in module DPHY_TX_INST.
+# Info: VCP2876 ../rtl/DPHY_TX_INST.v : (155, 28): Implicit net declaration, symbol lp1_out has not been declared in module DPHY_TX_INST.
+# Info: VCP2876 ../rtl/DPHY_TX_INST.v : (156, 28): Implicit net declaration, symbol lp2_out has not been declared in module DPHY_TX_INST.
+# Info: VCP2876 ../rtl/DPHY_TX_INST.v : (157, 28): Implicit net declaration, symbol lp3_out has not been declared in module DPHY_TX_INST.
+# Info: VCP2876 ../rtl/DPHY_TX_INST.v : (160, 26): Implicit net declaration, symbol lp1_in has not been declared in module DPHY_TX_INST.
+# Info: VCP2876 ../rtl/DPHY_TX_INST.v : (161, 26): Implicit net declaration, symbol lp2_in has not been declared in module DPHY_TX_INST.
+# Info: VCP2876 ../rtl/DPHY_TX_INST.v : (162, 26): Implicit net declaration, symbol lp3_in has not been declared in module DPHY_TX_INST.
+# Pass 3. Processing behavioral statements.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: DPHY_TX_INST.
+# $root top modules: parallel2byte packetheader crc16_1lane colorbar_gen DPHY_TX_INST.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+vlog -dbg -work work C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_1lane_XO2_V6/rtl/LP_HS_dly_ctrl.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: LP_HS_DELAY_CNTRL.
+# $root top modules: parallel2byte packetheader crc16_1lane colorbar_gen DPHY_TX_INST LP_HS_DELAY_CNTRL.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+vlog -dbg -work work C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_1lane_XO2_V6/rtl/BYTE_PACKETIZER.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module parallel2byte found in current working library.
+# Info: VCP2113 Module packetheader found in current working library.
+# Info: VCP2113 Module crc16_1lane found in current working library.
+# Pass 2. Processing instantiations.
+# Info: VCP2876 ../rtl/BYTE_PACKETIZER.v : (93, 30): Implicit net declaration, symbol byte_en has not been declared in module BYTE_PACKETIZER.
+# Info: VCP2876 ../rtl/BYTE_PACKETIZER.v : (98, 31): Implicit net declaration, symbol FV_start has not been declared in module BYTE_PACKETIZER.
+# Info: VCP2876 ../rtl/BYTE_PACKETIZER.v : (99, 29): Implicit net declaration, symbol FV_end has not been declared in module BYTE_PACKETIZER.
+# Warning: VCP2963 ../rtl/BYTE_PACKETIZER.v : (101, 7): Module parallel2byte has no parameters.
+# Info: VCP2876 ../rtl/BYTE_PACKETIZER.v : (130, 46): Implicit net declaration, symbol chksum_rdy has not been declared in module BYTE_PACKETIZER.
+# Warning: VCP2963 ../rtl/BYTE_PACKETIZER.v : (136, 7): Module packetheader has no parameters.
+# Warning: VCP2958 ../rtl/BYTE_PACKETIZER.v : (84, 33): Parameter word_width not found.
+# Warning: VCP2958 ../rtl/BYTE_PACKETIZER.v : (85, 33): Parameter lane_width not found.
+# Warning: VCP2958 ../rtl/BYTE_PACKETIZER.v : (86, 17): Parameter dt not found.
+# Warning: VCP2958 ../rtl/BYTE_PACKETIZER.v : (117, 32): Parameter lane_width not found.
+# Pass 3. Processing behavioral statements.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: BYTE_PACKETIZER.
+# $root top modules: colorbar_gen DPHY_TX_INST LP_HS_DELAY_CNTRL BYTE_PACKETIZER.
+# Compile success 0 Errors 6 Warnings  Analysis time: 0[s].
+# done
+vlog -dbg -work work C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_1lane_XO2_V6/rtl/IPExpress/pll_pix2byte_YUV422_8bit_1lane.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: pll_pix2byte_YUV422_8bit_1lane.
+# $root top modules: colorbar_gen DPHY_TX_INST LP_HS_DELAY_CNTRL BYTE_PACKETIZER pll_pix2byte_YUV422_8bit_1lane.
+# Compile success 0 Errors 0 Warnings  Analysis time: 1[s].
+# done
+vlog -dbg -work work C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_1lane_XO2_V6/rtl/top.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module pll_pix2byte_YUV422_8bit_1lane found in current working library.
+# Info: VCP2113 Module BYTE_PACKETIZER found in current working library.
+# Info: VCP2113 Module LP_HS_DELAY_CNTRL found in current working library.
+# Info: VCP2113 Module DPHY_TX_INST found in current working library.
+# Info: VCP2113 Module colorbar_gen found in current working library.
+# Pass 2. Processing instantiations.
+# Info: VCP2876 ../rtl/top.v : (140, 36): Implicit net declaration, symbol w_fv has not been declared in module top.
+# Info: VCP2876 ../rtl/top.v : (141, 36): Implicit net declaration, symbol w_lv has not been declared in module top.
+# Info: VCP2876 ../rtl/top.v : (149, 34): Implicit net declaration, symbol hs_en has not been declared in module top.
+# Info: VCP2876 ../rtl/top.v : (192, 27): Implicit net declaration, symbol hs_clk_en has not been declared in module top.
+# Info: VCP2876 ../rtl/top.v : (193, 29): Implicit net declaration, symbol hsxx_clk_en has not been declared in module top.
+# Info: VCP2876 ../rtl/top.v : (194, 28): Implicit net declaration, symbol hs_data_en has not been declared in module top.
+# Pass 3. Processing behavioral statements.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: top.
+# $root top modules: top.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+vlog -dbg C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_1lane_XO2_V6/tb/Parallel2CSI2_tb_1lane.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module top found in current working library.
+# Info: VCP2113 Module colorbar_gen found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: Parallel2CSI2_tb.
+# $root top modules: Parallel2CSI2_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+vlog -dbg -work work C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_1lane_XO2_V6/rtl/compiler_directives.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Warning: VCP2640 No modules defined.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# $root top modules: Parallel2CSI2_tb.
+# Compile success 0 Errors 1 Warnings  Analysis time: 0[s].
+# done
+module Parallel2CSI2_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'top' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'colorbar_gen' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'BYTE_PACKETIZER' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'LP_HS_DELAY_CNTRL' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'DPHY_TX_INST' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'IO_Controller_TX' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.3 [s].
+vsim +access +r Parallel2CSI2_tb -PL pmi_work -L ovi_machxo2
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'top' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'colorbar_gen' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'BYTE_PACKETIZER' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'LP_HS_DELAY_CNTRL' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'DPHY_TX_INST' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'IO_Controller_TX' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.3 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 10fs.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELBREAD: Warning: Parameter 'word_width' not found in work.parallel2byte instantiated in unit work.BYTE_PACKETIZER.
+# ELBREAD: Warning: Parameter 'lane_width' not found in work.parallel2byte instantiated in unit work.BYTE_PACKETIZER.
+# ELBREAD: Warning: Parameter 'dt' not found in work.parallel2byte instantiated in unit work.BYTE_PACKETIZER.
+# ELBREAD: Warning: Parameter 'lane_width' not found in work.packetheader instantiated in unit work.BYTE_PACKETIZER.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Warning: BYTE_PACKETIZER.v (116): Length of connection (32) does not match the length of port "EoTp" (1) on instance "/Parallel2CSI2_tb/u_top/u_BYTE_PACKETIZER/u_packetheader".
+# SLP: Warning: top.v (131): Length of connection (32) does not match the length of port "VC" (2) on instance "/Parallel2CSI2_tb/u_top/u_BYTE_PACKETIZER".
+# SLP: Warning: BYTE_PACKETIZER.v (83): Length of connection (10) does not match the length of port "PIXDATA" (8) on instance "/Parallel2CSI2_tb/u_top/u_BYTE_PACKETIZER/u_parallel2byte".
+# SLP: Warning: BYTE_PACKETIZER.v (140): Length of connection (32) does not match the length of port "data" (8) on instance "/Parallel2CSI2_tb/u_top/u_BYTE_PACKETIZER/genblk1/u_crc16".
+# SLP: Warning: DPHY_TX_INST.v (129): Length of connection (1) does not match the length of port "lp1_out" (2) on instance "/Parallel2CSI2_tb/u_top/u_DPHY_TX_INST/u_IO_Controller_TX".
+# SLP: Warning: DPHY_TX_INST.v (129): Length of connection (1) does not match the length of port "lp2_out" (2) on instance "/Parallel2CSI2_tb/u_top/u_DPHY_TX_INST/u_IO_Controller_TX".
+# SLP: Warning: DPHY_TX_INST.v (129): Length of connection (1) does not match the length of port "lp3_out" (2) on instance "/Parallel2CSI2_tb/u_top/u_DPHY_TX_INST/u_IO_Controller_TX".
+# SLP: Warning: DPHY_TX_INST.v (129): Length of connection (1) does not match the length of port "lp1_in" (2) on instance "/Parallel2CSI2_tb/u_top/u_DPHY_TX_INST/u_IO_Controller_TX".
+# SLP: Warning: DPHY_TX_INST.v (129): Length of connection (1) does not match the length of port "lp2_in" (2) on instance "/Parallel2CSI2_tb/u_top/u_DPHY_TX_INST/u_IO_Controller_TX".
+# SLP: Warning: DPHY_TX_INST.v (129): Length of connection (1) does not match the length of port "lp3_in" (2) on instance "/Parallel2CSI2_tb/u_top/u_DPHY_TX_INST/u_IO_Controller_TX".
+# SLP: Warning: DPHY_TX_INST.v (127): Length of connection (11) does not match the length of port "dataout" (32) on instance "/Parallel2CSI2_tb/u_top/u_DPHY_TX_INST/u_oDDRx4".
+# SLP: Warning: Parallel2CSI2_tb_1lane.v (26): Length of connection (8) does not match the length of port "PIXDATA" (10) on instance "/Parallel2CSI2_tb/u_top".
+# SLP: Warning: Parallel2CSI2_tb_1lane.v (55): Length of connection (8) does not match the length of port "data" (24) on instance "/Parallel2CSI2_tb/u_colorbar_gen".
+# SLP: Elaboration phase ... done : 0.3 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 1.4 [s]
+# SLP: Finished : 1.8 [s]
+# SLP: 4602 (70.56%) primitives and 1920 (29.44%) other processes in SLP
+# SLP: 21228 (99.96%) signals in SLP and 9 (0.04%) interface signals
+# ELAB2: Elaboration final pass complete - time: 2.3 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 9065 kB (elbread=3353 elab2=5420 kernel=291 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\sim\sim\src\wave.asdb
+#  19:21, 2018 m. vasario 18 d., sekmadienis
+#  Simulation has been initialized
+add wave *
+# 9 signal(s) traced.
+run 1000ns
+# Waveform file 'untitled.awc' connected to 'C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_1lane_XO2_V6/sim/sim/src/wave.asdb'.
+# KERNEL: stopped at time: 1 us
+run
+endsim
+# KERNEL: stopped at time: 3770232 ns
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'top' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'colorbar_gen' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'BYTE_PACKETIZER' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'LP_HS_DELAY_CNTRL' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'DPHY_TX_INST' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'IO_Controller_TX' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.3 [s].
+asim -O5 -L ovi_machxo2 -PL pmi_work +access +w_nets +accb +accr +access +r +access +r+w Parallel2CSI2_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'top' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'colorbar_gen' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'BYTE_PACKETIZER' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'LP_HS_DELAY_CNTRL' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'DPHY_TX_INST' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'IO_Controller_TX' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.3 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 10fs.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELBREAD: Warning: Parameter 'word_width' not found in work.parallel2byte instantiated in unit work.BYTE_PACKETIZER.
+# ELBREAD: Warning: Parameter 'lane_width' not found in work.parallel2byte instantiated in unit work.BYTE_PACKETIZER.
+# ELBREAD: Warning: Parameter 'dt' not found in work.parallel2byte instantiated in unit work.BYTE_PACKETIZER.
+# ELBREAD: Warning: Parameter 'lane_width' not found in work.packetheader instantiated in unit work.BYTE_PACKETIZER.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Warning: BYTE_PACKETIZER.v (116): Length of connection (32) does not match the length of port "EoTp" (1) on instance "/Parallel2CSI2_tb/u_top/u_BYTE_PACKETIZER/u_packetheader".
+# SLP: Warning: top.v (131): Length of connection (32) does not match the length of port "VC" (2) on instance "/Parallel2CSI2_tb/u_top/u_BYTE_PACKETIZER".
+# SLP: Warning: BYTE_PACKETIZER.v (83): Length of connection (10) does not match the length of port "PIXDATA" (8) on instance "/Parallel2CSI2_tb/u_top/u_BYTE_PACKETIZER/u_parallel2byte".
+# SLP: Warning: BYTE_PACKETIZER.v (140): Length of connection (32) does not match the length of port "data" (8) on instance "/Parallel2CSI2_tb/u_top/u_BYTE_PACKETIZER/genblk1/u_crc16".
+# SLP: Warning: DPHY_TX_INST.v (129): Length of connection (1) does not match the length of port "lp1_out" (2) on instance "/Parallel2CSI2_tb/u_top/u_DPHY_TX_INST/u_IO_Controller_TX".
+# SLP: Warning: DPHY_TX_INST.v (129): Length of connection (1) does not match the length of port "lp2_out" (2) on instance "/Parallel2CSI2_tb/u_top/u_DPHY_TX_INST/u_IO_Controller_TX".
+# SLP: Warning: DPHY_TX_INST.v (129): Length of connection (1) does not match the length of port "lp3_out" (2) on instance "/Parallel2CSI2_tb/u_top/u_DPHY_TX_INST/u_IO_Controller_TX".
+# SLP: Warning: DPHY_TX_INST.v (129): Length of connection (1) does not match the length of port "lp1_in" (2) on instance "/Parallel2CSI2_tb/u_top/u_DPHY_TX_INST/u_IO_Controller_TX".
+# SLP: Warning: DPHY_TX_INST.v (129): Length of connection (1) does not match the length of port "lp2_in" (2) on instance "/Parallel2CSI2_tb/u_top/u_DPHY_TX_INST/u_IO_Controller_TX".
+# SLP: Warning: DPHY_TX_INST.v (129): Length of connection (1) does not match the length of port "lp3_in" (2) on instance "/Parallel2CSI2_tb/u_top/u_DPHY_TX_INST/u_IO_Controller_TX".
+# SLP: Warning: DPHY_TX_INST.v (127): Length of connection (11) does not match the length of port "dataout" (32) on instance "/Parallel2CSI2_tb/u_top/u_DPHY_TX_INST/u_oDDRx4".
+# SLP: Warning: Parallel2CSI2_tb_1lane.v (26): Length of connection (8) does not match the length of port "PIXDATA" (10) on instance "/Parallel2CSI2_tb/u_top".
+# SLP: Warning: Parallel2CSI2_tb_1lane.v (55): Length of connection (8) does not match the length of port "data" (24) on instance "/Parallel2CSI2_tb/u_colorbar_gen".
+# SLP: Elaboration phase ... done : 0.3 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 1.8 [s]
+# SLP: Finished : 2.2 [s]
+# SLP: 4602 (70.56%) primitives and 1920 (29.44%) other processes in SLP
+# SLP: 685 (3.14%) signals in SLP and 20552 (94.09%) interface signals
+# ELAB2: Elaboration final pass complete - time: 2.7 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 10453 kB (elbread=3353 elab2=6787 kernel=313 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\sim\sim\src\wave.asdb
+#  19:26, 2018 m. vasario 18 d., sekmadienis
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_1lane_XO2_V6/sim/sim/src/wave.asdb'.
+run
+endsim
+# KERNEL: stopped at time: 540536 ns
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'top' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'colorbar_gen' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'BYTE_PACKETIZER' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'LP_HS_DELAY_CNTRL' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'DPHY_TX_INST' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'IO_Controller_TX' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.3 [s].
+asim -O5 -L ovi_machxo2 -PL pmi_work +access +w_nets +accb +accr +access +r +access +r+w Parallel2CSI2_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'top' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'colorbar_gen' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'BYTE_PACKETIZER' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'LP_HS_DELAY_CNTRL' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'DPHY_TX_INST' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'IO_Controller_TX' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.3 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 10fs.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELBREAD: Warning: Parameter 'word_width' not found in work.parallel2byte instantiated in unit work.BYTE_PACKETIZER.
+# ELBREAD: Warning: Parameter 'lane_width' not found in work.parallel2byte instantiated in unit work.BYTE_PACKETIZER.
+# ELBREAD: Warning: Parameter 'dt' not found in work.parallel2byte instantiated in unit work.BYTE_PACKETIZER.
+# ELBREAD: Warning: Parameter 'lane_width' not found in work.packetheader instantiated in unit work.BYTE_PACKETIZER.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 4602 (70.56%) primitives and 1920 (29.44%) other processes in SLP
+# SLP: 685 (3.14%) signals in SLP and 20552 (94.09%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.6 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 10453 kB (elbread=3353 elab2=6787 kernel=313 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\sim\sim\src\wave.asdb
+#  19:26, 2018 m. vasario 18 d., sekmadienis
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_1lane_XO2_V6/sim/sim/src/wave.asdb'.
+run
+# KERNEL: stopped at time: 558315200 ps
+# add wave -noreg {/Parallel2CSI2_tb/u_top/D0}
+# 1 signal(s) traced.
+# add wave -noreg {/Parallel2CSI2_tb/u_top/DCK}
+# 1 signal(s) traced.
+# add wave -noreg {/Parallel2CSI2_tb/u_top/PIXCLK}
+# 1 signal(s) traced.
+# add wave -noreg {/Parallel2CSI2_tb/u_top/FV}
+# 1 signal(s) traced.
+# add wave -noreg {/Parallel2CSI2_tb/u_top/LV}
+# 1 signal(s) traced.
+# add wave -noreg {/Parallel2CSI2_tb/u_top/PIXDATA}
+# 1 signal(s) traced.
+run
+# KERNEL: stopped at time: 931824 ns
+endsim
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'top' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'colorbar_gen' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'BYTE_PACKETIZER' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'LP_HS_DELAY_CNTRL' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'DPHY_TX_INST' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'IO_Controller_TX' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.3 [s].
+asim -O5 -L ovi_machxo2 -PL pmi_work +access +w_nets +accb +accr +access +r +access +r+w Parallel2CSI2_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'top' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'colorbar_gen' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'BYTE_PACKETIZER' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'LP_HS_DELAY_CNTRL' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'DPHY_TX_INST' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'IO_Controller_TX' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.3 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 10fs.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELBREAD: Warning: Parameter 'word_width' not found in work.parallel2byte instantiated in unit work.BYTE_PACKETIZER.
+# ELBREAD: Warning: Parameter 'lane_width' not found in work.parallel2byte instantiated in unit work.BYTE_PACKETIZER.
+# ELBREAD: Warning: Parameter 'dt' not found in work.parallel2byte instantiated in unit work.BYTE_PACKETIZER.
+# ELBREAD: Warning: Parameter 'lane_width' not found in work.packetheader instantiated in unit work.BYTE_PACKETIZER.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 4602 (70.56%) primitives and 1920 (29.44%) other processes in SLP
+# SLP: 685 (3.14%) signals in SLP and 20552 (94.09%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.6 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 10453 kB (elbread=3353 elab2=6787 kernel=313 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\sim\sim\src\wave.asdb
+#  19:29, 2018 m. vasario 18 d., sekmadienis
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_1lane_XO2_V6/sim/sim/src/wave.asdb'.
+run
+# KERNEL: stopped at time: 216344800 ps
+# add wave -noreg {/Parallel2CSI2_tb/DCK}
+# 1 signal(s) traced.
+# add wave -noreg {/Parallel2CSI2_tb/D0}
+# 1 signal(s) traced.
+# add wave -noreg {/Parallel2CSI2_tb/fv}
+# 1 signal(s) traced.
+# add wave -noreg {/Parallel2CSI2_tb/u_top/FV}
+# 1 signal(s) traced.
+run @216444.8ns
+# KERNEL: stopped at time: 216444800 ps
+run 100 ns
+# KERNEL: stopped at time: 216544800 ps
+run 100 ns
+# KERNEL: stopped at time: 216644800 ps
+run 100 ns
+# KERNEL: stopped at time: 216744800 ps
+run 100 ns
+# KERNEL: stopped at time: 216844800 ps
+run 100 ns
+# KERNEL: stopped at time: 216944800 ps
+run 100 ns
+# KERNEL: stopped at time: 217044800 ps
+run 100 ns
+# KERNEL: stopped at time: 217144800 ps
+run 100 ns
+# KERNEL: stopped at time: 217244800 ps
+run 100 ns
+# KERNEL: stopped at time: 217344800 ps
+run 100 ns
+# KERNEL: stopped at time: 217444800 ps
+run 100 ns
+# KERNEL: stopped at time: 217544800 ps
+# add wave -noreg {/Parallel2CSI2_tb/u_top/PIXCLK}
+# 1 signal(s) traced.
+run 100 ns
+# KERNEL: stopped at time: 217644800 ps
+run 100 ns
+# KERNEL: stopped at time: 217744800 ps
+run 100 ns
+# KERNEL: stopped at time: 217844800 ps
+run 100 ns
+# KERNEL: stopped at time: 217944800 ps
+run 100 ns
+# KERNEL: stopped at time: 218044800 ps
+run 100 ns
+# KERNEL: stopped at time: 218144800 ps
+run 100 ns
+# KERNEL: stopped at time: 218244800 ps
+run 100 ns
+# KERNEL: stopped at time: 218344800 ps
+# add wave -noreg {/Parallel2CSI2_tb/u_top/reset_n}
+# 1 signal(s) traced.
+run 100 ns
+# KERNEL: stopped at time: 218444800 ps
+run 100 ns
+# KERNEL: stopped at time: 218544800 ps
+run 100 ns
+# KERNEL: stopped at time: 218644800 ps
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'top' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'colorbar_gen' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'BYTE_PACKETIZER' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'LP_HS_DELAY_CNTRL' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'DPHY_TX_INST' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'IO_Controller_TX' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.3 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 10fs.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELBREAD: Warning: Parameter 'word_width' not found in work.parallel2byte instantiated in unit work.BYTE_PACKETIZER.
+# ELBREAD: Warning: Parameter 'lane_width' not found in work.parallel2byte instantiated in unit work.BYTE_PACKETIZER.
+# ELBREAD: Warning: Parameter 'dt' not found in work.parallel2byte instantiated in unit work.BYTE_PACKETIZER.
+# ELBREAD: Warning: Parameter 'lane_width' not found in work.packetheader instantiated in unit work.BYTE_PACKETIZER.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, using existing simulator library: 0.1 [s]
+# SLP: Finished : 0.1 [s]
+# SLP: 4602 (70.56%) primitives and 1920 (29.44%) other processes in SLP
+# SLP: 685 (3.14%) signals in SLP and 20552 (94.09%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.7 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 10453 kB (elbread=3353 elab2=6787 kernel=313 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\sim\sim\src\wave.asdb
+#  19:31, 2018 m. vasario 18 d., sekmadienis
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_1lane_XO2_V6/sim/sim/src/wave.asdb'.
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+run 100 ns
+# KERNEL: stopped at time: 400 ns
+run 100 ns
+# KERNEL: stopped at time: 500 ns
+run 100 ns
+# KERNEL: stopped at time: 600 ns
+run 100 ns
+# KERNEL: stopped at time: 700 ns
+run 100 ns
+# KERNEL: stopped at time: 800 ns
+run 100 ns
+# KERNEL: stopped at time: 900 ns
+run 100 ns
+# KERNEL: stopped at time: 1 us
+run 100 ns
+# KERNEL: stopped at time: 1100 ns
+run 100 ns
+# KERNEL: stopped at time: 1200 ns
+run 100 ns
+# KERNEL: stopped at time: 1300 ns
+run 100 ns
+# KERNEL: stopped at time: 1400 ns
+run 100 ns
+# KERNEL: stopped at time: 1500 ns
+run 100 ns
+# KERNEL: stopped at time: 1600 ns
+run 100 ns
+# KERNEL: stopped at time: 1700 ns
+run 100 ns
+# KERNEL: stopped at time: 1800 ns
+run 100 ns
+# KERNEL: stopped at time: 1900 ns
+run 100 ns
+# KERNEL: stopped at time: 2 us
+run 100 ns
+# KERNEL: stopped at time: 2100 ns
+run 100 ns
+# KERNEL: stopped at time: 2200 ns
+run 100 ns
+# KERNEL: stopped at time: 2300 ns
+run 100 ns
+# KERNEL: stopped at time: 2400 ns
+run 100 ns
+# KERNEL: stopped at time: 2500 ns
+run 100 ns
+# KERNEL: stopped at time: 2600 ns
+run 1000 ns
+# KERNEL: stopped at time: 3600 ns
+run 1000 ns
+# KERNEL: stopped at time: 4600 ns
+run 1000 ns
+# KERNEL: stopped at time: 5600 ns
+run 1000 ns
+# KERNEL: stopped at time: 6600 ns
+run 1000 ns
+# KERNEL: stopped at time: 7600 ns
+run 1000 ns
+# KERNEL: stopped at time: 8600 ns
+# add wave -noreg {/Parallel2CSI2_tb/u_colorbar_gen/fv}
+# 1 signal(s) traced.
+# add wave -noreg {/Parallel2CSI2_tb/u_colorbar_gen/lv}
+# 1 signal(s) traced.
+run 1000 ns
+# KERNEL: stopped at time: 9600 ns
+run 1000 ns
+# KERNEL: stopped at time: 10600 ns
+run 1000 ns
+# KERNEL: stopped at time: 11600 ns
+run 1000 ns
+# KERNEL: stopped at time: 12600 ns
+run 1000 ns
+# KERNEL: stopped at time: 13600 ns
+run 1000 ns
+# KERNEL: stopped at time: 14600 ns
+run 1000 ns
+# KERNEL: stopped at time: 15600 ns
+run 1000 ns
+# KERNEL: stopped at time: 16600 ns
+run 1000 ns
+# KERNEL: stopped at time: 17600 ns
+run 1000 ns
+# KERNEL: stopped at time: 18600 ns
+run 1000 ns
+# KERNEL: stopped at time: 19600 ns
+run 1000 ns
+# KERNEL: stopped at time: 20600 ns
+run 1000 ns
+# KERNEL: stopped at time: 21600 ns
+run 1000 ns
+# KERNEL: stopped at time: 22600 ns
+run 1000 ns
+# KERNEL: stopped at time: 23600 ns
+run 1000 ns
+# KERNEL: stopped at time: 24600 ns
+run 10000 ns
+# KERNEL: stopped at time: 34600 ns
+run 1000 ns
+# KERNEL: stopped at time: 35600 ns
+run 1000 ns
+# KERNEL: stopped at time: 36600 ns
+run 1000 ns
+# KERNEL: stopped at time: 37600 ns
+# add wave -noreg {/Parallel2CSI2_tb/u_colorbar_gen/data}
+# 1 signal(s) traced.
+run 1000 ns
+# KERNEL: stopped at time: 38600 ns
+run 1000 ns
+# KERNEL: stopped at time: 39600 ns
+run 1000 ns
+# KERNEL: stopped at time: 40600 ns
+run 1000 ns
+# KERNEL: stopped at time: 41600 ns
+run 1000 ns
+# KERNEL: stopped at time: 42600 ns
+run 1000 ns
+# KERNEL: stopped at time: 43600 ns
+run 1000 ns
+# KERNEL: stopped at time: 44600 ns
+run 1000 ns
+# KERNEL: stopped at time: 45600 ns

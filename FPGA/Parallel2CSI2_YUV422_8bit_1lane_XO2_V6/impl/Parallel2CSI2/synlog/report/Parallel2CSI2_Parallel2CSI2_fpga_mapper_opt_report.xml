@@ -5,7 +5,7 @@ The file contains the optimization information from mapper to be displayed as pa
 *******************************************************************************************-->
 <report_table display_priority="3" name="Optimizations Summary">
 <parameter tooltip="Non-gated/non-generated clock trees / Gated/generated clock trees" name="Combined Clock Conversion">
-<data>0 / 3</data>
+<data>1 / 2</data>
 <report_link name="more">
 <data>C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\impl\Parallel2CSI2\synlog\report\Parallel2CSI2_Parallel2CSI2_fpga_mapper_combined_clk.rpt</data>
 <title>START OF CLOCK OPTIMIZATION REPORT</title>

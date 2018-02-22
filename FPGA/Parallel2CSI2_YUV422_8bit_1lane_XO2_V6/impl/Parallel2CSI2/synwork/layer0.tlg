@@ -75,34 +75,20 @@ Selecting top level module top
 
 @N: CG364 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\IPExpress\pll_pix2byte_YUV422_8bit_1lane.v":8:7:8:36|Synthesizing module pll_pix2byte_YUV422_8bit_1lane in library work.
 
-@N: CG364 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\colorbar_gen.v":47:7:47:18|Synthesizing module colorbar_gen in library work.
+@N: CG364 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\astrohn_astir2.v":2:7:2:20|Synthesizing module astrohn_astir2 in library work.
 
-	h_active=32'b00000000000000000000010100000000
-	h_total=32'b00000000000000000000010110100000
-	v_active=32'b00000000000000000000000111100000
-	v_total=32'b00000000000000000000001011101110
-	H_FRONT_PORCH=32'b00000000000000000000000000101000
-	H_SYNCH=32'b00000000000000000000000000101100
-	H_BACK_PORCH=32'b00000000000000000000000010010100
-	V_FRONT_PORCH=32'b00000000000000000000000000000101
-	V_SYNCH=32'b00000000000000000000000000000101
-	mode=32'b00000000000000000000000000000000
-   Generated name = colorbar_gen_1280_1440_480_750_40_44_148_5_5_0
-
-@W: CL169 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\colorbar_gen.v":95:4:95:9|Pruning unused register fv_cnt[10:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\colorbar_gen.v":95:4:95:9|Pruning unused register q_fv. Make sure that there are no unused intermediate registers.
-@W: CS263 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\top.v":294:25:294:33|Port-width mismatch for port data. Formal has width 24, Actual 8
-@N: CG364 :"D:\FPGA\Lattice\diamond\3.8_x64\synpbase\lib\lucent\machxo2.v":1793:7:1793:10|Synthesizing module OSCH in library work.
-
-@W: CS263 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\top.v":312:48:312:48|Port-width mismatch for port STDBY. Formal has width 1, Actual 32
+@W: CL169 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\astrohn_astir2.v":18:0:18:5|Pruning unused register w_fv. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\astrohn_astir2.v":18:0:18:5|Pruning unused register fv_del_counter[7:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\astrohn_astir2.v":18:0:18:5|Pruning unused register frame_state[1:0]. Make sure that there are no unused intermediate registers.
 @W: CS263 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\top.v":144:28:144:29|Port-width mismatch for port VC. Formal has width 2, Actual 32
-@W: CL190 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\colorbar_gen.v":95:4:95:9|Optimizing register bit pixcnt[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\colorbar_gen.v":95:4:95:9|Optimizing register bit linecnt[10] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\colorbar_gen.v":95:4:95:9|Optimizing register bit linecnt[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL279 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\colorbar_gen.v":95:4:95:9|Pruning register bits 11 to 10 of linecnt[11:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@W: CL260 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\colorbar_gen.v":95:4:95:9|Pruning register bit 11 of pixcnt[11:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
-@N: CL159 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\top.v":97:28:97:33|Input PIXCLK is unused.
-@N: CL159 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\top.v":100:28:100:34|Input PIXDATA is unused.
+@N: CL201 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\astrohn_astir2.v":18:0:18:5|Trying to extract state machine for register state.
+Extracted state machine for register state
+State machine has 4 reachable states with original encodings of:
+   00
+   01
+   10
+   11
+@W: CL249 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\astrohn_astir2.v":18:0:18:5|Initial value is not supported on state machine state
 @W: CL156 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\DPHY_TX_INST.v":127:162:127:196|*Input un1_byte_D0[31:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
 @W: CL156 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\DPHY_TX_INST.v":150:20:150:26|*Input lp1_dir to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
 @W: CL156 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\DPHY_TX_INST.v":151:20:151:26|*Input lp2_dir to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.

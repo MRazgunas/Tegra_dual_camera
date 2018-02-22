@@ -10,7 +10,7 @@ Lattice Diamond Version 3.8.0.115.3
 #OS: Windows 8 6.2
 #Hostname: DESKTOP-LLVA2C9
 
-# Sun Feb 18 00:18:41 2018
+# Thu Feb 22 19:05:53 2018
 
 #Implementation: Parallel2CSI2
 
@@ -120,34 +120,20 @@ Selecting top level module top
 
 @N: CG364 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\IPExpress\pll_pix2byte_YUV422_8bit_1lane.v":8:7:8:36|Synthesizing module pll_pix2byte_YUV422_8bit_1lane in library work.
 
-@N: CG364 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\colorbar_gen.v":47:7:47:18|Synthesizing module colorbar_gen in library work.
+@N: CG364 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\astrohn_astir2.v":2:7:2:20|Synthesizing module astrohn_astir2 in library work.
 
-	h_active=32'b00000000000000000000010100000000
-	h_total=32'b00000000000000000000010110100000
-	v_active=32'b00000000000000000000000111100000
-	v_total=32'b00000000000000000000001011101110
-	H_FRONT_PORCH=32'b00000000000000000000000000101000
-	H_SYNCH=32'b00000000000000000000000000101100
-	H_BACK_PORCH=32'b00000000000000000000000010010100
-	V_FRONT_PORCH=32'b00000000000000000000000000000101
-	V_SYNCH=32'b00000000000000000000000000000101
-	mode=32'b00000000000000000000000000000000
-   Generated name = colorbar_gen_1280_1440_480_750_40_44_148_5_5_0
-
-@W: CL169 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\colorbar_gen.v":95:4:95:9|Pruning unused register fv_cnt[10:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\colorbar_gen.v":95:4:95:9|Pruning unused register q_fv. Make sure that there are no unused intermediate registers.
-@W: CS263 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\top.v":294:25:294:33|Port-width mismatch for port data. Formal has width 24, Actual 8
-@N: CG364 :"D:\FPGA\Lattice\diamond\3.8_x64\synpbase\lib\lucent\machxo2.v":1793:7:1793:10|Synthesizing module OSCH in library work.
-
-@W: CS263 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\top.v":312:48:312:48|Port-width mismatch for port STDBY. Formal has width 1, Actual 32
+@W: CL169 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\astrohn_astir2.v":18:0:18:5|Pruning unused register w_fv. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\astrohn_astir2.v":18:0:18:5|Pruning unused register fv_del_counter[7:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\astrohn_astir2.v":18:0:18:5|Pruning unused register frame_state[1:0]. Make sure that there are no unused intermediate registers.
 @W: CS263 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\top.v":144:28:144:29|Port-width mismatch for port VC. Formal has width 2, Actual 32
-@W: CL190 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\colorbar_gen.v":95:4:95:9|Optimizing register bit pixcnt[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\colorbar_gen.v":95:4:95:9|Optimizing register bit linecnt[10] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\colorbar_gen.v":95:4:95:9|Optimizing register bit linecnt[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL279 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\colorbar_gen.v":95:4:95:9|Pruning register bits 11 to 10 of linecnt[11:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@W: CL260 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\colorbar_gen.v":95:4:95:9|Pruning register bit 11 of pixcnt[11:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
-@N: CL159 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\top.v":97:28:97:33|Input PIXCLK is unused.
-@N: CL159 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\top.v":100:28:100:34|Input PIXDATA is unused.
+@N: CL201 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\astrohn_astir2.v":18:0:18:5|Trying to extract state machine for register state.
+Extracted state machine for register state
+State machine has 4 reachable states with original encodings of:
+   00
+   01
+   10
+   11
+@W: CL249 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\astrohn_astir2.v":18:0:18:5|Initial value is not supported on state machine state
 @W: CL156 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\DPHY_TX_INST.v":127:162:127:196|*Input un1_byte_D0[31:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
 @W: CL156 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\DPHY_TX_INST.v":150:20:150:26|*Input lp1_dir to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
 @W: CL156 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\DPHY_TX_INST.v":151:20:151:26|*Input lp2_dir to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
@@ -180,7 +166,7 @@ At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sun Feb 18 00:18:41 2018
+# Thu Feb 22 19:05:53 2018
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2016q2rc, Build 192R, built Jul  5 2016
@@ -192,7 +178,7 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sun Feb 18 00:18:41 2018
+# Thu Feb 22 19:05:53 2018
 
 ###########################################################]
 @END
@@ -202,7 +188,7 @@ At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sun Feb 18 00:18:41 2018
+# Thu Feb 22 19:05:53 2018
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2016q2rc, Build 192R, built Jul  5 2016
@@ -214,7 +200,7 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sun Feb 18 00:18:42 2018
+# Thu Feb 22 19:05:54 2018
 
 ###########################################################]
 Pre-mapping Report
@@ -242,8 +228,6 @@ Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00
 
 Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 113MB peak: 115MB)
 
-@N: BN362 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\colorbar_gen.v":95:4:95:9|Removing sequential instance vsync (in view: work.colorbar_gen_1280_1440_480_750_40_44_148_5_5_0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\colorbar_gen.v":95:4:95:9|Removing sequential instance hsync (in view: work.colorbar_gen_1280_1440_480_750_40_44_148_5_5_0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
 ICG Latch Removal Summary:
 Number of ICG latches removed:	0
 Number of ICG latches not removed:	0
@@ -262,11 +246,11 @@ Clock                                                    Frequency     Period   
 System                                                   1.0 MHz       1000.000      system       system_clkgroup         0    
 oDDRx4|sclk_inferred_clock                               1.0 MHz       1000.000      inferred     Inferred_clkgroup_0     4    
 pll_pix2byte_YUV422_8bit_1lane|CLKOS2_inferred_clock     1.0 MHz       1000.000      inferred     Inferred_clkgroup_2     133  
-top|w_pixclk_inferred_clock                              7.0 MHz       142.857       inferred     Inferred_clkgroup_1     43   
+top|PIXCLK                                               1.0 MHz       1000.000      inferred     Inferred_clkgroup_1     27   
 ===============================================================================================================================
 
 @W: MT529 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\oddrx4.v":81:12:81:15|Found inferred clock oDDRx4|sclk_inferred_clock which controls 4 sequential elements including u_DPHY_TX_INST.u_oDDRx4.FF_3. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
-@W: MT529 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\colorbar_gen.v":95:4:95:9|Found inferred clock top|w_pixclk_inferred_clock which controls 43 sequential elements including u_colorbar_gen.linecnt[9:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+@W: MT529 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\astrohn_astir2.v":18:0:18:5|Found inferred clock top|PIXCLK which controls 27 sequential elements including u_astrohn_astir2.linecount[8:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
 @W: MT529 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\byte_packetizer.v":104:5:104:10|Found inferred clock pll_pix2byte_YUV422_8bit_1lane|CLKOS2_inferred_clock which controls 133 sequential elements including u_BYTE_PACKETIZER.q_WC[15:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
 
 @N: MF203 |Set autoconstraint_io 
@@ -274,6 +258,13 @@ Finished Pre Mapping Phase.
 
 Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
 
+Encoding state machine state[3:0] (in view: work.astrohn_astir2(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+   11 -> 11
+@N: MO225 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\astrohn_astir2.v":18:0:18:5|There are no possible illegal states for state machine state[3:0] (in view: work.astrohn_astir2(verilog)); safe FSM implementation is not required.
 None
 None
 
@@ -284,7 +275,7 @@ Pre-mapping successful!
 At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 56MB peak: 142MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sun Feb 18 00:18:43 2018
+# Thu Feb 22 19:05:55 2018
 
 ###########################################################]
 Map & Optimize Report
@@ -324,16 +315,16 @@ Available hyper_sources - for debug and ip models
 
 Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
 
+@W: BN132 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\byte_packetizer.v":104:5:104:10|Removing instance u_BYTE_PACKETIZER.q_WC[9] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[8]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\byte_packetizer.v":104:5:104:10|Removing instance u_BYTE_PACKETIZER.q_WC[15] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[14]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\byte_packetizer.v":104:5:104:10|Removing instance u_BYTE_PACKETIZER.q_WC[14] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[13]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\byte_packetizer.v":104:5:104:10|Removing instance u_BYTE_PACKETIZER.q_WC[13] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[12]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\byte_packetizer.v":104:5:104:10|Removing instance u_BYTE_PACKETIZER.q_WC[12] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\byte_packetizer.v":104:5:104:10|Removing instance u_BYTE_PACKETIZER.q_WC[9] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\byte_packetizer.v":104:5:104:10|Removing instance u_BYTE_PACKETIZER.q_WC[7] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\byte_packetizer.v":104:5:104:10|Removing instance u_BYTE_PACKETIZER.q_WC[6] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\byte_packetizer.v":104:5:104:10|Removing instance u_BYTE_PACKETIZER.q_WC[5] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\byte_packetizer.v":104:5:104:10|Removing instance u_BYTE_PACKETIZER.q_WC[4] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\byte_packetizer.v":104:5:104:10|Removing instance u_BYTE_PACKETIZER.q_WC[3] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\byte_packetizer.v":104:5:104:10|Removing instance u_BYTE_PACKETIZER.q_WC[11] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\byte_packetizer.v":104:5:104:10|Removing instance u_BYTE_PACKETIZER.q_WC[7] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\byte_packetizer.v":104:5:104:10|Removing instance u_BYTE_PACKETIZER.q_WC[6] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\byte_packetizer.v":104:5:104:10|Removing instance u_BYTE_PACKETIZER.q_WC[5] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\byte_packetizer.v":104:5:104:10|Removing instance u_BYTE_PACKETIZER.q_WC[4] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @N: BN362 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\byte_packetizer.v":104:5:104:10|Removing sequential instance u_BYTE_PACKETIZER.q_WC[0] (in view: work.top(verilog)) because it does not drive other instances.
 @A: BN291 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\byte_packetizer.v":104:5:104:10|Boundary register u_BYTE_PACKETIZER.q_WC[0] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
 @N: BN362 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data_0_[31] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
@@ -364,40 +355,45 @@ Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00
 @N:"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\lp_hs_dly_ctrl.v":119:4:119:9|Found counter in view:work.LP_HS_DELAY_CNTRL(verilog) inst hs_en_low_cnt[15:0]
 @N:"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\lp_hs_dly_ctrl.v":119:4:119:9|Found counter in view:work.LP_HS_DELAY_CNTRL(verilog) inst hs_en_high_cnt[15:0]
 @N:"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\lp_hs_dly_ctrl.v":119:4:119:9|Found counter in view:work.LP_HS_DELAY_CNTRL(verilog) inst hs_extended[4:0]
-@N:"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\colorbar_gen.v":125:1:125:6|Found counter in view:work.colorbar_gen_1280_1440_480_750_40_44_148_5_5_0(verilog) inst color_cntr[11:0]
-@N:"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\colorbar_gen.v":89:4:89:9|Found counter in view:work.colorbar_gen_1280_1440_480_750_40_44_148_5_5_0(verilog) inst rstn_cnt[7:0]
+Encoding state machine state[3:0] (in view: work.astrohn_astir2(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+   11 -> 11
+@N: MO225 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\astrohn_astir2.v":18:0:18:5|There are no possible illegal states for state machine state[3:0] (in view: work.astrohn_astir2(verilog)); safe FSM implementation is not required.
 
 Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
 
 
-Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 143MB)
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 142MB)
 
 
-Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 143MB)
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 142MB)
 
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 143MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 142MB)
 
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 143MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 142MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 143MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 142MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 143MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 142MB)
 
 
-Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 143MB)
+Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 142MB)
 
 
-Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 144MB)
+Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 144MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
-   1		0h:00m:00s		   134.55ns		  99 /       103
+   1		0h:00m:00s		   991.45ns		  82 /        85
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 144MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 144MB)
 
 @N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
 @N: FO126 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\lp_hs_dly_ctrl.v":108:16:108:21|Generating RAM u_LP_HS_DELAY_CNTRL.data_dly\[26\]\.hold_data_CR31[7:0]
@@ -411,16 +407,20 @@ Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:
 
 #### START OF CLOCK OPTIMIZATION REPORT #####[
 
-0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
-3 gated/generated clock tree(s) driving 111 clock pin(s) of sequential element(s)
-0 instances converted, 111 sequential instances remain driven by gated/generated clocks
+1 non-gated/non-generated clock tree(s) driving 25 clock pin(s) of sequential element(s)
+2 gated/generated clock tree(s) driving 68 clock pin(s) of sequential element(s)
+0 instances converted, 68 sequential instances remain driven by gated/generated clocks
 
+============================= Non-Gated/Non-Generated Clocks ==============================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance    
+-------------------------------------------------------------------------------------------
+@K:CKID0003       PIXCLK              port                   25         u_astrohn_astir2.FV
+===========================================================================================
 =============================================================================================================================== Gated/Generated Clocks ================================================================================================================================
 Clock Tree ID     Driving Element                                Drive Element Type     Fanout     Sample Instance                                       Explanation                                                                                                                   
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 @K:CKID0001       u_pll_pix2byte_YUV422_8bit_1lane.PLLInst_0     EHXPLLJ                64         u_LP_HS_DELAY_CNTRL.data_dly[26].hold_data_CF4[4]     Gating structure creates improper gating logic. See the Gated Clocks description in the user guide for conversion requirements
-@K:CKID0002       u_OSCH                                         OSCH                   43         u_colorbar_gen.color_cntr[11]                         No gated clock conversion method for cell cell:LUCENT.FD1S3DX                                                                 
-@K:CKID0003       u_DPHY_TX_INST.u_oDDRx4.Inst3_CLKDIVC          CLKDIVC                4          u_DPHY_TX_INST.u_oDDRx4.FF_0                          No gated clock conversion method for cell cell:LUCENT.FD1P3DX                                                                 
+@K:CKID0002       u_DPHY_TX_INST.u_oDDRx4.Inst3_CLKDIVC          CLKDIVC                4          u_DPHY_TX_INST.u_oDDRx4.FF_0                          No gated clock conversion method for cell cell:LUCENT.FD1P3DX                                                                 
 =======================================================================================================================================================================================================================================================================================
 
 
@@ -441,7 +441,7 @@ L-2016.03L-1
 Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 146MB peak: 148MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 147MB peak: 148MB)
+Start final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 146MB peak: 148MB)
 
 @W: MT246 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\oddrx4.v":132:14:132:28|Blackbox ECLKSYNCA is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
 @W: MT246 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\oddrx4.v":129:12:129:24|Blackbox CLKDIVC is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
@@ -450,13 +450,13 @@ Start final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:0
 @W: MT246 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\byte_packetizer.v":119:5:119:18|Blackbox packetheader_1s is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
 @W: MT246 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\byte_packetizer.v":87:8:87:22|Blackbox parallel2byte_8s_1s_30 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
 @W: MT246 :"c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\ipexpress\pll_pix2byte_yuv422_8bit_1lane.v":70:12:70:20|Blackbox EHXPLLJ is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
-@W: MT420 |Found inferred clock top|w_pixclk_inferred_clock with period 142.86ns. Please declare a user-defined clock on object "n:w_pixclk"
+@W: MT420 |Found inferred clock top|PIXCLK with period 1000.00ns. Please declare a user-defined clock on object "p:PIXCLK"
 @W: MT420 |Found inferred clock oDDRx4|sclk_inferred_clock with period 1000.00ns. Please declare a user-defined clock on object "n:u_DPHY_TX_INST.u_oDDRx4.sclk"
 @W: MT420 |Found inferred clock pll_pix2byte_YUV422_8bit_1lane|CLKOS2_inferred_clock with period 1000.00ns. Please declare a user-defined clock on object "n:u_pll_pix2byte_YUV422_8bit_1lane.CLKOS2"
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Sun Feb 18 00:18:45 2018
+# Timing Report written on Thu Feb 22 19:05:57 2018
 #
 
 
@@ -472,14 +472,14 @@ Performance Summary
 *******************
 
 
-Worst slack in design: 133.217
+Worst slack in design: 990.886
 
                                                          Requested     Estimated     Requested     Estimated                 Clock        Clock              
 Starting Clock                                           Frequency     Frequency     Period        Period        Slack       Type         Group              
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 oDDRx4|sclk_inferred_clock                               1.0 MHz       360.7 MHz     1000.000      2.772         997.228     inferred     Inferred_clkgroup_0
 pll_pix2byte_YUV422_8bit_1lane|CLKOS2_inferred_clock     1.0 MHz       129.6 MHz     1000.000      7.716         992.284     inferred     Inferred_clkgroup_2
-top|w_pixclk_inferred_clock                              7.0 MHz       103.7 MHz     142.857       9.640         133.217     inferred     Inferred_clkgroup_1
+top|PIXCLK                                               1.0 MHz       169.6 MHz     1000.000      5.896         994.104     inferred     Inferred_clkgroup_1
 System                                                   1.0 MHz       362.9 MHz     1000.000      2.756         997.244     system       system_clkgroup    
 =============================================================================================================================================================
 
@@ -495,12 +495,13 @@ Clocks                                                                          
 Starting                                              Ending                                                |  constraint  slack    |  constraint  slack  |  constraint  slack  |  constraint  slack
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 System                                                System                                                |  1000.000    997.244  |  No paths    -      |  No paths    -      |  No paths    -    
+System                                                top|PIXCLK                                            |  1000.000    990.887  |  No paths    -      |  No paths    -      |  No paths    -    
 System                                                pll_pix2byte_YUV422_8bit_1lane|CLKOS2_inferred_clock  |  1000.000    993.392  |  No paths    -      |  No paths    -      |  No paths    -    
 oDDRx4|sclk_inferred_clock                            System                                                |  1000.000    997.875  |  No paths    -      |  No paths    -      |  No paths    -    
 oDDRx4|sclk_inferred_clock                            oDDRx4|sclk_inferred_clock                            |  1000.000    997.228  |  No paths    -      |  No paths    -      |  No paths    -    
-top|w_pixclk_inferred_clock                           System                                                |  142.857     138.905  |  No paths    -      |  No paths    -      |  No paths    -    
-top|w_pixclk_inferred_clock                           top|w_pixclk_inferred_clock                           |  142.857     133.217  |  No paths    -      |  No paths    -      |  No paths    -    
-top|w_pixclk_inferred_clock                           pll_pix2byte_YUV422_8bit_1lane|CLKOS2_inferred_clock  |  Diff grp    -        |  No paths    -      |  No paths    -      |  No paths    -    
+top|PIXCLK                                            System                                                |  1000.000    996.104  |  No paths    -      |  No paths    -      |  No paths    -    
+top|PIXCLK                                            top|PIXCLK                                            |  1000.000    994.104  |  No paths    -      |  No paths    -      |  No paths    -    
+top|PIXCLK                                            pll_pix2byte_YUV422_8bit_1lane|CLKOS2_inferred_clock  |  Diff grp    -        |  No paths    -      |  No paths    -      |  No paths    -    
 pll_pix2byte_YUV422_8bit_1lane|CLKOS2_inferred_clock  System                                                |  1000.000    995.521  |  No paths    -      |  No paths    -      |  No paths    -    
 pll_pix2byte_YUV422_8bit_1lane|CLKOS2_inferred_clock  pll_pix2byte_YUV422_8bit_1lane|CLKOS2_inferred_clock  |  1000.000    992.284  |  No paths    -      |  No paths    -      |  No paths    -    
 ====================================================================================================================================================================================================
@@ -521,14 +522,14 @@ Name           Reference           Constraint     Time        Time         Slack
                Clock                                                              
 ----------------------------------------------------------------------------------
 PIXCLK         NA                  NA             NA          NA           NA     
-PIXDATA[0]     NA                  NA             NA          NA           NA     
-PIXDATA[1]     NA                  NA             NA          NA           NA     
-PIXDATA[2]     NA                  NA             NA          NA           NA     
-PIXDATA[3]     NA                  NA             NA          NA           NA     
-PIXDATA[4]     NA                  NA             NA          NA           NA     
-PIXDATA[5]     NA                  NA             NA          NA           NA     
-PIXDATA[6]     NA                  NA             NA          NA           NA     
-PIXDATA[7]     NA                  NA             NA          NA           NA     
+PIXDATA[0]     System (rising)     NA             0.000       990.886      990.886
+PIXDATA[1]     System (rising)     NA             0.000       991.943      991.943
+PIXDATA[2]     System (rising)     NA             0.000       990.886      990.886
+PIXDATA[3]     System (rising)     NA             0.000       990.886      990.886
+PIXDATA[4]     System (rising)     NA             0.000       990.886      990.886
+PIXDATA[5]     System (rising)     NA             0.000       991.935      991.935
+PIXDATA[6]     System (rising)     NA             0.000       991.943      991.943
+PIXDATA[7]     System (rising)     NA             0.000       993.096      993.096
 reset_n        System (rising)     NA             0.000       997.244      997.244
 ==================================================================================
 
@@ -541,12 +542,12 @@ Name         Reference                                                         C
 ------------------------------------------------------------------------------------------------------------------------------
 D0           pll_pix2byte_YUV422_8bit_1lane|CLKOS2_inferred_clock (rising)     NA             4.479       1000.000     995.521
 DCK          pll_pix2byte_YUV422_8bit_1lane|CLKOS2_inferred_clock (rising)     NA             4.479       1000.000     995.521
-FV           top|w_pixclk_inferred_clock (rising)                              NA             3.720       142.857      139.137
+FV           top|PIXCLK (rising)                                               NA             3.784       1000.000     996.216
 LP0[0]       pll_pix2byte_YUV422_8bit_1lane|CLKOS2_inferred_clock (rising)     NA             4.233       1000.000     995.767
 LP0[1]       pll_pix2byte_YUV422_8bit_1lane|CLKOS2_inferred_clock (rising)     NA             4.233       1000.000     995.767
 LPCLK[0]     pll_pix2byte_YUV422_8bit_1lane|CLKOS2_inferred_clock (rising)     NA             4.233       1000.000     995.767
 LPCLK[1]     pll_pix2byte_YUV422_8bit_1lane|CLKOS2_inferred_clock (rising)     NA             4.233       1000.000     995.767
-LV           top|w_pixclk_inferred_clock (rising)                              NA             3.952       142.857      138.905
+LV           top|PIXCLK (rising)                                               NA             3.896       1000.000     996.104
 ==============================================================================================================================
 
 
@@ -564,30 +565,31 @@ Finished timing report (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01
 Resource Usage Report
 Part: lcmxo2_4000hc-6
 
-Register bits: 107 of 4320 (2%)
+Register bits: 89 of 4320 (2%)
 PIC Latch:       0
-I/O cells:       9
+I/O cells:       18
 
 
 Details:
-CCU2D:          48
+CCU2D:          36
 CLKDIVC:        1
 DPR16X4C:       4
 ECLKSYNCA:      2
 EHXPLLJ:        1
+FD1P3AX:        1
 FD1P3BX:        21
-FD1P3DX:        35
-FD1S3AX:        5
-FD1S3DX:        38
-FD1S3IX:        8
+FD1P3DX:        28
+FD1S3AX:        11
+FD1S3DX:        2
+FD1S3IX:        26
 GSR:            1
-IB:             1
-INV:            9
+IB:             10
+INV:            8
 OB:             6
 OBZ:            2
 ODDRX4B:        2
-ORCALUT4:       99
-OSCH:           1
+ORCALUT4:       83
+PFUMX:          1
 PUR:            1
 ROM16X1A:       2
 VHI:            5
@@ -599,7 +601,7 @@ Mapper successful!
 At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 31MB peak: 148MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sun Feb 18 00:18:45 2018
+# Thu Feb 22 19:05:57 2018
 
 ###########################################################]
 
@@ -619,16 +621,6 @@ Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
     <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="word_width"  />
     <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="lane_width"  />
     <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="poly"  />
-    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="mode"  />
-    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="V_SYNCH"  />
-    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="V_FRONT_PORCH"  />
-    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="H_BACK_PORCH"  />
-    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="H_SYNCH"  />
-    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="H_FRONT_PORCH"  />
-    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="v_total"  />
-    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="v_active"  />
-    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="h_total"  />
-    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="h_active"  />
     <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="p_LP11_clk_end"  />
     <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="p_LP00_clk_end"  />
     <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="p_HS00_clk_end"  />
@@ -667,15 +659,6 @@ Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
     <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="lane_width"  />
     <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="dt"  />
     <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="crc16"  />
-    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="h_active"  />
-    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="h_total"  />
-    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="v_active"  />
-    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="v_total"  />
-    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="H_FRONT_PORCH"  />
-    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="H_SYNCH"  />
-    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="V_FRONT_PORCH"  />
-    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="V_SYNCH"  />
-    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="mode"  />
     <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="lane_width"  />
     <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="reserved"  />
     <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="crc16"  />
@@ -712,18 +695,11 @@ Loading NGO design 'C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Paral
 Running DRC...
 
     <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_DPHY_TX_INST/u_oDDRx4/cdiv1" arg2="u_DPHY_TX_INST/u_oDDRx4/cdiv1"  />
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_colorbar_gen/un7_pixcnt_cry_9_0_COUT" arg2="u_colorbar_gen/un7_pixcnt_cry_9_0_COUT"  />
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_colorbar_gen/un7_pixcnt_cry_0_0_S0" arg2="u_colorbar_gen/un7_pixcnt_cry_0_0_S0"  />
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_colorbar_gen/un7_pixcnt_cry_0_0_S1" arg2="u_colorbar_gen/un7_pixcnt_cry_0_0_S1"  />
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_colorbar_gen/un2_linecnt_s_9_0_COUT" arg2="u_colorbar_gen/un2_linecnt_s_9_0_COUT"  />
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_colorbar_gen/un2_linecnt_s_9_0_S1" arg2="u_colorbar_gen/un2_linecnt_s_9_0_S1"  />
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_colorbar_gen/un2_linecnt_cry_0_0_S0" arg2="u_colorbar_gen/un2_linecnt_cry_0_0_S0"  />
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_colorbar_gen/color_cntr_s_0_COUT[11]" arg2="u_colorbar_gen/color_cntr_s_0_COUT[11]"  />
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_colorbar_gen/color_cntr_s_0_S1[11]" arg2="u_colorbar_gen/color_cntr_s_0_S1[11]"  />
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_colorbar_gen/color_cntr_cry_0_S0[0]" arg2="u_colorbar_gen/color_cntr_cry_0_S0[0]"  />
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_colorbar_gen/rstn_cnt_s_0_COUT[7]" arg2="u_colorbar_gen/rstn_cnt_s_0_COUT[7]"  />
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_colorbar_gen/rstn_cnt_s_0_S1[7]" arg2="u_colorbar_gen/rstn_cnt_s_0_S1[7]"  />
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_colorbar_gen/rstn_cnt_cry_0_S0[0]" arg2="u_colorbar_gen/rstn_cnt_cry_0_S0[0]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_astrohn_astir2/un1_pixcounter_5_s_11_0_COUT" arg2="u_astrohn_astir2/un1_pixcounter_5_s_11_0_COUT"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_astrohn_astir2/un1_pixcounter_5_s_11_0_S1" arg2="u_astrohn_astir2/un1_pixcounter_5_s_11_0_S1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_astrohn_astir2/un1_pixcounter_5_cry_0_0_S0" arg2="u_astrohn_astir2/un1_pixcounter_5_cry_0_0_S0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_astrohn_astir2/un1_linecount_1_cry_7_0_COUT" arg2="u_astrohn_astir2/un1_linecount_1_cry_7_0_COUT"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_astrohn_astir2/un1_linecount_1_cry_0_0_S0" arg2="u_astrohn_astir2/un1_linecount_1_cry_0_0_S0"  />
     <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_LP_HS_DELAY_CNTRL/hold_data_CF4_cry_0_COUT[3]" arg2="u_LP_HS_DELAY_CNTRL/hold_data_CF4_cry_0_COUT[3]"  />
     <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_LP_HS_DELAY_CNTRL/hold_data_CF4_cry_0_S0[0]" arg2="u_LP_HS_DELAY_CNTRL/hold_data_CF4_cry_0_S0[0]"  />
     <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_LP_HS_DELAY_CNTRL/hs_en_low_cnt_s_0_COUT[15]" arg2="u_LP_HS_DELAY_CNTRL/hs_en_low_cnt_s_0_COUT[15]"  />
@@ -734,26 +710,16 @@ Running DRC...
     <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_LP_HS_DELAY_CNTRL/hs_en_high_cnt_cry_0_S0[0]" arg2="u_LP_HS_DELAY_CNTRL/hs_en_high_cnt_cry_0_S0[0]"  />
     <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_LP_HS_DELAY_CNTRL/hs_extended_cry_0_COUT[3]" arg2="u_LP_HS_DELAY_CNTRL/hs_extended_cry_0_COUT[3]"  />
     <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_LP_HS_DELAY_CNTRL/hs_extended_cry_0_S0[0]" arg2="u_LP_HS_DELAY_CNTRL/hs_extended_cry_0_S0[0]"  />
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_OSCH_SEDSTDBY" arg2="u_OSCH_SEDSTDBY"  />
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="PIXCLK" arg2="PIXCLK"  />
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="PIXDATA[0]" arg2="PIXDATA[0]"  />
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="PIXDATA[1]" arg2="PIXDATA[1]"  />
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="PIXDATA[2]" arg2="PIXDATA[2]"  />
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="PIXDATA[3]" arg2="PIXDATA[3]"  />
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="PIXDATA[4]" arg2="PIXDATA[4]"  />
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="PIXDATA[5]" arg2="PIXDATA[5]"  />
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="PIXDATA[6]" arg2="PIXDATA[6]"  />
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="PIXDATA[7]" arg2="PIXDATA[7]"  />
     <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_BYTE_PACKETIZER/u_packetheader/un6_wc_end_flag_a_4_cry_0_0_S1" arg2="u_BYTE_PACKETIZER/u_packetheader/un6_wc_end_flag_a_4_cry_0_0_S1"  />
     <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_BYTE_PACKETIZER/u_packetheader/lpkt_cnt_cry_0_S0[0]" arg2="u_BYTE_PACKETIZER/u_packetheader/lpkt_cnt_cry_0_S0[0]"  />
     <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_BYTE_PACKETIZER/u_packetheader/lpkt_cnt_s_0_S1[15]" arg2="u_BYTE_PACKETIZER/u_packetheader/lpkt_cnt_s_0_S1[15]"  />
     <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_BYTE_PACKETIZER/u_packetheader/lpkt_cnt_s_0_COUT[15]" arg2="u_BYTE_PACKETIZER/u_packetheader/lpkt_cnt_s_0_COUT[15]"  />
     <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_BYTE_PACKETIZER/u_packetheader/un6_wc_end_flag_a_4_cry_0_0_S0" arg2="u_BYTE_PACKETIZER/u_packetheader/un6_wc_end_flag_a_4_cry_0_0_S0"  />
     <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_BYTE_PACKETIZER/u_packetheader/un6_wc_end_flag_a_4_cry_15_0_COUT" arg2="u_BYTE_PACKETIZER/u_packetheader/un6_wc_end_flag_a_4_cry_15_0_COUT"  />
-    <postMsg mid="1163101" type="Warning" dynamic="1" navigation="0" arg0="39"  />
+    <postMsg mid="1163101" type="Warning" dynamic="1" navigation="0" arg0="22"  />
 
 Design Results:
-    747 blocks expanded
+    708 blocks expanded
 Complete the first expansion.
 Writing 'Parallel2CSI2_Parallel2CSI2.ngd' ...
 Total CPU Time: 0 secs  
@@ -782,8 +748,6 @@ Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
 
 Part used: LCMXO2-4000HCCABGA256, Performance used: 6.
 
-    <postMsg mid="1100523" type="Warning" dynamic="2" navigation="2" arg0="C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_1lane_XO2_V6/impl/Parallel2CSI2.lpf(19): Semantic error in &quot;FREQUENCY NET &quot;PIXCLK_c&quot; 50.000000 MHz ;&quot;: " arg1="PIXCLK_c matches no clock nets in the design. " arg2="C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_1lane_XO2_V6/impl/Parallel2CSI2.lpf" arg3="19"  />
-    <postMsg mid="1104062" type="Warning" dynamic="2" navigation="0" arg0="" arg1="1 semantic error"  />
 Loading device for application map from file 'xo2c4000.nph' in environment: D:/FPGA/Lattice/diamond/3.8_x64/ispfpga.
 Package Status:                     Final          Version 1.44.
 
@@ -793,39 +757,27 @@ Removing unused logic...
 
 Optimizing...
 
-4 CCU2 constant inputs absorbed.
+2 CCU2 constant inputs absorbed.
 
-    <postMsg mid="52111110" type="Warning" dynamic="9" navigation="0" arg0="EHXPLLJ" arg1="u_pll_pix2byte_YUV422_8bit_1lane/PLLInst_0" arg2="CLKOP" arg3="108.000" arg4="7.000" arg5="1" arg6="4" arg7="CLKOP" arg8="5"  />
-    <postMsg mid="52111110" type="Warning" dynamic="9" navigation="0" arg0="EHXPLLJ" arg1="u_pll_pix2byte_YUV422_8bit_1lane/PLLInst_0" arg2="CLKOS" arg3="108.000" arg4="7.000" arg5="1" arg6="4" arg7="CLKOS" arg8="5"  />
-    <postMsg mid="52111110" type="Warning" dynamic="9" navigation="0" arg0="EHXPLLJ" arg1="u_pll_pix2byte_YUV422_8bit_1lane/PLLInst_0" arg2="CLKOS2" arg3="27.000" arg4="7.000" arg5="1" arg6="4" arg7="CLKOS2" arg8="20"  />
     <postMsg mid="51001027" type="Warning" dynamic="1" navigation="0" arg0="reset_n_c_i"  />
-    <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="PIXCLK"  />
-    <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="PIXDATA[7:0](7)"  />
-    <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="PIXDATA[7:0](6)"  />
-    <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="PIXDATA[7:0](5)"  />
-    <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="PIXDATA[7:0](4)"  />
-    <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="PIXDATA[7:0](3)"  />
-    <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="PIXDATA[7:0](2)"  />
-    <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="PIXDATA[7:0](1)"  />
-    <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="PIXDATA[7:0](0)"  />
 
 
 
 Design Summary:
-   Number of registers:    302 out of  4941 (6%)
-      PFU registers:          302 out of  4320 (7%)
+   Number of registers:    284 out of  4941 (6%)
+      PFU registers:          284 out of  4320 (7%)
       PIO registers:            0 out of   621 (0%)
-   Number of SLICEs:       254 out of  2160 (12%)
-      SLICEs as Logic/ROM:    230 out of  2160 (11%)
+   Number of SLICEs:       234 out of  2160 (11%)
+      SLICEs as Logic/ROM:    210 out of  2160 (10%)
       SLICEs as RAM:           24 out of  1620 (1%)
-      SLICEs as Carry:         80 out of  2160 (4%)
-   Number of LUT4s:        500 out of  4320 (12%)
-      Number used as logic LUTs:        292
+      SLICEs as Carry:         68 out of  2160 (3%)
+   Number of LUT4s:        459 out of  4320 (11%)
+      Number used as logic LUTs:        275
       Number used as distributed RAM:    48
-      Number used as ripple logic:      160
+      Number used as ripple logic:      136
       Number used as shift registers:     0
-   Number of PIO sites used: 11 + 4(JTAG) out of 207 (7%)
-      Number of PIO sites used for single ended IOs: 11
+   Number of PIO sites used: 20 + 4(JTAG) out of 207 (12%)
+      Number of PIO sites used for single ended IOs: 20
       Number of PIO sites used for differential IOs: 4 (represented by 2 PIO comps in NCD)
    Number of IDDR/ODDR/TDDR cells used: 2 out of 621 (0%)
       Number of IDDR cells:   0
@@ -844,7 +796,7 @@ Design Summary:
    EFB used :       No
    JTAG used :      No
    Readback used :  No
-   Oscillator used :  Yes
+   Oscillator used :  No
    Startup used :   No
    POR :            On
    Bandgap :        On
@@ -862,26 +814,26 @@ Design Summary:
       1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of distributed RAMs) + 2*(Number of ripple logic)
       2. Number of logic LUT4s does not include count of distributed RAM and ripple logic.
    Number of clocks:  7
-     Net w_pixclk: 36 loads, 36 rising, 0 falling (Driver: u_OSCH )
      Net u_DPHY_TX_INST/u_oDDRx4/eclkc: 1 loads, 1 rising, 0 falling (Driver: u_DPHY_TX_INST/u_oDDRx4/Inst4_ECLKSYNCA )
      Net u_DPHY_TX_INST/u_oDDRx4/sclk: 4 loads, 4 rising, 0 falling (Driver: u_DPHY_TX_INST/u_oDDRx4/Inst3_CLKDIVC )
      Net u_DPHY_TX_INST/u_oDDRx4/eclkd: 2 loads, 2 rising, 0 falling (Driver: u_DPHY_TX_INST/u_oDDRx4/Inst2_ECLKSYNCA )
      Net CLKOS: 1 loads, 1 rising, 0 falling (Driver: u_pll_pix2byte_YUV422_8bit_1lane/PLLInst_0 )
      Net CLKOP: 2 loads, 2 rising, 0 falling (Driver: u_pll_pix2byte_YUV422_8bit_1lane/PLLInst_0 )
+     Net PIXCLK_c: 27 loads, 27 rising, 0 falling (Driver: PIO PIXCLK )
      Net byte_clk: 154 loads, 154 rising, 0 falling (Driver: u_pll_pix2byte_YUV422_8bit_1lane/PLLInst_0 )
    Number of Clock Enables:  22
      Net u_DPHY_TX_INST/u_oDDRx4/FF_0_Q: 2 loads, 2 LSLICEs
-     Net u_colorbar_gen/rstn_cnt[7]: 4 loads, 4 LSLICEs
+     Net u_astrohn_astir2/un1_state24_2_0_a2_1: 1 loads, 1 LSLICEs
      Net u_LP_HS_DELAY_CNTRL/N_117_i: 9 loads, 9 LSLICEs
      Net u_LP_HS_DELAY_CNTRL/N_24: 1 loads, 1 LSLICEs
      Net u_LP_HS_DELAY_CNTRL/N_20: 1 loads, 1 LSLICEs
-     Net u_LP_HS_DELAY_CNTRL/N_28: 1 loads, 1 LSLICEs
+     Net u_LP_HS_DELAY_CNTRL/hsxx_clk_en55_i_0: 1 loads, 1 LSLICEs
      Net u_LP_HS_DELAY_CNTRL/hs_extendede: 3 loads, 3 LSLICEs
      Net u_LP_HS_DELAY_CNTRL/N_120_i: 9 loads, 9 LSLICEs
      Net u_LP_HS_DELAY_CNTRL/N_26: 1 loads, 1 LSLICEs
      Net u_LP_HS_DELAY_CNTRL/hs_clk_en58_i_0: 1 loads, 1 LSLICEs
      Net u_BYTE_PACKETIZER/w_edge_detect: 1 loads, 1 LSLICEs
-     Net u_BYTE_PACKETIZER/u_parallel2byte/un2_read_0_0: 4 loads, 0 LSLICEs
+     Net u_BYTE_PACKETIZER/u_parallel2byte/un2_read_0: 4 loads, 0 LSLICEs
      Net u_BYTE_PACKETIZER/u_parallel2byte/q_lv: 2 loads, 0 LSLICEs
      Net u_BYTE_PACKETIZER/byte_en: 8 loads, 8 LSLICEs
      Net u_BYTE_PACKETIZER/u_packetheader/un1_q_long_pkt_indicator_1_1_i: 5 loads, 5 LSLICEs
@@ -892,29 +844,29 @@ Design Summary:
      Net u_BYTE_PACKETIZER/u_packetheader/un3_q_wc_0: 8 loads, 8 LSLICEs
      Net u_BYTE_PACKETIZER/u_packetheader/un5_q_ECC_0: 3 loads, 3 LSLICEs
      Net u_BYTE_PACKETIZER/u_packetheader/un14_lpkt_cnt_En_i: 1 loads, 1 LSLICEs
-   Number of LSRs:  6
-     Net reset_n_c: 111 loads, 105 LSLICEs
+   Number of LSRs:  7
+     Net reset_n_c: 106 loads, 100 LSLICEs
      Net reset_n_c_i: 2 loads, 0 LSLICEs
-     Net u_colorbar_gen/rstn_cnt[7]: 23 loads, 23 LSLICEs
+     Net u_astrohn_astir2/pixcounter13: 7 loads, 7 LSLICEs
+     Net u_astrohn_astir2/un1_state_0_a2_3_a3: 5 loads, 5 LSLICEs
      Net hs_en: 4 loads, 4 LSLICEs
      Net u_BYTE_PACKETIZER/un1_w_edge_detect: 9 loads, 9 LSLICEs
      Net u_BYTE_PACKETIZER/u_packetheader/un1_q_bytepkt_en_0: 26 loads, 26 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
-     Net reset_n_c: 112 loads
-     Net u_colorbar_gen/rstn_cnt[7]: 29 loads
+     Net reset_n_c: 107 loads
      Net u_BYTE_PACKETIZER/u_packetheader/un1_q_bytepkt_en_0: 26 loads
      Net u_BYTE_PACKETIZER/u_packetheader/lpkt_cnt: 21 loads
      Net u_LP_HS_DELAY_CNTRL/tmp1[0]: 21 loads
-     Net LV_c: 19 loads
-     Net u_LP_HS_DELAY_CNTRL/N_36: 19 loads
-     Net u_LP_HS_DELAY_CNTRL/N_36_i: 17 loads
+     Net u_LP_HS_DELAY_CNTRL/N_17: 19 loads
+     Net u_LP_HS_DELAY_CNTRL/N_17_i: 17 loads
      Net u_LP_HS_DELAY_CNTRL/tmp1_i[1]: 16 loads
      Net u_LP_HS_DELAY_CNTRL/tmp3[2]: 16 loads
-    <postMsg mid="51001230" type="Warning" dynamic="1" navigation="0" arg0="C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_1lane_XO2_V6/impl/Parallel2CSI2.lpf"  />
+     Net u_LP_HS_DELAY_CNTRL/tmp3[3]: 16 loads
+     Net u_BYTE_PACKETIZER/u_parallel2byte/read_cntr[0]: 13 loads
  
 
-   Number of warnings:  16
+   Number of warnings:  1
    Number of errors:    0
 
 
@@ -932,7 +884,7 @@ Removing old design directory at request of -rem command line option to this pro
 Running par. Please wait . . .
 
 Lattice Place and Route Report for Design "Parallel2CSI2_Parallel2CSI2_map.ncd"
-Sun Feb 18 00:18:49 2018
+Thu Feb 22 19:06:01 2018
 
 PAR: Place And Route Diamond (64-bit) 3.8.0.115.3.
 Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_1lane_XO2_V6/impl/promote.xml -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF:parHold=0 Parallel2CSI2_Parallel2CSI2_map.ncd Parallel2CSI2_Parallel2CSI2.dir/5_1.ncd Parallel2CSI2_Parallel2CSI2.prf
@@ -956,13 +908,12 @@ License checked out.
 Ignore Preference Error(s):  True
 Device utilization summary:
 
-   PIO (prelim)   11+4(JTAG)/280     5% used
-                  11+4(JTAG)/207     7% bonded
+   PIO (prelim)   20+4(JTAG)/280     9% used
+                  20+4(JTAG)/207     12% bonded
    IOLOGIC            2/280          <1% used
 
-   SLICE            254/2160         11% used
+   SLICE            234/2160         10% used
 
-   OSC                1/1           100% used
    CLKDIV             1/4            25% used
    EBR                2/10           20% used
    PLL                1/2            50% used
@@ -970,31 +921,26 @@ Device utilization summary:
 
 
 INFO: Design contains EBR with ASYNC Reset Mode that has a limitation: The use of the EBR block asynchronous reset requires that certain timing be met between the clock and the reset within the memory block. See the device specific data sheet for additional details.
-Based on the preference: FREQUENCY NET "CLKOP" 200.000000 MHz ;
-A new generated preference: FREQUENCY NET "u_DPHY_TX_INST/u_oDDRx4/sclk" 50.000000 MHz ;
-    <postMsg mid="70061014" type="Warning" dynamic="1" navigation="0" arg0="u_pll_pix2byte_YUV422_8bit_1lane/PLLInst_0"  />
-    <postMsg mid="70061018" type="Warning" dynamic="7" navigation="0" arg0="CLKOP" arg1="u_pll_pix2byte_YUV422_8bit_1lane/PLLInst_0" arg2=" 200.0" arg3="   5.0" arg4="1000.0" arg5=" 200.0" arg6="   5.0"  />
-    <postMsg mid="70061018" type="Warning" dynamic="7" navigation="0" arg0="CLKOS" arg1="u_pll_pix2byte_YUV422_8bit_1lane/PLLInst_0" arg2=" 200.0" arg3="   5.0" arg4="1000.0" arg5=" 200.0" arg6="   5.0"  />
-    <postMsg mid="70061018" type="Warning" dynamic="7" navigation="0" arg0="CLKOS2" arg1="u_pll_pix2byte_YUV422_8bit_1lane/PLLInst_0" arg2="  50.0" arg3="  20.0" arg4="1000.0" arg5="  50.0" arg6="  20.0"  />
-Number of Signals: 916
-Number of Connections: 2294
+Based on the preference: FREQUENCY NET "CLKOP" 108.000000 MHz ;
+A new generated preference: FREQUENCY NET "u_DPHY_TX_INST/u_oDDRx4/sclk" 27.000000 MHz ;
+Number of Signals: 859
+Number of Connections: 2145
     <postMsg mid="61061045" type="Warning" dynamic="0" navigation="0"  />
 
 Pin Constraint Summary:
-   9 out of 9 pins locked (100% locked).
+   18 out of 18 pins locked (100% locked).
 
 The following 4 signals are selected to use the primary clock routing resources:
     CLKOP (driver: u_pll_pix2byte_YUV422_8bit_1lane/PLLInst_0, clk load #: 0)
     u_DPHY_TX_INST/u_oDDRx4/sclk (driver: u_DPHY_TX_INST/u_oDDRx4/Inst3_CLKDIVC, clk load #: 4)
     byte_clk (driver: u_pll_pix2byte_YUV422_8bit_1lane/PLLInst_0, clk load #: 154)
-    w_pixclk (driver: u_OSCH, clk load #: 36)
+    PIXCLK_c (driver: PIXCLK, clk load #: 27)
 
 
-The following 4 signals are selected to use the secondary clock routing resources:
-    reset_n_c (driver: reset_n, clk load #: 0, sr load #: 111, ce load #: 0)
-    u_colorbar_gen/rstn_cnt[7] (driver: SLICE_217, clk load #: 0, sr load #: 23, ce load #: 4)
-    u_BYTE_PACKETIZER/u_packetheader/un1_q_bytepkt_en_0 (driver: SLICE_288, clk load #: 0, sr load #: 26, ce load #: 0)
-    u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/rden_i (driver: SLICE_300, clk load #: 0, sr load #: 0, ce load #: 10)
+The following 3 signals are selected to use the secondary clock routing resources:
+    reset_n_c (driver: reset_n, clk load #: 0, sr load #: 106, ce load #: 0)
+    u_BYTE_PACKETIZER/u_packetheader/un1_q_bytepkt_en_0 (driver: SLICE_273, clk load #: 0, sr load #: 26, ce load #: 0)
+    u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/rden_i (driver: SLICE_284, clk load #: 0, sr load #: 0, ce load #: 10)
 
     <postMsg mid="61061008" type="Warning" dynamic="5" navigation="0" arg0="reset_n_c" arg1="Secondary" arg2="reset_n" arg3="J15" arg4="Secondary"  />
 No signal is selected as Global Set/Reset.
@@ -1003,20 +949,20 @@ Starting Placer Phase 0.
 Finished Placer Phase 0.  REAL time: 0 secs 
 
 Starting Placer Phase 1.
-..................
-Placer score = 90000.
+....................
+Placer score = 89438.
 Finished Placer Phase 1.  REAL time: 7 secs 
 
 Starting Placer Phase 2.
 .
-Placer score =  88826
+Placer score =  89301
 Finished Placer Phase 2.  REAL time: 7 secs 
 
 
 ------------------ Clock Report ------------------
 
 Global Clock Resources:
-  CLK_PIN    : 0 out of 8 (0%)
+  CLK_PIN    : 1 out of 8 (12%)
   General PIO: 1 out of 280 (0%)
   PLL        : 1 out of 2 (50%)
   DCM        : 0 out of 2 (0%)
@@ -1026,14 +972,13 @@ Quadrants All (TL, TR, BL, BR) - Global Clocks:
   PRIMARY "CLKOP" from CLKOP on comp "u_pll_pix2byte_YUV422_8bit_1lane/PLLInst_0" on PLL site "LPLL", clk load = 0
   PRIMARY "u_DPHY_TX_INST/u_oDDRx4/sclk" from CDIVX on comp "u_DPHY_TX_INST/u_oDDRx4/Inst3_CLKDIVC" on CLKDIV site "TCLKDIV0", clk load = 4
   PRIMARY "byte_clk" from CLKOS2 on comp "u_pll_pix2byte_YUV422_8bit_1lane/PLLInst_0" on PLL site "LPLL", clk load = 154
-  PRIMARY "w_pixclk" from OSC on comp "u_OSCH" on site "OSC", clk load = 36
-  SECONDARY "reset_n_c" from comp "reset_n" on PIO site "J15 (PR13A)", clk load = 0, ce load = 0, sr load = 111
-  SECONDARY "u_colorbar_gen/rstn_cnt[7]" from Q0 on comp "SLICE_217" on site "R12C15C", clk load = 0, ce load = 4, sr load = 23
-  SECONDARY "u_BYTE_PACKETIZER/u_packetheader/un1_q_bytepkt_en_0" from F1 on comp "SLICE_288" on site "R12C17B", clk load = 0, ce load = 0, sr load = 26
-  SECONDARY "u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/rden_i" from F1 on comp "SLICE_300" on site "R12C15A", clk load = 0, ce load = 10, sr load = 0
+  PRIMARY "PIXCLK_c" from comp "PIXCLK" on CLK_PIN site "H14 (PR10A)", clk load = 27
+  SECONDARY "reset_n_c" from comp "reset_n" on PIO site "J15 (PR13A)", clk load = 0, ce load = 0, sr load = 106
+  SECONDARY "u_BYTE_PACKETIZER/u_packetheader/un1_q_bytepkt_en_0" from F1 on comp "SLICE_273" on site "R12C17D", clk load = 0, ce load = 0, sr load = 26
+  SECONDARY "u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/rden_i" from F1 on comp "SLICE_284" on site "R12C17B", clk load = 0, ce load = 10, sr load = 0
 
   PRIMARY  : 4 out of 8 (50%)
-  SECONDARY: 4 out of 8 (50%)
+  SECONDARY: 3 out of 8 (37%)
 
 Edge Clocks:
   ECLK "u_DPHY_TX_INST/u_oDDRx4/eclkd": TECLK0
@@ -1045,33 +990,33 @@ Edge Clocks:
 
 
 I/O Usage Summary (final):
-   11 + 4(JTAG) out of 280 (5.4%) PIO sites used.
-   11 + 4(JTAG) out of 207 (7.2%) bonded PIO sites used.
-   Number of PIO comps: 9; differential: 2.
+   20 + 4(JTAG) out of 280 (8.6%) PIO sites used.
+   20 + 4(JTAG) out of 207 (11.6%) bonded PIO sites used.
+   Number of PIO comps: 18; differential: 2.
    Number of Vref pins used: 0.
 
 I/O Bank Usage Summary:
-+----------+---------------+------------+-----------+
-| I/O Bank | Usage         | Bank Vccio | Bank Vref |
-+----------+---------------+------------+-----------+
-| 0        | 4 / 51 (  7%) | 2.5V       | -         |
-| 1        | 3 / 52 (  5%) | 2.5V       | -         |
-| 2        | 0 / 52 (  0%) | -          | -         |
-| 3        | 0 / 16 (  0%) | -          | -         |
-| 4        | 0 / 16 (  0%) | -          | -         |
-| 5        | 4 / 20 ( 20%) | 1.2V       | -         |
-+----------+---------------+------------+-----------+
++----------+----------------+------------+-----------+
+| I/O Bank | Usage          | Bank Vccio | Bank Vref |
++----------+----------------+------------+-----------+
+| 0        | 4 / 51 (  7%)  | 2.5V       | -         |
+| 1        | 12 / 52 ( 23%) | 2.5V       | -         |
+| 2        | 0 / 52 (  0%)  | -          | -         |
+| 3        | 0 / 16 (  0%)  | -          | -         |
+| 4        | 0 / 16 (  0%)  | -          | -         |
+| 5        | 4 / 20 ( 20%)  | 1.2V       | -         |
++----------+----------------+------------+-----------+
 
 Total placer CPU time: 7 secs 
 
 Dumping design to file Parallel2CSI2_Parallel2CSI2.dir/5_1.ncd.
 
-0 connections routed; 2294 unrouted.
+0 connections routed; 2145 unrouted.
 Starting router resource preassignment
 
 Completed router resource preassignment. Real time: 8 secs 
 
-Start NBR router at 00:18:57 02/18/18
+Start NBR router at 19:06:09 02/22/18
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -1086,54 +1031,48 @@ Note: NBR uses a different method to calculate timing slacks. The
       your design.                                               
 *****************************************************************
 
-Start NBR special constraint process at 00:18:57 02/18/18
+Start NBR special constraint process at 19:06:09 02/22/18
 
-Start NBR section for initial routing at 00:18:57 02/18/18
-Level 1, iteration 1
-0(0.00%) conflict; 1559(67.96%) untouched conns; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 8.262ns/0.000ns; real time: 8 secs 
-Level 2, iteration 1
-0(0.00%) conflict; 1559(67.96%) untouched conns; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 8.262ns/0.000ns; real time: 8 secs 
-Level 3, iteration 1
-0(0.00%) conflict; 1559(67.96%) untouched conns; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 8.262ns/0.000ns; real time: 8 secs 
+Start NBR section for initial routing at 19:06:10 02/22/18
 Level 4, iteration 1
-65(0.03%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 8.262ns/0.000ns; real time: 9 secs 
+86(0.04%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 16.780ns/0.000ns; real time: 9 secs 
 
 Info: Initial congestion level at 75% usage is 0
 Info: Initial congestion area  at 75% usage is 0 (0.00%)
 
-Start NBR section for normal routing at 00:18:58 02/18/18
+Start NBR section for normal routing at 19:06:10 02/22/18
 Level 4, iteration 1
-35(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 8.262ns/0.000ns; real time: 9 secs 
+46(0.02%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 16.780ns/0.000ns; real time: 9 secs 
 Level 4, iteration 2
-21(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 8.262ns/0.000ns; real time: 9 secs 
+20(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 16.780ns/0.000ns; real time: 9 secs 
 Level 4, iteration 3
-4(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 8.262ns/0.000ns; real time: 9 secs 
+5(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 16.780ns/0.000ns; real time: 9 secs 
 Level 4, iteration 4
-1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 8.262ns/0.000ns; real time: 9 secs 
+3(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 16.780ns/0.000ns; real time: 9 secs 
 Level 4, iteration 5
-1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 8.262ns/0.000ns; real time: 9 secs 
+3(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 16.780ns/0.000ns; real time: 9 secs 
 Level 4, iteration 6
-1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 8.262ns/0.000ns; real time: 9 secs 
+2(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 16.780ns/0.000ns; real time: 9 secs 
 Level 4, iteration 7
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 16.780ns/0.000ns; real time: 9 secs 
+Level 4, iteration 8
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 8.262ns/0.000ns; real time: 9 secs 
+Estimated worst slack/total negative slack<setup>: 16.780ns/0.000ns; real time: 9 secs 
 
-Start NBR section for re-routing at 00:18:58 02/18/18
+Start NBR section for re-routing at 19:06:10 02/22/18
 Level 4, iteration 1
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 8.262ns/0.000ns; real time: 9 secs 
+Estimated worst slack/total negative slack<setup>: 16.780ns/0.000ns; real time: 10 secs 
 
-Start NBR section for post-routing at 00:18:58 02/18/18
+Start NBR section for post-routing at 19:06:11 02/22/18
 
 End NBR router with 0 unrouted connection
 
@@ -1141,7 +1080,7 @@ NBR Summary
 -----------
   Number of unrouted connections : 0 (0.00%)
   Number of connections with timing violations : 0 (0.00%)
-  Estimated worst slack<setup> : 8.262ns
+  Estimated worst slack<setup> : 16.780ns
   Timing score<setup> : 0
 -----------
 Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
@@ -1151,7 +1090,7 @@ Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored
 Total CPU time 10 secs 
 Total REAL time: 10 secs 
 Completely routed.
-End of route.  2294 routed (100.00%); 0 unrouted.
+End of route.  2145 routed (100.00%); 0 unrouted.
 
 Timing score: 0 
 
@@ -1160,7 +1099,7 @@ Dumping design to file Parallel2CSI2_Parallel2CSI2.dir/5_1.ncd.
 
 PAR_SUMMARY::Run status = completed
 PAR_SUMMARY::Number of unrouted conns = 0
-PAR_SUMMARY::Worst  slack<setup/<ns>> = 10.213
+PAR_SUMMARY::Worst  slack<setup/<ns>> = 17.667
 PAR_SUMMARY::Timing score<setup/<ns>> = 0.000
 PAR_SUMMARY::Worst  slack<hold /<ns>> = <n/a>
 PAR_SUMMARY::Timing score<hold /<ns>> = <n/a>

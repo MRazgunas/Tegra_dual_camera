@@ -27,10 +27,10 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 <data>992.284</data>
 </row>
 <row>
-<data>top|w_pixclk_inferred_clock</data>
-<data>7.0 MHz</data>
-<data>103.7 MHz</data>
-<data>133.217</data>
+<data>top|PIXCLK</data>
+<data>1.0 MHz</data>
+<data>169.6 MHz</data>
+<data>994.104</data>
 </row>
 <row>
 <data>System</data>

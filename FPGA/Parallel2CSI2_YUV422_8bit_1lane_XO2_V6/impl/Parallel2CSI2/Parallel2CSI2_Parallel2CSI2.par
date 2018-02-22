@@ -4,7 +4,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
-Sun Feb 18 00:18:49 2018
+Thu Feb 22 19:06:01 2018
 
 D:/FPGA/Lattice/diamond/3.8_x64/ispfpga\bin\nt64\par -f
 Parallel2CSI2_Parallel2CSI2.p2t Parallel2CSI2_Parallel2CSI2_map.ncd
@@ -17,7 +17,7 @@ Preference file: Parallel2CSI2_Parallel2CSI2.prf.
 Level/       Number       Worst        Timing       Worst        Timing       Run          NCD
 Cost [ncd]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Time         Status
 ----------   --------     -----        ------       -----------  -----------  ----         ------
-5_1   *      0            10.213       0            -            -            10           Complete
+5_1   *      0            17.667       0            -            -            10           Complete
 
 
 * : Design saved.
@@ -27,7 +27,7 @@ Total (real) run time for 1-seed: 10 secs
 par done!
 
 Lattice Place and Route Report for Design "Parallel2CSI2_Parallel2CSI2_map.ncd"
-Sun Feb 18 00:18:49 2018
+Thu Feb 22 19:06:01 2018
 
 PAR: Place And Route Diamond (64-bit) 3.8.0.115.3.
 Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_1lane_XO2_V6/impl/promote.xml -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF:parHold=0 Parallel2CSI2_Parallel2CSI2_map.ncd Parallel2CSI2_Parallel2CSI2.dir/5_1.ncd Parallel2CSI2_Parallel2CSI2.prf
@@ -51,13 +51,12 @@ License checked out.
 Ignore Preference Error(s):  True
 Device utilization summary:
 
-   PIO (prelim)   11+4(JTAG)/280     5% used
-                  11+4(JTAG)/207     7% bonded
+   PIO (prelim)   20+4(JTAG)/280     9% used
+                  20+4(JTAG)/207     12% bonded
    IOLOGIC            2/280          <1% used
 
-   SLICE            254/2160         11% used
+   SLICE            234/2160         10% used
 
-   OSC                1/1           100% used
    CLKDIV             1/4            25% used
    EBR                2/10           20% used
    PLL                1/2            50% used
@@ -65,35 +64,26 @@ Device utilization summary:
 
 
 INFO: Design contains EBR with ASYNC Reset Mode that has a limitation: The use of the EBR block asynchronous reset requires that certain timing be met between the clock and the reset within the memory block. See the device specific data sheet for additional details.
-Based on the preference: FREQUENCY NET "CLKOP" 200.000000 MHz ;
-A new generated preference: FREQUENCY NET "u_DPHY_TX_INST/u_oDDRx4/sclk" 50.000000 MHz ;
-WARNING - par: Input and feedback clock frequencies do not match their divider settings for u_pll_pix2byte_YUV422_8bit_1lane/PLLInst_0. If you desire to change the PLL frequency settings, please do so by regenerating your PLL module. 
-
-WARNING - par: Output clock frequency on pin CLKOP of u_pll_pix2byte_YUV422_8bit_1lane/PLLInst_0 is  200.0 MHz. With divider    5.0, this requires the internal VCO frequency to be  1000.0 MHz ( 200.0 MHz x    5.0), which is outside the VCO valid range [400, 800] MHz.
-
-WARNING - par: Output clock frequency on pin CLKOS of u_pll_pix2byte_YUV422_8bit_1lane/PLLInst_0 is  200.0 MHz. With divider    5.0, this requires the internal VCO frequency to be  1000.0 MHz ( 200.0 MHz x    5.0), which is outside the VCO valid range [400, 800] MHz.
-
-WARNING - par: Output clock frequency on pin CLKOS2 of u_pll_pix2byte_YUV422_8bit_1lane/PLLInst_0 is   50.0 MHz. With divider   20.0, this requires the internal VCO frequency to be  1000.0 MHz (  50.0 MHz x   20.0), which is outside the VCO valid range [400, 800] MHz.
-
-Number of Signals: 916
-Number of Connections: 2294
+Based on the preference: FREQUENCY NET "CLKOP" 108.000000 MHz ;
+A new generated preference: FREQUENCY NET "u_DPHY_TX_INST/u_oDDRx4/sclk" 27.000000 MHz ;
+Number of Signals: 859
+Number of Connections: 2145
 WARNING - par: The SN pin is not available for use as a general purpose I/O pin when the SLAVE_SPI_PORT attribute is enabled.  The SN pin should be tied high with an external pull-up if you are not using the Slave SPI port for configuration.
 
 Pin Constraint Summary:
-   9 out of 9 pins locked (100% locked).
+   18 out of 18 pins locked (100% locked).
 
 The following 4 signals are selected to use the primary clock routing resources:
     CLKOP (driver: u_pll_pix2byte_YUV422_8bit_1lane/PLLInst_0, clk load #: 0)
     u_DPHY_TX_INST/u_oDDRx4/sclk (driver: u_DPHY_TX_INST/u_oDDRx4/Inst3_CLKDIVC, clk load #: 4)
     byte_clk (driver: u_pll_pix2byte_YUV422_8bit_1lane/PLLInst_0, clk load #: 154)
-    w_pixclk (driver: u_OSCH, clk load #: 36)
+    PIXCLK_c (driver: PIXCLK, clk load #: 27)
 
 
-The following 4 signals are selected to use the secondary clock routing resources:
-    reset_n_c (driver: reset_n, clk load #: 0, sr load #: 111, ce load #: 0)
-    u_colorbar_gen/rstn_cnt[7] (driver: SLICE_217, clk load #: 0, sr load #: 23, ce load #: 4)
-    u_BYTE_PACKETIZER/u_packetheader/un1_q_bytepkt_en_0 (driver: SLICE_288, clk load #: 0, sr load #: 26, ce load #: 0)
-    u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/rden_i (driver: SLICE_300, clk load #: 0, sr load #: 0, ce load #: 10)
+The following 3 signals are selected to use the secondary clock routing resources:
+    reset_n_c (driver: reset_n, clk load #: 0, sr load #: 106, ce load #: 0)
+    u_BYTE_PACKETIZER/u_packetheader/un1_q_bytepkt_en_0 (driver: SLICE_273, clk load #: 0, sr load #: 26, ce load #: 0)
+    u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/rden_i (driver: SLICE_284, clk load #: 0, sr load #: 0, ce load #: 10)
 
 WARNING - par: Signal "reset_n_c" is selected to use Secondary clock resources. However, its driver comp "reset_n" is located at "J15", which is not a dedicated pin for connecting to Secondary clock resources. General routing has to be used to route this signal, and it might suffer from excessive delay or skew.
 No signal is selected as Global Set/Reset.
@@ -102,20 +92,20 @@ Starting Placer Phase 0.
 Finished Placer Phase 0.  REAL time: 0 secs 
 
 Starting Placer Phase 1.
-..................
-Placer score = 90000.
+....................
+Placer score = 89438.
 Finished Placer Phase 1.  REAL time: 7 secs 
 
 Starting Placer Phase 2.
 .
-Placer score =  88826
+Placer score =  89301
 Finished Placer Phase 2.  REAL time: 7 secs 
 
 
 ------------------ Clock Report ------------------
 
 Global Clock Resources:
-  CLK_PIN    : 0 out of 8 (0%)
+  CLK_PIN    : 1 out of 8 (12%)
   General PIO: 1 out of 280 (0%)
   PLL        : 1 out of 2 (50%)
   DCM        : 0 out of 2 (0%)
@@ -125,14 +115,13 @@ Quadrants All (TL, TR, BL, BR) - Global Clocks:
   PRIMARY "CLKOP" from CLKOP on comp "u_pll_pix2byte_YUV422_8bit_1lane/PLLInst_0" on PLL site "LPLL", clk load = 0
   PRIMARY "u_DPHY_TX_INST/u_oDDRx4/sclk" from CDIVX on comp "u_DPHY_TX_INST/u_oDDRx4/Inst3_CLKDIVC" on CLKDIV site "TCLKDIV0", clk load = 4
   PRIMARY "byte_clk" from CLKOS2 on comp "u_pll_pix2byte_YUV422_8bit_1lane/PLLInst_0" on PLL site "LPLL", clk load = 154
-  PRIMARY "w_pixclk" from OSC on comp "u_OSCH" on site "OSC", clk load = 36
-  SECONDARY "reset_n_c" from comp "reset_n" on PIO site "J15 (PR13A)", clk load = 0, ce load = 0, sr load = 111
-  SECONDARY "u_colorbar_gen/rstn_cnt[7]" from Q0 on comp "SLICE_217" on site "R12C15C", clk load = 0, ce load = 4, sr load = 23
-  SECONDARY "u_BYTE_PACKETIZER/u_packetheader/un1_q_bytepkt_en_0" from F1 on comp "SLICE_288" on site "R12C17B", clk load = 0, ce load = 0, sr load = 26
-  SECONDARY "u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/rden_i" from F1 on comp "SLICE_300" on site "R12C15A", clk load = 0, ce load = 10, sr load = 0
+  PRIMARY "PIXCLK_c" from comp "PIXCLK" on CLK_PIN site "H14 (PR10A)", clk load = 27
+  SECONDARY "reset_n_c" from comp "reset_n" on PIO site "J15 (PR13A)", clk load = 0, ce load = 0, sr load = 106
+  SECONDARY "u_BYTE_PACKETIZER/u_packetheader/un1_q_bytepkt_en_0" from F1 on comp "SLICE_273" on site "R12C17D", clk load = 0, ce load = 0, sr load = 26
+  SECONDARY "u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/rden_i" from F1 on comp "SLICE_284" on site "R12C17B", clk load = 0, ce load = 10, sr load = 0
 
   PRIMARY  : 4 out of 8 (50%)
-  SECONDARY: 4 out of 8 (50%)
+  SECONDARY: 3 out of 8 (37%)
 
 Edge Clocks:
   ECLK "u_DPHY_TX_INST/u_oDDRx4/eclkd": TECLK0
@@ -144,33 +133,33 @@ Edge Clocks:
 
 
 I/O Usage Summary (final):
-   11 + 4(JTAG) out of 280 (5.4%) PIO sites used.
-   11 + 4(JTAG) out of 207 (7.2%) bonded PIO sites used.
-   Number of PIO comps: 9; differential: 2.
+   20 + 4(JTAG) out of 280 (8.6%) PIO sites used.
+   20 + 4(JTAG) out of 207 (11.6%) bonded PIO sites used.
+   Number of PIO comps: 18; differential: 2.
    Number of Vref pins used: 0.
 
 I/O Bank Usage Summary:
-+----------+---------------+------------+-----------+
-| I/O Bank | Usage         | Bank Vccio | Bank Vref |
-+----------+---------------+------------+-----------+
-| 0        | 4 / 51 (  7%) | 2.5V       | -         |
-| 1        | 3 / 52 (  5%) | 2.5V       | -         |
-| 2        | 0 / 52 (  0%) | -          | -         |
-| 3        | 0 / 16 (  0%) | -          | -         |
-| 4        | 0 / 16 (  0%) | -          | -         |
-| 5        | 4 / 20 ( 20%) | 1.2V       | -         |
-+----------+---------------+------------+-----------+
++----------+----------------+------------+-----------+
+| I/O Bank | Usage          | Bank Vccio | Bank Vref |
++----------+----------------+------------+-----------+
+| 0        | 4 / 51 (  7%)  | 2.5V       | -         |
+| 1        | 12 / 52 ( 23%) | 2.5V       | -         |
+| 2        | 0 / 52 (  0%)  | -          | -         |
+| 3        | 0 / 16 (  0%)  | -          | -         |
+| 4        | 0 / 16 (  0%)  | -          | -         |
+| 5        | 4 / 20 ( 20%)  | 1.2V       | -         |
++----------+----------------+------------+-----------+
 
 Total placer CPU time: 7 secs 
 
 Dumping design to file Parallel2CSI2_Parallel2CSI2.dir/5_1.ncd.
 
-0 connections routed; 2294 unrouted.
+0 connections routed; 2145 unrouted.
 Starting router resource preassignment
 
 Completed router resource preassignment. Real time: 8 secs 
 
-Start NBR router at 00:18:57 02/18/18
+Start NBR router at 19:06:09 02/22/18
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -185,54 +174,48 @@ Note: NBR uses a different method to calculate timing slacks. The
       your design.                                               
 *****************************************************************
 
-Start NBR special constraint process at 00:18:57 02/18/18
+Start NBR special constraint process at 19:06:09 02/22/18
 
-Start NBR section for initial routing at 00:18:57 02/18/18
-Level 1, iteration 1
-0(0.00%) conflict; 1559(67.96%) untouched conns; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 8.262ns/0.000ns; real time: 8 secs 
-Level 2, iteration 1
-0(0.00%) conflict; 1559(67.96%) untouched conns; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 8.262ns/0.000ns; real time: 8 secs 
-Level 3, iteration 1
-0(0.00%) conflict; 1559(67.96%) untouched conns; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 8.262ns/0.000ns; real time: 8 secs 
+Start NBR section for initial routing at 19:06:10 02/22/18
 Level 4, iteration 1
-65(0.03%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 8.262ns/0.000ns; real time: 9 secs 
+86(0.04%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 16.780ns/0.000ns; real time: 9 secs 
 
 Info: Initial congestion level at 75% usage is 0
 Info: Initial congestion area  at 75% usage is 0 (0.00%)
 
-Start NBR section for normal routing at 00:18:58 02/18/18
+Start NBR section for normal routing at 19:06:10 02/22/18
 Level 4, iteration 1
-35(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 8.262ns/0.000ns; real time: 9 secs 
+46(0.02%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 16.780ns/0.000ns; real time: 9 secs 
 Level 4, iteration 2
-21(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 8.262ns/0.000ns; real time: 9 secs 
+20(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 16.780ns/0.000ns; real time: 9 secs 
 Level 4, iteration 3
-4(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 8.262ns/0.000ns; real time: 9 secs 
+5(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 16.780ns/0.000ns; real time: 9 secs 
 Level 4, iteration 4
-1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 8.262ns/0.000ns; real time: 9 secs 
+3(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 16.780ns/0.000ns; real time: 9 secs 
 Level 4, iteration 5
-1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 8.262ns/0.000ns; real time: 9 secs 
+3(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 16.780ns/0.000ns; real time: 9 secs 
 Level 4, iteration 6
-1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 8.262ns/0.000ns; real time: 9 secs 
+2(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 16.780ns/0.000ns; real time: 9 secs 
 Level 4, iteration 7
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 16.780ns/0.000ns; real time: 9 secs 
+Level 4, iteration 8
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 8.262ns/0.000ns; real time: 9 secs 
+Estimated worst slack/total negative slack<setup>: 16.780ns/0.000ns; real time: 9 secs 
 
-Start NBR section for re-routing at 00:18:58 02/18/18
+Start NBR section for re-routing at 19:06:10 02/22/18
 Level 4, iteration 1
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 8.262ns/0.000ns; real time: 9 secs 
+Estimated worst slack/total negative slack<setup>: 16.780ns/0.000ns; real time: 10 secs 
 
-Start NBR section for post-routing at 00:18:58 02/18/18
+Start NBR section for post-routing at 19:06:11 02/22/18
 
 End NBR router with 0 unrouted connection
 
@@ -240,7 +223,7 @@ NBR Summary
 -----------
   Number of unrouted connections : 0 (0.00%)
   Number of connections with timing violations : 0 (0.00%)
-  Estimated worst slack<setup> : 8.262ns
+  Estimated worst slack<setup> : 16.780ns
   Timing score<setup> : 0
 -----------
 Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
@@ -250,7 +233,7 @@ Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored
 Total CPU time 10 secs 
 Total REAL time: 10 secs 
 Completely routed.
-End of route.  2294 routed (100.00%); 0 unrouted.
+End of route.  2145 routed (100.00%); 0 unrouted.
 
 Timing score: 0 
 
@@ -262,7 +245,7 @@ All signals are completely routed.
 
 PAR_SUMMARY::Run status = completed
 PAR_SUMMARY::Number of unrouted conns = 0
-PAR_SUMMARY::Worst  slack<setup/<ns>> = 10.213
+PAR_SUMMARY::Worst  slack<setup/<ns>> = 17.667
 PAR_SUMMARY::Timing score<setup/<ns>> = 0.000
 PAR_SUMMARY::Worst  slack<hold /<ns>> = <n/a>
 PAR_SUMMARY::Timing score<hold /<ns>> = <n/a>
