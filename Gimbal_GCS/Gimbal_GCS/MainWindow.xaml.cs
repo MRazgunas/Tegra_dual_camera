@@ -70,7 +70,6 @@ namespace Gimbal_GCS
             {
                 btnZoomOut_Click(null, null);
             }
-
         }
 
         private void ConnectMenu_Click(object sender, RoutedEventArgs e)
