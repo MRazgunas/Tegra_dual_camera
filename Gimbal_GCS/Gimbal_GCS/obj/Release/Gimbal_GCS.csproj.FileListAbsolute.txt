@@ -1,0 +1,16 @@
+C:\Users\matas\Documents\GitHub\Tegra_dual_camera\Gimbal_GCS\Gimbal_GCS\bin\Release\Gimbal_GCS.exe.config
+C:\Users\matas\Documents\GitHub\Tegra_dual_camera\Gimbal_GCS\Gimbal_GCS\bin\Release\Gimbal_GCS.exe
+C:\Users\matas\Documents\GitHub\Tegra_dual_camera\Gimbal_GCS\Gimbal_GCS\bin\Release\Gimbal_GCS.pdb
+C:\Users\matas\Documents\GitHub\Tegra_dual_camera\Gimbal_GCS\Gimbal_GCS\bin\Release\M2Mqtt.Net.dll
+C:\Users\matas\Documents\GitHub\Tegra_dual_camera\Gimbal_GCS\Gimbal_GCS\bin\Release\M2Mqtt.Net.pdb
+C:\Users\matas\Documents\GitHub\Tegra_dual_camera\Gimbal_GCS\Gimbal_GCS\obj\Release\MainWindow.g.cs
+C:\Users\matas\Documents\GitHub\Tegra_dual_camera\Gimbal_GCS\Gimbal_GCS\obj\Release\App.g.cs
+C:\Users\matas\Documents\GitHub\Tegra_dual_camera\Gimbal_GCS\Gimbal_GCS\obj\Release\Gimbal_GCS_MarkupCompile.cache
+C:\Users\matas\Documents\GitHub\Tegra_dual_camera\Gimbal_GCS\Gimbal_GCS\obj\Release\Gimbal_GCS_MarkupCompile.lref
+C:\Users\matas\Documents\GitHub\Tegra_dual_camera\Gimbal_GCS\Gimbal_GCS\obj\Release\MainWindow.baml
+C:\Users\matas\Documents\GitHub\Tegra_dual_camera\Gimbal_GCS\Gimbal_GCS\obj\Release\Gimbal_GCS.g.resources
+C:\Users\matas\Documents\GitHub\Tegra_dual_camera\Gimbal_GCS\Gimbal_GCS\obj\Release\Gimbal_GCS.Properties.Resources.resources
+C:\Users\matas\Documents\GitHub\Tegra_dual_camera\Gimbal_GCS\Gimbal_GCS\obj\Release\Gimbal_GCS.csproj.GenerateResource.Cache
+C:\Users\matas\Documents\GitHub\Tegra_dual_camera\Gimbal_GCS\Gimbal_GCS\obj\Release\Gimbal_GCS.csproj.CoreCompileInputs.cache
+C:\Users\matas\Documents\GitHub\Tegra_dual_camera\Gimbal_GCS\Gimbal_GCS\obj\Release\Gimbal_GCS.exe
+C:\Users\matas\Documents\GitHub\Tegra_dual_camera\Gimbal_GCS\Gimbal_GCS\obj\Release\Gimbal_GCS.pdb

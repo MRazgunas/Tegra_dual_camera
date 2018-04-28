@@ -632,24 +632,24 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL249 :&quot;C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_4lane_XO2_V6_SONY_RGB\rtl\sony_block_cam_interface.v&quot;:22:0:22:5|Initial value is not supported on state machine state</Dynamic>
+            <Dynamic>CL249 :&quot;C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_4lane_XO2_V6_SONY_RGB\rtl\sony_block_cam_interface.v&quot;:45:0:45:5|Initial value is not supported on state machine state</Dynamic>
             <Navigation>CL249</Navigation>
             <Navigation>C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_4lane_XO2_V6_SONY_RGB\rtl\sony_block_cam_interface.v</Navigation>
-            <Navigation>22</Navigation>
+            <Navigation>45</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>22</Navigation>
+            <Navigation>45</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Initial value is not supported on state machine state</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL249 :&quot;C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_4lane_XO2_V6_SONY_RGB\rtl\sony_block_cam_interface.v&quot;:22:0:22:5|Initial value is not supported on state machine frame_state</Dynamic>
+            <Dynamic>CL249 :&quot;C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_4lane_XO2_V6_SONY_RGB\rtl\sony_block_cam_interface.v&quot;:45:0:45:5|Initial value is not supported on state machine frame_state</Dynamic>
             <Navigation>CL249</Navigation>
             <Navigation>C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_4lane_XO2_V6_SONY_RGB\rtl\sony_block_cam_interface.v</Navigation>
-            <Navigation>22</Navigation>
+            <Navigation>45</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>22</Navigation>
+            <Navigation>45</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Initial value is not supported on state machine frame_state</Navigation>
         </Message>
@@ -819,24 +819,24 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>MT529 :&quot;c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_4lane_xo2_v6_sony_rgb\rtl\sony_block_cam_interface.v&quot;:22:0:22:5|Found inferred clock top|PIXCLK which controls 31 sequential elements including u_sony_block_to_yuv422_csi.w_fv. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
+            <Dynamic>MT529 :&quot;c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_4lane_xo2_v6_sony_rgb\rtl\sony_block_cam_interface.v&quot;:45:0:45:5|Found inferred clock top|PIXCLK which controls 31 sequential elements including u_sony_block_to_yuv422_csi.w_fv. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
             <Navigation>MT529</Navigation>
             <Navigation>c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_4lane_xo2_v6_sony_rgb\rtl\sony_block_cam_interface.v</Navigation>
-            <Navigation>22</Navigation>
+            <Navigation>45</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>22</Navigation>
+            <Navigation>45</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Found inferred clock top|PIXCLK which controls 31 sequential elements including u_sony_block_to_yuv422_csi.w_fv. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>MT529 :&quot;c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_4lane_xo2_v6_sony_rgb\rtl\sony_block_cam_interface.v&quot;:88:0:88:5|Found inferred clock pll_sony_block_cam_interface|CLKOP_inferred_clock which controls 8 sequential elements including u_sony_block_to_yuv422_csi.data_out[7:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
+            <Dynamic>MT529 :&quot;c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_4lane_xo2_v6_sony_rgb\rtl\sony_block_cam_interface.v&quot;:111:0:111:5|Found inferred clock pll_sony_block_cam_interface|CLKOP_inferred_clock which controls 8 sequential elements including u_sony_block_to_yuv422_csi.data_out[7:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
             <Navigation>MT529</Navigation>
             <Navigation>c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_4lane_xo2_v6_sony_rgb\rtl\sony_block_cam_interface.v</Navigation>
-            <Navigation>88</Navigation>
+            <Navigation>111</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>88</Navigation>
+            <Navigation>111</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Found inferred clock pll_sony_block_cam_interface|CLKOP_inferred_clock which controls 8 sequential elements including u_sony_block_to_yuv422_csi.data_out[7:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
         </Message>

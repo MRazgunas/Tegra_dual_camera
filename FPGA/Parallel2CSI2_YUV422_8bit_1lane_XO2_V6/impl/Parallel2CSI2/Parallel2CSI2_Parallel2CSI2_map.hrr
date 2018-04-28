@@ -4,7 +4,7 @@ Report for cell top
                      Cell usage:
                                   cell	      count    Res Usage(%)
                                   SLIC	     234.00        100.0
-                                  LUT4	     275.00        100.0
+                                  LUT4	     274.00        100.0
                                DISTRAM	      24.00        100.0
                                  IOBUF	         18        100.0
                                 PFUREG	        284        100.0
@@ -13,8 +13,8 @@ Report for cell top
 SUB MODULES
                                   cell	      count    SLC Usage(%)
         pll_pix2byte_YUV422_8bit_1lane	          1         0.0
-                        astrohn_astir2	          1        10.3
-                     LP_HS_DELAY_CNTRL	          1        26.4
+                        astrohn_astir2	          1        10.0
+                     LP_HS_DELAY_CNTRL	          1        26.8
                           DPHY_TX_INST	          1         1.1
         BYTE_PACKETIZER_8s_1s_30_1s_1s	          1        62.0
 ---------------------------------------------------
@@ -49,8 +49,8 @@ Report for cell astrohn_astir2
    Instance path: top/u_astrohn_astir2
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      24.20        10.3
-                                  LUT4	      22.00         8.0
+                                  SLIC	      23.33        10.0
+                                  LUT4	      21.00         7.7
                                 PFUREG	         25         8.8
                                 RIPPLE	         12        17.6
 ---------------------------------------------------
@@ -58,8 +58,8 @@ Report for cell LP_HS_DELAY_CNTRL
    Instance path: top/u_LP_HS_DELAY_CNTRL
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      61.67        26.4
-                                  LUT4	      57.00        20.7
+                                  SLIC	      62.67        26.8
+                                  LUT4	      57.00        20.8
                                DISTRAM	      12.00        50.0
                                 PFUREG	         58        20.4
                                 RIPPLE	         24        35.3
@@ -68,8 +68,8 @@ Report for cell BYTE_PACKETIZER_8s_1s_30_1s_1s
    Instance path: top/u_BYTE_PACKETIZER
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     145.13        62.0
-                                  LUT4	     189.00        68.7
+                                  SLIC	     145.00        62.0
+                                  LUT4	     189.00        69.0
                                DISTRAM	      12.00        50.0
                                 PFUREG	        197        69.4
                                 RIPPLE	         32        47.1
@@ -84,7 +84,7 @@ Report for cell parallel2byte_8s_1s_30
    Instance path: top/u_BYTE_PACKETIZER/u_parallel2byte
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      22.20         9.5
+                                  SLIC	      22.12         9.5
                                   LUT4	      39.50        14.4
                                 PFUREG	         28         9.9
                                    EBR	          2        100.0
@@ -104,20 +104,20 @@ Report for cell packetheader_1s
    Instance path: top/u_BYTE_PACKETIZER/u_packetheader
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     112.03        47.9
-                                  LUT4	     129.50        47.1
+                                  SLIC	     112.02        47.9
+                                  LUT4	     129.50        47.3
                                DISTRAM	      12.00        50.0
                                 PFUREG	        150        52.8
                                 RIPPLE	         32        47.1
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                           PH_DLY_FIFO	          1        12.3
+                           PH_DLY_FIFO	          1        12.2
 ---------------------------------------------------
 Report for cell PH_DLY_FIFO
    Instance path: top/u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      28.67        12.3
+                                  SLIC	      28.50        12.2
                                   LUT4	      19.00         6.9
                                DISTRAM	       6.00        25.0
                                 PFUREG	         50        17.6

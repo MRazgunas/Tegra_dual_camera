@@ -17,7 +17,30 @@ reg w_fv = 0;
 
 reg [1:0] frame_state = 0;
 
+reg [15:0] data_hold[2];
+//reg [15:0] data_in;
+
+reg odd = 0;
+
 pll_sony_block_cam_interface plldoubler(.CLKI(clock_in), .CLKOP(clock_out));
+
+//always @ (posedge clock_in) begin
+	//if(FV == 1) begin
+		//data_hold[1] <= data_hold[0];
+		//data_hold[0] <= data_in1;
+//		if(odd == 0) begin
+//			data_in <= data_in1;
+//			odd <= 1;
+		//end else if(odd == 1) begin
+			//data_in <= data_hold[1];
+			//odd <= 0;
+		//end
+	//end else begin
+//		data_hold[1] <= data_hold[0];
+		//data_hold[0] <= data_in1;
+		//data_in <= data_hold[1];
+//	end
+//end
 
 always @ (posedge clock_in) begin
 	if(state == 0 && data_in == 16'hFFFF) begin

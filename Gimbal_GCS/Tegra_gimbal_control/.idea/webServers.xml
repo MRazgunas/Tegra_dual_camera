@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="b71681bb-79f0-452e-9f65-2da303eb09f9" name="TegraTX1" url="http://192.168.8.108">
+        <fileTransfer host="192.168.8.108" port="22" rootFolder="/home/nvidia" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

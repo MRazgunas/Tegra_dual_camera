@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<DiamondModule name="pll_sony_block_cam_interface" module="PLL" VendorName="Lattice Semiconductor Corporation" generator="IPexpress" date="2018 01 22 11:07:13.943" version="5.8" type="Module" synthesis="synplify" source_format="Verilog">
+<DiamondModule name="pll_sony_block_cam_interface" module="pll_sony_block_cam_interface" VendorName="Lattice Semiconductor Corporation" generator="IPexpress" date="2018 02 24 14:43:23.308" version="5.8" type="Module" synthesis="synplify" source_format="Verilog HDL">
   <Package>
-		<File name="pll_sony_block_cam_interface.lpc" type="lpc" modified="2018 01 22 11:07:12.203"/>
-		<File name="pll_sony_block_cam_interface.v" type="top_level_verilog" modified="2018 01 22 11:07:12.295"/>
-		<File name="pll_sony_block_cam_interface_tmpl.v" type="template_verilog" modified="2018 01 22 11:07:12.299"/>
+		<File name="pll_sony_block_cam_interface.lpc" type="lpc" modified="2018 02 24 14:43:21.677"/>
+		<File name="pll_sony_block_cam_interface.v" type="top_level_verilog" modified="2018 02 24 14:43:21.771"/>
+		<File name="pll_sony_block_cam_interface_tmpl.v" type="template_verilog" modified="2018 02 24 14:43:21.776"/>
   </Package>
 </DiamondModule>

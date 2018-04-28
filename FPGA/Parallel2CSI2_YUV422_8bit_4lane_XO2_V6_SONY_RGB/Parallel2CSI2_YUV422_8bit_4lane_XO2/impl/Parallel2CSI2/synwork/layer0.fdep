@@ -7,7 +7,7 @@
 #CUR:"D:\\FPGA\\Lattice\\diamond\\3.8_x64\\synpbase\\lib\\vlog\\scemi_objects.v":1467755488
 #CUR:"D:\\FPGA\\Lattice\\diamond\\3.8_x64\\synpbase\\lib\\vlog\\scemi_pipes.svh":1467755488
 #CUR:"C:\\Users\\matas\\Documents\\GitHub\\Tegra_dual_camera\\FPGA\\Parallel2CSI2_YUV422_8bit_4lane_XO2_V6_SONY_RGB\\rtl\\compiler_directives.v":1376897626
-#CUR:"C:\\Users\\matas\\Documents\\GitHub\\Tegra_dual_camera\\FPGA\\Parallel2CSI2_YUV422_8bit_4lane_XO2_V6_SONY_RGB\\rtl\\top.v":1518185443
+#CUR:"C:\\Users\\matas\\Documents\\GitHub\\Tegra_dual_camera\\FPGA\\Parallel2CSI2_YUV422_8bit_4lane_XO2_V6_SONY_RGB\\rtl\\top.v":1519482432
 #CUR:"C:\\Users\\matas\\Documents\\GitHub\\Tegra_dual_camera\\FPGA\\Parallel2CSI2_YUV422_8bit_4lane_XO2_V6_SONY_RGB\\Parallel2CSI2_YUV422_8bit_4lane_XO2\\impl\\../../rtl/compiler_directives.v":1376897626
 #CUR:"C:\\Users\\matas\\Documents\\GitHub\\Tegra_dual_camera\\FPGA\\Parallel2CSI2_YUV422_8bit_4lane_XO2_V6_SONY_RGB\\rtl\\IPExpress\\pll_pix2byte_YUV422_8bit_4lane.v":1516612580
 #CUR:"C:\\Users\\matas\\Documents\\GitHub\\Tegra_dual_camera\\FPGA\\Parallel2CSI2_YUV422_8bit_4lane_XO2_V6_SONY_RGB\\rtl\\DPHY_TX_INST.v":1399971548
@@ -20,8 +20,8 @@
 #CUR:"C:\\Users\\matas\\Documents\\GitHub\\Tegra_dual_camera\\FPGA\\Parallel2CSI2_YUV422_8bit_4lane_XO2_V6_SONY_RGB\\rtl\\crc16_4lane_bb.v":1374566680
 #CUR:"C:\\Users\\matas\\Documents\\GitHub\\Tegra_dual_camera\\FPGA\\Parallel2CSI2_YUV422_8bit_4lane_XO2_V6_SONY_RGB\\rtl\\packetheader_bb.v":1376394874
 #CUR:"C:\\Users\\matas\\Documents\\GitHub\\Tegra_dual_camera\\FPGA\\Parallel2CSI2_YUV422_8bit_4lane_XO2_V6_SONY_RGB\\rtl\\parallel2byte_bb.v":1376901286
-#CUR:"C:\\Users\\matas\\Documents\\GitHub\\Tegra_dual_camera\\FPGA\\Parallel2CSI2_YUV422_8bit_4lane_XO2_V6_SONY_RGB\\rtl\\sony_block_cam_interface.v":1517746454
-#CUR:"C:\\Users\\matas\\Documents\\GitHub\\Tegra_dual_camera\\FPGA\\Parallel2CSI2_YUV422_8bit_4lane_XO2_V6_SONY_RGB\\rtl\\IPExpress\\pll_sony_block_cam_interface.v":1516612032
+#CUR:"C:\\Users\\matas\\Documents\\GitHub\\Tegra_dual_camera\\FPGA\\Parallel2CSI2_YUV422_8bit_4lane_XO2_V6_SONY_RGB\\rtl\\sony_block_cam_interface.v":1519482496
+#CUR:"C:\\Users\\matas\\Documents\\GitHub\\Tegra_dual_camera\\FPGA\\Parallel2CSI2_YUV422_8bit_4lane_XO2_V6_SONY_RGB\\rtl\\IPExpress\\pll_sony_block_cam_interface.v":1519476201
 #numinternalfiles:6
 #defaultlanguage:verilog
 0			"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_4lane_XO2_V6_SONY_RGB\rtl\compiler_directives.v" verilog

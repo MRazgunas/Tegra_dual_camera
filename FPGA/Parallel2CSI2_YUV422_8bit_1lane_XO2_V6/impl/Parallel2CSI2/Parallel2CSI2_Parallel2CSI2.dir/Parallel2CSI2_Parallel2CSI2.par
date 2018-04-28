@@ -4,7 +4,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
-Thu Feb 22 19:06:01 2018
+Fri Feb 23 19:52:57 2018
 
 D:/FPGA/Lattice/diamond/3.8_x64/ispfpga\bin\nt64\par -f
 Parallel2CSI2_Parallel2CSI2.p2t Parallel2CSI2_Parallel2CSI2_map.ncd

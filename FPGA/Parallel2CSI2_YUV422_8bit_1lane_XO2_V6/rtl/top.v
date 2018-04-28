@@ -49,7 +49,7 @@
 
 module top #(
      parameter              VC         = 0             ,  //2-bit Virtual Channel Number
-     parameter              WC         = 16'h0300      ,  //16-bit Word Count in byte packets.  16'h05A0 = 16'd1440 bytes = 1440 * (8-bits per byte) / (24-bits per pixel for RGB888) = 480 pixels
+     parameter              WC         = 16'h0500      ,  //16-bit Word Count in byte packets.  16'h05A0 = 16'd1440 bytes = 1440 * (8-bits per byte) / (24-bits per pixel for RGB888) = 480 pixels
      parameter              word_width = 8            ,  //Pixel Bus Width.  Example: RGB888 = 8-bits Red, 8-bits Green, 8-bits Blue = 24 bits/pixel
      parameter              DT         = 6'h1E         ,  //6-bit MIPI CSI2 Data Type.  Example: dt = 6'h2B = RAW10
      parameter              testmode   = 0             ,  //adds colorbar pattern generator for testing purposes.  Operates off of PIXCLK input clock and reset_n input reset

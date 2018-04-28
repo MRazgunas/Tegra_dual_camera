@@ -28,8 +28,8 @@
 @N: CG364 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_4lane_XO2_V6_SONY_RGB\rtl\IPExpress\pll_pix2byte_YUV422_8bit_4lane.v":8:7:8:36|Synthesizing module pll_pix2byte_YUV422_8bit_4lane in library work.
 @N: CG364 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_4lane_XO2_V6_SONY_RGB\rtl\IPExpress\pll_sony_block_cam_interface.v":8:7:8:34|Synthesizing module pll_sony_block_cam_interface in library work.
 @N: CG364 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_4lane_XO2_V6_SONY_RGB\rtl\sony_block_cam_interface.v":2:7:2:30|Synthesizing module sony_block_to_yuv422_csi in library work.
-@N: CL201 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_4lane_XO2_V6_SONY_RGB\rtl\sony_block_cam_interface.v":22:0:22:5|Trying to extract state machine for register state.
-@N: CL201 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_4lane_XO2_V6_SONY_RGB\rtl\sony_block_cam_interface.v":22:0:22:5|Trying to extract state machine for register frame_state.
+@N: CL201 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_4lane_XO2_V6_SONY_RGB\rtl\sony_block_cam_interface.v":45:0:45:5|Trying to extract state machine for register state.
+@N: CL201 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_4lane_XO2_V6_SONY_RGB\rtl\sony_block_cam_interface.v":45:0:45:5|Trying to extract state machine for register frame_state.
 @N: CL159 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_4lane_XO2_V6_SONY_RGB\rtl\IO_Controller_TX.v":49:11:49:17|Input reset_n is unused.
 @N: CL135 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_4lane_XO2_V6_SONY_RGB\rtl\LP_HS_dly_ctrl.v":107:16:107:21|Found seqShift data_dly[17].hold_data, depth=17, width=32
 @N|Running in 64-bit mode

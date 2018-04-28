@@ -1,7 +1,7 @@
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Thu Feb 22 19:05:57 2018
+# Timing Report written on Fri Feb 23 19:52:53 2018
 #
 
 
@@ -43,7 +43,7 @@ System                                                pll_pix2byte_YUV422_8bit_1
 oDDRx4|sclk_inferred_clock                            System                                                |  0.000       1.443   |  No paths    -      |  No paths    -      |  No paths    -    
 oDDRx4|sclk_inferred_clock                            oDDRx4|sclk_inferred_clock                            |  0.000       0.606   |  No paths    -      |  No paths    -      |  No paths    -    
 top|PIXCLK                                            System                                                |  0.000       0.776   |  No paths    -      |  No paths    -      |  No paths    -    
-top|PIXCLK                                            top|PIXCLK                                            |  0.000       1.320   |  No paths    -      |  No paths    -      |  No paths    -    
+top|PIXCLK                                            top|PIXCLK                                            |  0.000       1.269   |  No paths    -      |  No paths    -      |  No paths    -    
 top|PIXCLK                                            pll_pix2byte_YUV422_8bit_1lane|CLKOS2_inferred_clock  |  Diff grp    -       |  No paths    -      |  No paths    -      |  No paths    -    
 pll_pix2byte_YUV422_8bit_1lane|CLKOS2_inferred_clock  System                                                |  0.000       0.731   |  No paths    -      |  No paths    -      |  No paths    -    
 pll_pix2byte_YUV422_8bit_1lane|CLKOS2_inferred_clock  pll_pix2byte_YUV422_8bit_1lane|CLKOS2_inferred_clock  |  0.000       0.731   |  No paths    -      |  No paths    -      |  No paths    -    

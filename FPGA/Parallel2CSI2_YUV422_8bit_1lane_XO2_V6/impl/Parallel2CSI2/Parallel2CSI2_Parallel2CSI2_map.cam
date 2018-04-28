@@ -1,15 +1,15 @@
 [ START MERGED ]
-hs_clk_en_i hs_clk_en
-u_DPHY_TX_INST/u_oDDRx4/opensync_cken u_DPHY_TX_INST/u_oDDRx4/FF_0_Q
-u_LP_HS_DELAY_CNTRL/tmp1_i[4] u_LP_HS_DELAY_CNTRL/tmp1[4]
-hs_en_i hs_en
+u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/invout_0 u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/Empty
+u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/invout_1 u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/Full
 hs_data_en_i hs_data_en
 u_BYTE_PACKETIZER/u_parallel2byte/reset_n_i reset_n_c
 u_BYTE_PACKETIZER/u_packetheader/reset_n_i reset_n_c
 u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/rRst u_BYTE_PACKETIZER/u_packetheader/un1_q_bytepkt_en_0
 u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/dec0_wre3 u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/wren_i
-u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/invout_0 u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/Empty
-u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/invout_1 u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/Full
+hs_clk_en_i hs_clk_en
+u_DPHY_TX_INST/u_oDDRx4/opensync_cken u_DPHY_TX_INST/u_oDDRx4/FF_0_Q
+u_LP_HS_DELAY_CNTRL/tmp1_i[4] u_LP_HS_DELAY_CNTRL/tmp1[4]
+hs_en_i hs_en
 [ END MERGED ]
 [ START CLIPPED ]
 u_BYTE_PACKETIZER/u_packetheader/un2_EoTp_En_0[0]
@@ -90,15 +90,15 @@ u_LP_HS_DELAY_CNTRL/N_1
 u_astrohn_astir2/un1_linecount_1_cry_0_0_S0
 u_astrohn_astir2/N_1
 u_astrohn_astir2/un1_linecount_1_cry_7_0_COUT
-u_astrohn_astir2/un1_pixcounter_5_cry_0_0_S0
+u_astrohn_astir2/un1_pixcounter_3_cry_0_0_S0
 u_astrohn_astir2/N_2
-u_astrohn_astir2/un1_pixcounter_5_s_11_0_S1
-u_astrohn_astir2/un1_pixcounter_5_s_11_0_COUT
+u_astrohn_astir2/un1_pixcounter_3_s_11_0_S1
+u_astrohn_astir2/un1_pixcounter_3_s_11_0_COUT
 u_DPHY_TX_INST/u_oDDRx4/cdiv1
 [ END CLIPPED ]
 [ START DESIGN PREFS ]
 SCHEMATIC START ;
-# map:  version Diamond (64-bit) 3.8.0.115.3 -- WARNING: Map write only section -- Thu Feb 22 19:06:00 2018
+# map:  version Diamond (64-bit) 3.8.0.115.3 -- WARNING: Map write only section -- Fri Feb 23 19:52:57 2018
 
 SYSCONFIG SDM_PORT=DISABLE SLAVE_SPI_PORT=ENABLE I2C_PORT=DISABLE MASTER_SPI_PORT=DISABLE COMPRESS_CONFIG=ON CONFIGURATION=CFG MY_ASSP=OFF ONE_TIME_PROGRAM=OFF CONFIG_SECURE=OFF MCCLK_FREQ=2.08 JTAG_PORT=ENABLE ENABLE_TRANSFR=DISABLE SHAREDEBRINIT=DISABLE MUX_CONFIGURATION_PORTS=DISABLE BACKGROUND_RECONFIG=OFF ;
 LOCATE COMP "DCK" SITE "C8" ;

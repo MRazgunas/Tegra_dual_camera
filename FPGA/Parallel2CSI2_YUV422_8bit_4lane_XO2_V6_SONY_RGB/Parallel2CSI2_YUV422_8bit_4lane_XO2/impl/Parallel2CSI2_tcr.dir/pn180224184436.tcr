@@ -1,0 +1,41 @@
+#Start recording tcl command: 2/24/2018 10:56:01
+#Project Location: C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_4lane_XO2_V6_SONY_RGB/Parallel2CSI2_YUV422_8bit_4lane_XO2/impl; Project name: Parallel2CSI2
+prj_project open "C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_4lane_XO2_V6_SONY_RGB/Parallel2CSI2_YUV422_8bit_4lane_XO2/impl/Parallel2CSI2.ldf"
+prj_run Export -impl Parallel2CSI2 -task Jedecgen
+prj_run Export -impl Parallel2CSI2 -task Jedecgen
+prj_run Map -impl Parallel2CSI2
+prj_run Export -impl Parallel2CSI2 -task Jedecgen
+prj_run Export -impl Parallel2CSI2 -task Jedecgen
+prj_run Export -impl Parallel2CSI2 -task Jedecgen
+prj_run Export -impl Parallel2CSI2 -task Jedecgen
+prj_run Export -impl Parallel2CSI2 -task Jedecgen
+prj_run Export -impl Parallel2CSI2 -task Jedecgen
+prj_run Export -impl Parallel2CSI2 -task Jedecgen
+prj_run Export -impl Parallel2CSI2 -task Jedecgen
+prj_run Export -impl Parallel2CSI2 -task Jedecgen
+prj_run Export -impl Parallel2CSI2 -task Jedecgen
+prj_run Export -impl Parallel2CSI2 -task Jedecgen
+prj_run Export -impl Parallel2CSI2 -task Jedecgen
+prj_run Export -impl Parallel2CSI2 -task Jedecgen
+prj_run Export -impl Parallel2CSI2 -task Jedecgen
+prj_run Export -impl Parallel2CSI2 -task Jedecgen
+prj_run Export -impl Parallel2CSI2 -task Jedecgen
+prj_run Export -impl Parallel2CSI2 -task Jedecgen
+prj_run Export -impl Parallel2CSI2 -task Jedecgen
+prj_run Export -impl Parallel2CSI2 -task Jedecgen
+prj_run Export -impl Parallel2CSI2 -task Jedecgen
+prj_run Export -impl Parallel2CSI2 -task Jedecgen
+prj_run Export -impl Parallel2CSI2 -task Jedecgen
+prj_run Export -impl Parallel2CSI2 -task Jedecgen
+prj_run Export -impl Parallel2CSI2 -task Jedecgen
+prj_run Export -impl Parallel2CSI2 -task Jedecgen
+prj_run Export -impl Parallel2CSI2 -task Jedecgen
+prj_run Export -impl Parallel2CSI2 -task Jedecgen
+prj_run Export -impl Parallel2CSI2 -task Jedecgen
+prj_run Export -impl Parallel2CSI2 -task Jedecgen
+prj_run Export -impl Parallel2CSI2 -task Jedecgen
+prj_run Export -impl Parallel2CSI2 -task Jedecgen
+prj_run Export -impl Parallel2CSI2 -task Jedecgen
+prj_run Export -impl Parallel2CSI2 -task Jedecgen
+prj_run Export -impl Parallel2CSI2 -task Jedecgen
+#Stop recording: 2/24/2018 18:44:36

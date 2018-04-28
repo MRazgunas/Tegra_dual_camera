@@ -85,7 +85,7 @@ set Para(install_dir) $env(TOOLRTF)
 set Para(FPGAPath) "[file join $Para(install_dir) ispfpga bin $platformpath]"
 
 set scuba "$Para(FPGAPath)/scuba"
-set modulename "pll_pix2byte_YUV422_8bit_4lane"
+set modulename "pll_sony_block_cam_interface"
 set lang "verilog"
 set lpcfile "$Para(sbp_path)/$modulename.lpc"
 set arch "xo2c00"

@@ -17,7 +17,7 @@ Target Vendor:  LATTICE
 Target Device:  LCMXO2-4000HCCABGA256
 Target Performance:   6
 Mapper:  xo2c00,  version:  Diamond (64-bit) 3.8.0.115.3
-Mapped on:  02/09/18  16:13:55
+Mapped on:  02/24/18  16:28:25
 
 Design Summary
 --------------
@@ -66,7 +66,7 @@ Design Summary
 
 
 
-Design:  top                                           Date:  02/09/18  16:13:55
+Design:  top                                           Date:  02/24/18  16:28:25
 
 Design Summary (cont)
 ---------------------
@@ -132,7 +132,7 @@ Design Summary (cont)
 
 
 
-Design:  top                                           Date:  02/09/18  16:13:55
+Design:  top                                           Date:  02/24/18  16:28:25
 
 Design Summary (cont)
 ---------------------
@@ -198,7 +198,7 @@ IO (PIO) Attributes
 
 
 
-Design:  top                                           Date:  02/09/18  16:13:55
+Design:  top                                           Date:  02/24/18  16:28:25
 
 IO (PIO) Attributes (cont)
 --------------------------
@@ -264,7 +264,7 @@ IO (PIO) Attributes (cont)
 
 
 
-Design:  top                                           Date:  02/09/18  16:13:55
+Design:  top                                           Date:  02/24/18  16:28:25
 
 IO (PIO) Attributes (cont)
 --------------------------
@@ -330,7 +330,7 @@ Signal u_BYTE_PACKETIZER/u_packetheader/GND undriven or does not drive anything
 
 
 
-Design:  top                                           Date:  02/09/18  16:13:55
+Design:  top                                           Date:  02/24/18  16:28:25
 
 Removed logic (cont)
 --------------------
@@ -396,7 +396,7 @@ Signal u_BYTE_PACKETIZER/u_packetheader/lpkt_cnt_s_0_COUT[15] undriven or does
 
 
 
-Design:  top                                           Date:  02/09/18  16:13:55
+Design:  top                                           Date:  02/24/18  16:28:25
 
 Removed logic (cont)
 --------------------
@@ -462,7 +462,7 @@ Signal u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/w_gctr_cia_S0 undriven or
 
 
 
-Design:  top                                           Date:  02/09/18  16:13:55
+Design:  top                                           Date:  02/24/18  16:28:25
 
 Removed logic (cont)
 --------------------
@@ -528,7 +528,7 @@ Signal u_sony_block_to_yuv422_csi/un1_fv_del_counter_3_cry_0_0_S0 undriven or
 
 
 
-Design:  top                                           Date:  02/09/18  16:13:55
+Design:  top                                           Date:  02/24/18  16:28:25
 
 Removed logic (cont)
 --------------------
@@ -594,7 +594,7 @@ Block u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/LUT4_10 was optimized away.
 
 
 
-Design:  top                                           Date:  02/09/18  16:13:55
+Design:  top                                           Date:  02/24/18  16:28:25
 
 Removed logic (cont)
 --------------------
@@ -660,7 +660,7 @@ Memory Usage
 
 
 
-Design:  top                                           Date:  02/09/18  16:13:55
+Design:  top                                           Date:  02/24/18  16:28:25
 
 Memory Usage (cont)
 -------------------
@@ -726,7 +726,7 @@ Memory Usage (cont)
 
 
 
-Design:  top                                           Date:  02/09/18  16:13:55
+Design:  top                                           Date:  02/24/18  16:28:25
 
 Memory Usage (cont)
 -------------------
@@ -792,7 +792,7 @@ PLL 1:                                     Pin/Node Value
 
 
 
-Design:  top                                           Date:  02/09/18  16:13:55
+Design:  top                                           Date:  02/24/18  16:28:25
 
 PLL/DLL Summary (cont)
 ----------------------
@@ -858,7 +858,7 @@ PLL 2:                                     Pin/Node Value
 
 
 
-Design:  top                                           Date:  02/09/18  16:13:55
+Design:  top                                           Date:  02/24/18  16:28:25
 
 PLL/DLL Summary (cont)
 ----------------------
@@ -924,7 +924,7 @@ PLL/DLL Summary (cont)
 
 
 
-Design:  top                                           Date:  02/09/18  16:13:55
+Design:  top                                           Date:  02/24/18  16:28:25
 
 PLL/DLL Summary (cont)
 ----------------------
@@ -990,7 +990,7 @@ Instance Name: u_pll_pix2byte_YUV422_8bit_4lane/PLLInst_0
 
 
 
-Design:  top                                           Date:  02/09/18  16:13:55
+Design:  top                                           Date:  02/24/18  16:28:25
 
 Run Time and Memory Usage
 -------------------------

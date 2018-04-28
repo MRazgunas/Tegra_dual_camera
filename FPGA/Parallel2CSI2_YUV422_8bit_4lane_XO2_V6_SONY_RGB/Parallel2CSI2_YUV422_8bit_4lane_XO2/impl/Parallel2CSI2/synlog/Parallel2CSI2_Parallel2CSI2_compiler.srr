@@ -28,7 +28,6 @@ Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys softwa
 @I::"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_4lane_XO2_V6_SONY_RGB\rtl\sony_block_cam_interface.v" (library work)
 @I::"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_4lane_XO2_V6_SONY_RGB\rtl\IPExpress\pll_sony_block_cam_interface.v" (library work)
 Verilog syntax check successful!
-Options changed - recompiling
 Selecting top level module top
 @N: CG364 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_4lane_XO2_V6_SONY_RGB\rtl\parallel2byte_bb.v":49:7:49:19|Synthesizing module parallel2byte in library work.
 
@@ -103,22 +102,22 @@ Selecting top level module top
 @N: CG364 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_4lane_XO2_V6_SONY_RGB\rtl\sony_block_cam_interface.v":2:7:2:30|Synthesizing module sony_block_to_yuv422_csi in library work.
 
 @W: CS263 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_4lane_XO2_V6_SONY_RGB\rtl\top.v":145:28:145:29|Port-width mismatch for port VC. Formal has width 2, Actual 32
-@N: CL201 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_4lane_XO2_V6_SONY_RGB\rtl\sony_block_cam_interface.v":22:0:22:5|Trying to extract state machine for register state.
+@N: CL201 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_4lane_XO2_V6_SONY_RGB\rtl\sony_block_cam_interface.v":45:0:45:5|Trying to extract state machine for register state.
 Extracted state machine for register state
 State machine has 4 reachable states with original encodings of:
    00
    01
    10
    11
-@W: CL249 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_4lane_XO2_V6_SONY_RGB\rtl\sony_block_cam_interface.v":22:0:22:5|Initial value is not supported on state machine state
-@N: CL201 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_4lane_XO2_V6_SONY_RGB\rtl\sony_block_cam_interface.v":22:0:22:5|Trying to extract state machine for register frame_state.
+@W: CL249 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_4lane_XO2_V6_SONY_RGB\rtl\sony_block_cam_interface.v":45:0:45:5|Initial value is not supported on state machine state
+@N: CL201 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_4lane_XO2_V6_SONY_RGB\rtl\sony_block_cam_interface.v":45:0:45:5|Trying to extract state machine for register frame_state.
 Extracted state machine for register frame_state
 State machine has 4 reachable states with original encodings of:
    00
    01
    10
    11
-@W: CL249 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_4lane_XO2_V6_SONY_RGB\rtl\sony_block_cam_interface.v":22:0:22:5|Initial value is not supported on state machine frame_state
+@W: CL249 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_4lane_XO2_V6_SONY_RGB\rtl\sony_block_cam_interface.v":45:0:45:5|Initial value is not supported on state machine frame_state
 @N: CL159 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_4lane_XO2_V6_SONY_RGB\rtl\IO_Controller_TX.v":49:11:49:17|Input reset_n is unused.
 @N: CL135 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_4lane_XO2_V6_SONY_RGB\rtl\LP_HS_dly_ctrl.v":107:16:107:21|Found seqShift data_dly[17].hold_data, depth=17, width=32
 @W: CL190 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_4lane_XO2_V6_SONY_RGB\rtl\LP_HS_dly_ctrl.v":118:4:118:9|Optimizing register bit hs_extended[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
@@ -144,28 +143,28 @@ At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Fri Feb 09 16:10:50 2018
+# Sat Feb 24 16:28:18 2018
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2016q2rc, Build 192R, built Jul  5 2016
 @N|Running in 64-bit mode
-File C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_4lane_XO2_V6\Parallel2CSI2_YUV422_8bit_4lane_XO2\impl\Parallel2CSI2\synwork\layer0.srs changed - recompiling
+File C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_4lane_XO2_V6_SONY_RGB\Parallel2CSI2_YUV422_8bit_4lane_XO2\impl\Parallel2CSI2\synwork\layer0.srs changed - recompiling
 
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 69MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Fri Feb 09 16:10:51 2018
+# Sat Feb 24 16:28:18 2018
 
 ###########################################################]
 @END
 
-At c_hdl Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Fri Feb 09 16:10:51 2018
+# Sat Feb 24 16:28:18 2018
 
 ###########################################################]

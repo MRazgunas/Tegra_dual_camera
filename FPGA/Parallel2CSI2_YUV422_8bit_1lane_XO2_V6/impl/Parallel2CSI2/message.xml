@@ -289,22 +289,22 @@
             <ID>1166052</ID>
             <Severity>Warning</Severity>
             <Dynamic>logical</Dynamic>
-            <Dynamic>u_astrohn_astir2/un1_pixcounter_5_s_11_0_COUT</Dynamic>
-            <Navigation>u_astrohn_astir2/un1_pixcounter_5_s_11_0_COUT</Navigation>
+            <Dynamic>u_astrohn_astir2/un1_pixcounter_3_s_11_0_COUT</Dynamic>
+            <Navigation>u_astrohn_astir2/un1_pixcounter_3_s_11_0_COUT</Navigation>
         </Message>
         <Message>
             <ID>1166052</ID>
             <Severity>Warning</Severity>
             <Dynamic>logical</Dynamic>
-            <Dynamic>u_astrohn_astir2/un1_pixcounter_5_s_11_0_S1</Dynamic>
-            <Navigation>u_astrohn_astir2/un1_pixcounter_5_s_11_0_S1</Navigation>
+            <Dynamic>u_astrohn_astir2/un1_pixcounter_3_s_11_0_S1</Dynamic>
+            <Navigation>u_astrohn_astir2/un1_pixcounter_3_s_11_0_S1</Navigation>
         </Message>
         <Message>
             <ID>1166052</ID>
             <Severity>Warning</Severity>
             <Dynamic>logical</Dynamic>
-            <Dynamic>u_astrohn_astir2/un1_pixcounter_5_cry_0_0_S0</Dynamic>
-            <Navigation>u_astrohn_astir2/un1_pixcounter_5_cry_0_0_S0</Navigation>
+            <Dynamic>u_astrohn_astir2/un1_pixcounter_3_cry_0_0_S0</Dynamic>
+            <Navigation>u_astrohn_astir2/un1_pixcounter_3_cry_0_0_S0</Navigation>
         </Message>
         <Message>
             <ID>1166052</ID>
@@ -962,14 +962,14 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\byte_packetizer.v&quot;:104:5:104:10|Removing instance u_BYTE_PACKETIZER.q_WC[9] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[8]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>BN132 :&quot;c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\byte_packetizer.v&quot;:104:5:104:10|Removing instance u_BYTE_PACKETIZER.q_WC[8] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>BN132</Navigation>
             <Navigation>c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\byte_packetizer.v</Navigation>
             <Navigation>104</Navigation>
             <Navigation>5</Navigation>
             <Navigation>104</Navigation>
             <Navigation>10</Navigation>
-            <Navigation>Removing instance u_BYTE_PACKETIZER.q_WC[9] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[8]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+            <Navigation>Removing instance u_BYTE_PACKETIZER.q_WC[8] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
@@ -1022,62 +1022,62 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\byte_packetizer.v&quot;:104:5:104:10|Removing instance u_BYTE_PACKETIZER.q_WC[11] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>BN132 :&quot;c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\byte_packetizer.v&quot;:104:5:104:10|Removing instance u_BYTE_PACKETIZER.q_WC[9] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>BN132</Navigation>
             <Navigation>c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\byte_packetizer.v</Navigation>
             <Navigation>104</Navigation>
             <Navigation>5</Navigation>
             <Navigation>104</Navigation>
             <Navigation>10</Navigation>
-            <Navigation>Removing instance u_BYTE_PACKETIZER.q_WC[11] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+            <Navigation>Removing instance u_BYTE_PACKETIZER.q_WC[9] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\byte_packetizer.v&quot;:104:5:104:10|Removing instance u_BYTE_PACKETIZER.q_WC[7] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>BN132 :&quot;c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\byte_packetizer.v&quot;:104:5:104:10|Removing instance u_BYTE_PACKETIZER.q_WC[7] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>BN132</Navigation>
             <Navigation>c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\byte_packetizer.v</Navigation>
             <Navigation>104</Navigation>
             <Navigation>5</Navigation>
             <Navigation>104</Navigation>
             <Navigation>10</Navigation>
-            <Navigation>Removing instance u_BYTE_PACKETIZER.q_WC[7] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+            <Navigation>Removing instance u_BYTE_PACKETIZER.q_WC[7] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\byte_packetizer.v&quot;:104:5:104:10|Removing instance u_BYTE_PACKETIZER.q_WC[6] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>BN132 :&quot;c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\byte_packetizer.v&quot;:104:5:104:10|Removing instance u_BYTE_PACKETIZER.q_WC[6] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>BN132</Navigation>
             <Navigation>c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\byte_packetizer.v</Navigation>
             <Navigation>104</Navigation>
             <Navigation>5</Navigation>
             <Navigation>104</Navigation>
             <Navigation>10</Navigation>
-            <Navigation>Removing instance u_BYTE_PACKETIZER.q_WC[6] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+            <Navigation>Removing instance u_BYTE_PACKETIZER.q_WC[6] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\byte_packetizer.v&quot;:104:5:104:10|Removing instance u_BYTE_PACKETIZER.q_WC[5] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>BN132 :&quot;c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\byte_packetizer.v&quot;:104:5:104:10|Removing instance u_BYTE_PACKETIZER.q_WC[5] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>BN132</Navigation>
             <Navigation>c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\byte_packetizer.v</Navigation>
             <Navigation>104</Navigation>
             <Navigation>5</Navigation>
             <Navigation>104</Navigation>
             <Navigation>10</Navigation>
-            <Navigation>Removing instance u_BYTE_PACKETIZER.q_WC[5] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+            <Navigation>Removing instance u_BYTE_PACKETIZER.q_WC[5] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\byte_packetizer.v&quot;:104:5:104:10|Removing instance u_BYTE_PACKETIZER.q_WC[4] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>BN132 :&quot;c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\byte_packetizer.v&quot;:104:5:104:10|Removing instance u_BYTE_PACKETIZER.q_WC[4] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>BN132</Navigation>
             <Navigation>c:\users\matas\documents\github\tegra_dual_camera\fpga\parallel2csi2_yuv422_8bit_1lane_xo2_v6\rtl\byte_packetizer.v</Navigation>
             <Navigation>104</Navigation>
             <Navigation>5</Navigation>
             <Navigation>104</Navigation>
             <Navigation>10</Navigation>
-            <Navigation>Removing instance u_BYTE_PACKETIZER.q_WC[4] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+            <Navigation>Removing instance u_BYTE_PACKETIZER.q_WC[4] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>

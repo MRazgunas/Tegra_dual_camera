@@ -4,7 +4,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
-Fri Feb 09 16:13:56 2018
+Sat Feb 24 16:28:26 2018
 
 D:/FPGA/Lattice/diamond/3.8_x64/ispfpga\bin\nt64\par -f
 Parallel2CSI2_Parallel2CSI2.p2t Parallel2CSI2_Parallel2CSI2_map.ncd
@@ -17,11 +17,11 @@ Preference file: Parallel2CSI2_Parallel2CSI2.prf.
 Level/       Number       Worst        Timing       Worst        Timing       Run          NCD
 Cost [ncd]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Time         Status
 ----------   --------     -----        ------       -----------  -----------  ----         ------
-5_1   *      0            3.719        0            -            -            23           Complete
+5_1   *      0            3.719        0            -            -            24           Complete
 
 
 * : Design saved.
 
-Total (real) run time for 1-seed: 23 secs 
+Total (real) run time for 1-seed: 24 secs 
 
 par done!

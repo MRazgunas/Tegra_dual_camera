@@ -50,7 +50,7 @@ set Para(install_dir) $env(TOOLRTF)
 set Para(FPGAPath) "[file join $Para(install_dir) ispfpga bin $platformpath]"
 set Para(bin_dir) "[file join $Para(install_dir) bin $platformpath]"
 
-set Para(ModuleName) "pll_pix2byte_YUV422_8bit_4lane"
+set Para(ModuleName) "pll_sony_block_cam_interface"
 set Para(Module) "PLL"
 set Para(libname) machxo2
 set Para(arch_name) xo2c00

@@ -46,7 +46,7 @@ always @ (posedge clock_in) begin
 	else if(state == 3 && data_in == 8'h80) begin
 		state <= 0;
 		linecount <= linecount + 1;
-		if(linecount < 288 && FV == 1) begin
+		if(linecount < 480 && FV == 1) begin
 			LV <= 1;
 		end
 		FV <= 1;
@@ -85,7 +85,7 @@ always @ (posedge clock_in) begin
 		pixcounter <= pixcounter+1;
 	end
 	
-	if(pixcounter == 799) begin
+	if(pixcounter == 1279) begin
 		pixcounter <= 0;
 		LV <= 0;
 	end

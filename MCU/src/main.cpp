@@ -105,19 +105,106 @@ static void cmd_enter_recovery(BaseSequentialStream *chp, int argc, char *argv[]
     }
 }
 
+static void cmd_send_to_sony(BaseSequentialStream *chp, int argc, char *argv[]) {
+    if(argc > 2 || argc == 0) {
+        chprintf(chp, "Usage: sony [binary command]\r\n");
+        return;
+    }
+    uint16_t i = 0;
+    uint8_t command[10] = { 0 };
+    while(argv[0][i] != '\0') {
+        uint8_t value = 0;
+        switch(argv[0][i]) {
+        case '0':
+            value = 0;
+            break;
+        case '1':
+            value = 1;
+            break;
+        case '2':
+            value = 2;
+            break;
+        case '3':
+            value = 3;
+            break;
+        case '4':
+            value = 4;
+            break;
+        case '5':
+            value = 5;
+            break;
+        case '6':
+            value = 6;
+            break;
+        case '7':
+            value = 7;
+            break;
+        case '8':
+            value = 8;
+            break;
+        case '9':
+            value = 9;
+            break;
+        case 'A':
+            value = 10;
+            break;
+        case 'B':
+            value = 11;
+            break;
+        case 'C':
+            value = 12;
+            break;
+        case 'D':
+            value = 13;
+            break;
+        case 'E':
+            value = 14;
+            break;
+        case 'F':
+            value = 15;
+            break;
+        }
+        if(i % 2 == 0) {
+            command[i/2] |= (value << 4) & 0xF0;
+        } else {
+            command[i/2] |= value & 0x0F;
+        }
+        i++;
+    }
+    chnWrite((BaseSequentialStream *) &SD3, command, i/2);
+}
+
+
+
 static const ShellCommand commands[] = {
     {"recovery", cmd_enter_recovery},
+    {"sony", cmd_send_to_sony},
     {NULL, NULL}
 };
 
+/*
+ * Shell history buffer
+ */
+char history_buffer[SHELL_MAX_HIST_BUFF];
+
+/*
+ * Shell completion buffer
+ */
+char *completion_buffer[SHELL_MAX_COMPLETIONS];
+
 static const ShellConfig shell_cfg1 = {
-  (BaseSequentialStream *)&SD3,
-  commands
+  (BaseSequentialStream *)&SD1,
+  commands,
+  history_buffer,
+  sizeof(history_buffer),
+  completion_buffer
 };
 
-static const ShellConfig shell_cfg2 = {
-  (BaseSequentialStream *)&SD1,
-  commands
+static const SerialConfig serialCfg = {
+  9600,
+  0,
+  0,
+  0
 };
 
 typedef struct {
@@ -145,15 +232,12 @@ int main(void) {
 
   sdStart(&SD1, NULL);
 
-  sdStart(&SD3, NULL);
+  sdStart(&SD3, &serialCfg);
 
   adcStart(&ADCD1, NULL);
 
   thread_t *shelltp = chThdCreateFromHeap(NULL, SHELL_WA_SIZE,
       "shell", NORMALPRIO + 1, shellThread, (void *)&shell_cfg1);
-
-  thread_t *shelltp2 = chThdCreateFromHeap(NULL, SHELL_WA_SIZE,
-       "shell", NORMALPRIO + 1, shellThread, (void *)&shell_cfg2);
 
 
   BRD_voltages board_volt;

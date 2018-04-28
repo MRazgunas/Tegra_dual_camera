@@ -26,7 +26,7 @@ Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys softwa
 @I::"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\parallel2byte_bb.v" (library work)
 @I::"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\astrohn_astir2.v" (library work)
 Verilog syntax check successful!
-File C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\top.v changed - recompiling
+File C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\astrohn_astir2.v changed - recompiling
 Selecting top level module top
 @N: CG364 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\parallel2byte_bb.v":49:7:49:19|Synthesizing module parallel2byte in library work.
 
@@ -150,7 +150,7 @@ At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Thu Feb 22 19:05:53 2018
+# Fri Feb 23 19:52:49 2018
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2016q2rc, Build 192R, built Jul  5 2016
@@ -162,7 +162,7 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Thu Feb 22 19:05:53 2018
+# Fri Feb 23 19:52:49 2018
 
 ###########################################################]
 @END
@@ -172,6 +172,6 @@ At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Thu Feb 22 19:05:53 2018
+# Fri Feb 23 19:52:49 2018
 
 ###########################################################]
