@@ -1,12 +1,9 @@
 /*
     ChibiOS - Copyright (C) 2006..2016 Giovanni Di Sirio
-
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
-
         http://www.apache.org/licenses/LICENSE-2.0
-
     Unless required by applicable law or agreed to in writing, software
     distributed under the License is distributed on an "AS IS" BASIS,
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -230,6 +227,11 @@ int main(void) {
 
   app::init();
 
+  palSetPad(GPIOC, GPIOC_RESET_IN);
+  palSetPad(GPIOB, GPIOB_FORCE_RECOV);
+  palSetPad(GPIOC, GPIOC_RESET_OUT);
+  //palClearPad(GPIOC, GPIOC_RESET_OUT);
+
   sdStart(&SD1, NULL);
 
   sdStart(&SD3, &serialCfg);
@@ -247,19 +249,24 @@ int main(void) {
 //  app::canNode.start(LOWPRIO);
 
   systime_t time_since_recov_req = 0;
+  systime_t time_since_power_btn_press = 0;
+
+  chibios_rt::BaseThread::sleep(MS2ST(200));
 
   while (true) {
       board_volt = read_voltages();
-      if(state > POWER_WAITING_FOR_VALID_VDD) {
-          if(board_volt.volt_in < 6.0f) {
-              state = POWER_EMERGENCY_SHUTDOWN;
-          }
+      if(board_volt.volt_in < 8.0f) {
+          palClearPad(GPIOB, GPIOB_VIN_PWR_BAD);
+          state = POWER_EMERGENCY_SHUTDOWN;
+      } else {
+          palSetPad(GPIOB, GPIOB_VIN_PWR_BAD);
       }
+
       if(state > POWER_WAITING_FOR_CARRIER_POWER_ON && palReadPad(GPIOB, GPIOB_CARRIER_PWR_ON) == 0) {
           state = POWER_REQUESTED_POWERDOWN;
       }
-      if(board_volt.volt_1v8 < 1.6f) {
-          palClearPad(GPIOC, GPIOC_RESET_OUT);
+      if(board_volt.volt_1v8 < 1.2f) {
+          //palClearPad(GPIOC, GPIOC_RESET_OUT);
       }
 
       if(chVTGetSystemTime() > time_since_recov_req + MS2ST(2500) && time_since_recov_req != 0) {
@@ -267,21 +274,24 @@ int main(void) {
           time_since_recov_req = 0;
       }
 
+      if(chVTGetSystemTime() > time_since_power_btn_press + MS2ST(1000) && time_since_power_btn_press != 0) {
+          palSetPad(GPIOC, GPIOC_POWER_BTN);
+          time_since_power_btn_press = 0;
+      }
+
       switch(state) {
       case POWER_WAITING_FOR_VALID_VDD:
-          if(board_volt.volt_in > 5.5f) {
-              if(fabs(board_volt.volt_in - previous_reading.volt_in) < 0.1f){
+          if(board_volt.volt_in > 8.0f) {
+              if(fabs(board_volt.volt_in - previous_reading.volt_in) < 0.05f){
                   stable_vin_value = board_volt.volt_in;
-                  palSetPad(GPIOB, GPIOB_VIN_PWR_BAD);
                   palClearPad(GPIOC, GPIOC_POWER_BTN);
-                  chibios_rt::BaseThread::sleep(MS2ST(100));
-                  palSetPad(GPIOC, GPIOC_POWER_BTN);
                   state = POWER_WAITING_FOR_CARRIER_POWER_ON;
               }
           }
           break;
       case POWER_WAITING_FOR_CARRIER_POWER_ON:
           if(palReadPad(GPIOB, GPIOB_CARRIER_PWR_ON)) {
+              palSetPad(GPIOC, GPIOC_POWER_BTN);
               state = POWER_STARTING_5V_RAIL;
           }
           break;
@@ -296,6 +306,9 @@ int main(void) {
           palSetPad(GPIOB, GPIOB_1V8_EN);
           palSetPad(GPIOB, GPIOB_1V2_EN);
           if(board_volt.volt_1v8 > 1.65f) {
+              chibios_rt::BaseThread::sleep(MS2ST(50));
+              palClearPad(GPIOC, GPIOC_RESET_OUT);
+              chibios_rt::BaseThread::sleep(MS2ST(100));
               palSetPad(GPIOC, GPIOC_RESET_OUT);
               state = POWER_POWERED_ON;
           }
