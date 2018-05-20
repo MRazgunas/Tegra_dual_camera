@@ -4,7 +4,7 @@
   (keywordMap (keywordLevel 0))
   (status
     (written
-      (timestamp 2018 2 24 14 43 21)
+      (timestamp 2018 5 20 23 41 44)
       (program "SCUBA" (version "Diamond (64-bit) 3.8.0.115.3"))))
       (comment "D:\FPGA\Lattice\diamond\3.8_x64\ispfpga\bin\nt64\scuba.exe -w -n pll_sony_block_cam_interface -lang verilog -synth synplify -arch xo2c00 -type pll -fin 75 -fclkop 150 -fclkop_tol 0.0 -fclkos 150 -fclkos_tol 0.0 -trimp 0 -phasep 90 -trimp_r -trims 0 -phases 0 -trims_r -phase_cntl STATIC -fb_mode 2 ")
   (library ORCLIB

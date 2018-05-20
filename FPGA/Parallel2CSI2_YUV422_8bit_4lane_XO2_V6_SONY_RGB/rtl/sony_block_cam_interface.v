@@ -9,111 +9,71 @@ module sony_block_to_yuv422_csi(
 	output reg LV
 	);
 
-reg [1:0] state = 0;
-
-reg [11:0] pixcounter = 0;
-reg [7:0] fv_del_counter = 0;
-reg w_fv = 0;
-
-reg [1:0] frame_state = 0;
-
-reg [15:0] data_hold[2];
-//reg [15:0] data_in;
-
-reg odd = 0;
-
 pll_sony_block_cam_interface plldoubler(.CLKI(clock_in), .CLKOP(clock_out));
 
-//always @ (posedge clock_in) begin
-	//if(FV == 1) begin
-		//data_hold[1] <= data_hold[0];
-		//data_hold[0] <= data_in1;
-//		if(odd == 0) begin
-//			data_in <= data_in1;
-//			odd <= 1;
-		//end else if(odd == 1) begin
-			//data_in <= data_hold[1];
-			//odd <= 0;
-		//end
-	//end else begin
-//		data_hold[1] <= data_hold[0];
-		//data_hold[0] <= data_in1;
-		//data_in <= data_hold[1];
-//	end
-//end
-
-always @ (posedge clock_in) begin
-	if(state == 0 && data_in == 16'hFFFF) begin
-		state <= 1;
-	end
-	else if(state == 1 && data_in == 0) begin
-		state <= 2;
-	end
-	else if(state == 2 && data_in == 0) begin
-		state <= 3;
-	end
-	else if(state == 3 && data_in == 16'h9D9D) begin
-		state <= 0;
-		//LV <= 0;
-	end
-	else if(state == 3 && data_in == 16'hABAB) begin
-		state <= 0;
-		if(frame_state == 0) begin
-			frame_state <= 1;
-			LV <= 1;
-		end
-	end
-	else if(state == 3 && data_in == 16'h8080) begin
-		state <= 0;
-		LV <= 1;
-		FV <= 1;
-		w_fv <= 1;
-		fv_del_counter <= 0;
-		frame_state <= 0;
-	end
-	else if(state == 3 && data_in == 16'hB6B6) begin
-		state <= 0;
-		//LV <= 0;
-		//w_fv <= 0;
-		if(frame_state == 1) begin
-			frame_state <= 2;
-		end
-		else if(frame_state == 2) begin
-			w_fv <= 0;
-			//FV <= 0;
-			frame_state <= 3;
-		end
-	end
-	else begin 
-		state <= 0;
-	end
+always @ (posedge clock_out) begin
 	
-	if(w_fv == 0 && fv_del_counter < 254) begin
-		fv_del_counter <= fv_del_counter + 1;
-	end
-	
-	if(fv_del_counter == 250) begin
-		FV <= 0;
-	end
-	
-	if(LV == 1) begin
-		pixcounter <= pixcounter+1;
-	end
-	
-	if(pixcounter == 1921) begin
-		pixcounter <= 0;
-		LV <= 0;
-	end
-		
 end
-	
+
+reg [2:0] state = 0;
+
+reg [12:0] pixcounter = 0;
+
+reg tmp_LV = 0;
 
 always @ (posedge clock_out) begin
 	if(clock_in == 1) begin
-		data_out <= data_in[15:8];//data_in[7:0];
+		data_out <= data_in[15:8];//data_in[7:0];	
+	end
+	else begin
+		data_out <= data_in[7:0];//data_in[15:8];	
+	end
+	
+	//LV <= tmp_LV;
+	
+	if(LV == 1) begin
+		pixcounter <= pixcounter + 1;
+	end
+	
+	if(pixcounter == 3839) begin
+		LV <= 0;
+		tmp_LV <= 0;
+	end
+	
+	if(state == 0 && data_out == 8'hFF)
+		state <= 1;
+	else if(state == 1 && data_out == 8'hFF)
+		state <= 2;
+	else if(state == 2 && data_out == 8'h00)
+		state <= 3;
+	else if(state == 3 && data_out == 8'h00)
+		state <= 4;
+	else if(state == 4 && data_out == 8'h00)
+		state <= 5;
+	else if(state == 5 && data_out == 8'h00)
+		state <= 6;
+	else if(state == 6)
+		state <= 7;
+	else if(state == 7 && data_out == 8'h9D) begin
+		state <= 0;
+		FV <= 1;
+	end
+	else if(state == 7 && data_out == 8'hAB) begin
+		state <= 0;
+		FV <= 0;
+	end
+	else if(state == 7 && data_out == 8'h9D) begin
+		state <= 0;
+		FV <= 1;
+	end
+	else if(state == 7 && data_out == 8'h80 && FV == 1) begin
+		state <= 0;
+		LV <= 1;
+		pixcounter <= 0;
 	end
 	else
-		data_out <= data_in[7:0];//data_in[15:8];		
+		state <= 0;
+	
 end
 
 endmodule
