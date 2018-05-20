@@ -1,245 +1,0 @@
-<HTML>
-<HEAD><TITLE>Lattice TCL Log</TITLE>
-<STYLE TYPE="text/css">
-<!--
- body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
--->
-</STYLE>
-</HEAD>
-<PRE><A name="pn180108161036"></A><B><U><big>pn180108161036</big></U></B>
-#Start recording tcl command: 1/8/2018 15:46:47
-#Project Location: X:/Parallel2CSI2_YUV422_8bit_4lane_XO2_V6/Parallel2CSI2_YUV422_8bit_4lane_XO2/impl; Project name: Parallel2CSI2
-prj_project open "X:/Parallel2CSI2_YUV422_8bit_4lane_XO2_V6/Parallel2CSI2_YUV422_8bit_4lane_XO2/impl/Parallel2CSI2.ldf"
-prj_run Map -impl Parallel2CSI2
-prj_dev set -part LCMXO2-4000HC-6BG256C
-prj_run Map -impl Parallel2CSI2
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_project save
-prj_project close
-#Stop recording: 1/8/2018 16:10:36
-
-
-
-<A name="pn180116202621"></A><B><U><big>pn180116202621</big></U></B>
-#Start recording tcl command: 1/16/2018 20:04:47
-#Project Location: X:/Parallel2CSI2_YUV422_8bit_4lane_XO2_V6/Parallel2CSI2_YUV422_8bit_4lane_XO2/impl; Project name: Parallel2CSI2
-prj_project open "X:/Parallel2CSI2_YUV422_8bit_4lane_XO2_V6/Parallel2CSI2_YUV422_8bit_4lane_XO2/impl/Parallel2CSI2.ldf"
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-#Stop recording: 1/16/2018 20:26:21
-
-
-
-<A name="pn180122121224"></A><B><U><big>pn180122121224</big></U></B>
-#Start recording tcl command: 1/22/2018 11:01:49
-#Project Location: X:/Parallel2CSI2_YUV422_8bit_4lane_XO2_V6/Parallel2CSI2_YUV422_8bit_4lane_XO2/impl; Project name: Parallel2CSI2
-prj_project open "X:/Parallel2CSI2_YUV422_8bit_4lane_XO2_V6/Parallel2CSI2_YUV422_8bit_4lane_XO2/impl/Parallel2CSI2.ldf"
-prj_src add "X:/Parallel2CSI2_YUV422_8bit_4lane_XO2_V6/rtl/sony_block_cam_interface.v"
-prj_src add "X:/Parallel2CSI2_YUV422_8bit_4lane_XO2_V6/rtl/IPExpress/pll_sony_block_cam_interface.ipx"
-prj_run Map -impl Parallel2CSI2
-prj_run Map -impl Parallel2CSI2
-prj_run Map -impl Parallel2CSI2
-prj_run Map -impl Parallel2CSI2
-prj_run Map -impl Parallel2CSI2
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run PAR -impl Parallel2CSI2
-prj_run PAR -impl Parallel2CSI2
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-#Stop recording: 1/22/2018 12:12:24
-
-
-
-<A name="pn180128222945"></A><B><U><big>pn180128222945</big></U></B>
-#Start recording tcl command: 1/24/2018 10:06:26
-#Project Location: X:/Parallel2CSI2_YUV422_8bit_4lane_XO2_V6/Parallel2CSI2_YUV422_8bit_4lane_XO2/impl; Project name: Parallel2CSI2
-prj_project open "X:/Parallel2CSI2_YUV422_8bit_4lane_XO2_V6/Parallel2CSI2_YUV422_8bit_4lane_XO2/impl/Parallel2CSI2.ldf"
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Synthesis -impl Parallel2CSI2
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-#Stop recording: 1/28/2018 22:29:47
-
-
-
-<A name="pn180204001047"></A><B><U><big>pn180204001047</big></U></B>
-#Start recording tcl command: 2/3/2018 19:52:35
-#Project Location: X:/Parallel2CSI2_YUV422_8bit_4lane_XO2_V6/Parallel2CSI2_YUV422_8bit_4lane_XO2/impl; Project name: Parallel2CSI2
-prj_project open "X:/Parallel2CSI2_YUV422_8bit_4lane_XO2_V6/Parallel2CSI2_YUV422_8bit_4lane_XO2/impl/Parallel2CSI2.ldf"
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-#Stop recording: 2/4/2018 00:10:47
-
-
-
-<A name="pn180204131416"></A><B><U><big>pn180204131416</big></U></B>
-#Start recording tcl command: 2/4/2018 12:49:19
-#Project Location: C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_4lane_XO2_V6/Parallel2CSI2_YUV422_8bit_4lane_XO2/impl; Project name: Parallel2CSI2
-prj_project open "C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_4lane_XO2_V6/Parallel2CSI2_YUV422_8bit_4lane_XO2/impl/Parallel2CSI2.ldf"
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-#Stop recording: 2/4/2018 13:14:16
-
-
-
-<A name="pn180204190113"></A><B><U><big>pn180204190113</big></U></B>
-#Start recording tcl command: 2/4/2018 13:24:58
-#Project Location: C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_4lane_XO2_V6/Parallel2CSI2_YUV422_8bit_4lane_XO2/impl; Project name: Parallel2CSI2
-prj_project open "C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_4lane_XO2_V6/Parallel2CSI2_YUV422_8bit_4lane_XO2/impl/Parallel2CSI2.ldf"
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-#Stop recording: 2/4/2018 19:01:13
-
-
-
-<A name="pn180209161503"></A><B><U><big>pn180209161503</big></U></B>
-#Start recording tcl command: 2/9/2018 16:09:18
-#Project Location: C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_4lane_XO2_V6_SONY_RGB/Parallel2CSI2_YUV422_8bit_4lane_XO2/impl; Project name: Parallel2CSI2
-prj_project open "C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_4lane_XO2_V6_SONY_RGB/Parallel2CSI2_YUV422_8bit_4lane_XO2/impl/Parallel2CSI2.ldf"
-prj_run Map -impl Parallel2CSI2
-prj_run Export -impl Parallel2CSI2 -task Jedecgen
-prj_project save
-prj_project close
-#Stop recording: 2/9/2018 16:15:03
-
-
-
-<A name="pn180209163932"></A><B><U><big>pn180209163932</big></U></B>
-#Start recording tcl command: 2/9/2018 16:37:20
-#Project Location: C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_4lane_XO2_V6_SONY_RGB/Parallel2CSI2_YUV422_8bit_4lane_XO2/impl; Project name: Parallel2CSI2
-prj_project open "C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_4lane_XO2_V6_SONY_RGB/Parallel2CSI2_YUV422_8bit_4lane_XO2/impl/Parallel2CSI2.ldf"
-#Stop recording: 2/9/2018 16:39:32
-
-
-
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-</PRE></FONT>
-</BODY>
-</HTML>

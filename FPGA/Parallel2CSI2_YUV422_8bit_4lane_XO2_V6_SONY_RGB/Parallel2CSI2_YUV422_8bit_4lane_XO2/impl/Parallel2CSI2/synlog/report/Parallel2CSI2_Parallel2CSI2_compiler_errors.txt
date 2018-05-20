@@ -1,2 +1,0 @@
-@E: CG313 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_4lane_XO2_V6_SONY_RGB\rtl\sony_block_cam_interface.v":4:14:4:20|Port data_in: direction is incompatible with declaration (can only be type wire)
-

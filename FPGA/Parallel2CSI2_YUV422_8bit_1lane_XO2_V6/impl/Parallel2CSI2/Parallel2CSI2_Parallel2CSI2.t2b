@@ -1,5 +1,0 @@
-
-
--g RamCfg:Reset
-
--path "C:/Users/matas/Documents/GitHub/Tegra_dual_camera/FPGA/Parallel2CSI2_YUV422_8bit_1lane_XO2_V6/impl"  

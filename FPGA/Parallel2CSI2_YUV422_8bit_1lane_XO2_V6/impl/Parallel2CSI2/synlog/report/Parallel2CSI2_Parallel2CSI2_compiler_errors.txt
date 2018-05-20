@@ -1,3 +1,0 @@
-@E: CG353 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\top.v":279:21:279:24|Expecting digit in radix 10
-@E: CS187 :"C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\rtl\top.v":318:0:318:8|Expecting endmodule
-

@@ -1,7 +1,0 @@
-D:\FPGA\Lattice\diamond\3.8_x64\synpbase\bin64\syn_nfilter.exe  -link  -top  top  -multisrs  C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\impl\Parallel2CSI2\synwork\Parallel2CSI2_Parallel2CSI2_comp.srs  -osyn  C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\impl\Parallel2CSI2\synwork\Parallel2CSI2_Parallel2CSI2_mult.srs  -log  C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\impl\Parallel2CSI2\synlog\Parallel2CSI2_Parallel2CSI2_multi_srs_gen.srr 
-rc:0 success:1 runtime:0
-file:C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\impl\Parallel2CSI2\synwork\Parallel2CSI2_Parallel2CSI2_comp.srs|io:i|time:1519408369|size:32079|exec:0
-file:C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\impl\Parallel2CSI2\synwork\Parallel2CSI2_Parallel2CSI2_mult.srs|io:o|time:1519408370|size:7577|exec:0
-file:C:\Users\matas\Documents\GitHub\Tegra_dual_camera\FPGA\Parallel2CSI2_YUV422_8bit_1lane_XO2_V6\impl\Parallel2CSI2\synlog\Parallel2CSI2_Parallel2CSI2_multi_srs_gen.srr|io:o|time:1519408370|size:595|exec:0
-file:D:\FPGA\Lattice\diamond\3.8_x64\synpbase\bin\syn_nfilter.exe|io:i|time:1467755716|size:3115520|exec:1
-file:D:\FPGA\Lattice\diamond\3.8_x64\synpbase\bin64\syn_nfilter.exe|io:i|time:1467755918|size:4189696|exec:1
