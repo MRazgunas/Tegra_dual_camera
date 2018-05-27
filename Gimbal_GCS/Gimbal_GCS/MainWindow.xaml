@@ -14,5 +14,6 @@
         </Menu>
         <RepeatButton x:Name="btnZoomIn" Content="ZoomIn" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="102,123,0,0" Click="btnZoomIn_Click" Delay="100" Interval="100"/>
         <RepeatButton x:Name="btnZoomOut" Content="ZoomOut" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="152,123,0,0" Click="btnZoomOut_Click" Delay="100" Interval="100"/>
+        <RepeatButton x:Name="btnRecording" Content="REC" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="102,148,0,0" Delay="100" Interval="100" Click="btnRecording_Click"/>
     </Grid>
 </Window>

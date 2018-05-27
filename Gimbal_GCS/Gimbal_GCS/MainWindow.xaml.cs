@@ -30,6 +30,8 @@ namespace Gimbal_GCS
         Joystick joystick;
         private readonly System.Timers.Timer _timer;
 
+        bool recording = false;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -45,6 +47,7 @@ namespace Gimbal_GCS
             if(joystickGuid == Guid.Empty)
             {
                 //No joystick found
+                return;
             }
 
             joystick = new Joystick(directInput, joystickGuid);
@@ -145,6 +148,26 @@ namespace Gimbal_GCS
                               false); // retained
             }
             else displayNotConnected();
+        }
+
+        private void startVideoRecording(bool start)
+        {
+            if(gimbal.IsConnected)
+            {
+                byte[] message;
+                if (start)
+                    message = Encoding.UTF8.GetBytes("1");
+                else
+                    message = Encoding.UTF8.GetBytes("0");                
+                ushort msgId = gimbal.Publish("gimbal/cameras/record", message,
+                    MqttMsgBase.QOS_LEVEL_EXACTLY_ONCE, false);
+            }
+        }
+
+        private void btnRecording_Click(object sender, RoutedEventArgs e)
+        {
+            startVideoRecording(!recording);
+            recording = !recording;
         }
     }
 }
