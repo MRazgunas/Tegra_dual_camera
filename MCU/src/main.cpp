@@ -283,15 +283,17 @@ int main(void) {
       case POWER_WAITING_FOR_VALID_VDD:
           if(board_volt.volt_in > 8.0f) {
               if(fabs(board_volt.volt_in - previous_reading.volt_in) < 0.05f){
+                  chibios_rt::BaseThread::sleep(MS2ST(1000));
                   stable_vin_value = board_volt.volt_in;
                   palClearPad(GPIOC, GPIOC_POWER_BTN);
+                  time_since_power_btn_press = chVTGetSystemTime();
                   state = POWER_WAITING_FOR_CARRIER_POWER_ON;
               }
           }
           break;
       case POWER_WAITING_FOR_CARRIER_POWER_ON:
           if(palReadPad(GPIOB, GPIOB_CARRIER_PWR_ON)) {
-              palSetPad(GPIOC, GPIOC_POWER_BTN);
+              //palSetPad(GPIOC, GPIOC_POWER_BTN);
               state = POWER_STARTING_5V_RAIL;
           }
           break;
@@ -306,7 +308,7 @@ int main(void) {
           palSetPad(GPIOB, GPIOB_1V8_EN);
           palSetPad(GPIOB, GPIOB_1V2_EN);
           if(board_volt.volt_1v8 > 1.65f) {
-              chibios_rt::BaseThread::sleep(MS2ST(50));
+              chibios_rt::BaseThread::sleep(MS2ST(500));
               palClearPad(GPIOC, GPIOC_RESET_OUT);
               chibios_rt::BaseThread::sleep(MS2ST(100));
               palSetPad(GPIOC, GPIOC_RESET_OUT);
