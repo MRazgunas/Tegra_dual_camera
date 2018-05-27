@@ -171,5 +171,21 @@ namespace Gimbal_GCS
             startVideoRecording(!recording);
             recording = !recording;
         }
+
+        private void btnGimbalControl_Click(object sender, RoutedEventArgs e)
+        {
+            byte[] x = BitConverter.GetBytes(1.0f);
+            byte[] y = BitConverter.GetBytes(2.0f);
+            byte[] z = BitConverter.GetBytes(3.0f);
+            byte[] w = BitConverter.GetBytes(4.0f);
+            byte[] mode = BitConverter.GetBytes((char)0);
+            byte[] message = new byte[x.Length + y.Length + z.Length + w.Length + mode.Length];
+            System.Buffer.BlockCopy(x, 0, message, 0, x.Length);
+            System.Buffer.BlockCopy(y, 0, message, x.Length, y.Length);
+            System.Buffer.BlockCopy(z, 0, message, x.Length + y.Length, z.Length);
+            System.Buffer.BlockCopy(w, 0, message, x.Length + y.Length + z.Length, w.Length);
+            System.Buffer.BlockCopy(mode, 0, message, x.Length + y.Length + z.Length + w.Length, mode.Length);
+            gimbal.Publish("gimbal/control", message, MqttMsgBase.QOS_LEVEL_EXACTLY_ONCE, false);
+        }
     }
 }
