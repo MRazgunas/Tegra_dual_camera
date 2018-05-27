@@ -44,22 +44,24 @@ namespace Gimbal_GCS
             if (joystickGuid == Guid.Empty)
                 foreach (var deviceInstance in directInput.GetDevices(DeviceType.Joystick, DeviceEnumerationFlags.AllDevices))
                     joystickGuid = deviceInstance.InstanceGuid;
-            if(joystickGuid == Guid.Empty)
+            if (joystickGuid == Guid.Empty)
             {
                 //No joystick found
-                return;
+                //return;
             }
+            else
+            {
 
-            joystick = new Joystick(directInput, joystickGuid);
-            JoystickState stato = new JoystickState();
+                joystick = new Joystick(directInput, joystickGuid);
+                JoystickState stato = new JoystickState();
 
-            joystick.Properties.AxisMode = DeviceAxisMode.Absolute;
-            joystick.Acquire();
+                joystick.Properties.AxisMode = DeviceAxisMode.Absolute;
+                joystick.Acquire();
 
-            _timer = new System.Timers.Timer(100);
-            _timer.Elapsed += new ElapsedEventHandler(UpdateJoystic);
-            _timer.Enabled = true;
-
+                _timer = new System.Timers.Timer(100);
+                _timer.Elapsed += new ElapsedEventHandler(UpdateJoystic);
+                _timer.Enabled = true;
+            }
         }
 
         private void UpdateJoystic(object source, ElapsedEventArgs e)
