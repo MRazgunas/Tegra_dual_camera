@@ -4,7 +4,7 @@
 #
 
 # Compiler options here.
-ifeq ($(USE_OPT),)
+ifeq ($(USE_OPT),)	
   USE_OPT = -O0 -ggdb -fomit-frame-pointer -falign-functions=16
   USE_OPT += -nodefaultlibs -lc -lgcc -lm
 endif
@@ -31,7 +31,7 @@ endif
 
 # Enable this if you want link time optimizations (LTO)
 ifeq ($(USE_LTO),)
-  USE_LTO = yes
+  USE_LTO = no
 endif
 
 # If enabled, this option allows to compile the application in THUMB mode.
@@ -118,7 +118,8 @@ CSRC = $(STARTUPSRC) \
        $(CHIBIOS)/os/various/syscalls.c \
        src/board/board.c \
        $(SHELLSRC) \
-       $(STREAMSSRC)
+       $(STREAMSSRC) \
+       src/exceptionvectors.c
 
 # C++ sources that can be compiled in ARM or THUMB mode depending on the global
 # setting.

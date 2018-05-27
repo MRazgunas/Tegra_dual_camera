@@ -1,23 +1,52 @@
-#ifndef GCM_FIRMWARE_SRC_NODE_HPP_
-#define GCM_FIRMWARE_SRC_NODE_HPP_
+#ifndef NODE_HPP
+#define NODE_HPP
 
 #include <uavcan/uavcan.hpp>
 #include <ch.hpp>
 
+#include <uavcan/protocol/file/BeginFirmwareUpdate.hpp>
+#include <uavcan_stm32/uavcan_stm32.hpp>
+
+typedef struct _gimbalMessage{
+    float x;
+    float y;
+    float z;
+    float w;
+    uint8_t cmd;
+} __attribute__((packed)) gimbalMessage;
+
 namespace Node {
 
-class uavcanNodeThread : public chibios_rt::BaseStaticThread<8192> {
-    void configureNodeInfo();
-public:
-    void main();
+    constexpr unsigned NodePoolSize = 1024;//2048;
+    uavcan::Node<NodePoolSize>& getNode();
+    void publishKeyValue(const char *key, float value);
+    void send_gmb_cmd(gimbalMessage mess);
 
-};
+    uint32_t getCANBitRate();
 
-constexpr unsigned NodePoolSize = 16384;
-uavcan::Node<NodePoolSize>& getNode();
-void init();
+    struct Lock : uavcan_stm32::MutexLocker
+    {
+        Lock();
+    };
+
+    using FirmwareUpdateRequestCallback =
+        std::function<uavcan::StorageType<uavcan::protocol::file::BeginFirmwareUpdate::Response::FieldTypes::error>::Type
+    (const uavcan::ReceivedDataStructure<uavcan::protocol::file::BeginFirmwareUpdate::Request>&)>;
+
+void init(uint32_t bit_rate,
+        uint8_t node_id,
+        uint8_t firmware_vers_major,
+        uint8_t firmware_vers_minor,
+        uint32_t vcs_commit,
+        uint64_t crc64,
+        const FirmwareUpdateRequestCallback& on_firmware_update_requested);
+
+    class uavcanNodeThread : public chibios_rt::BaseStaticThread<4096> {
+    public:
+        void main();
+    };
 
 }
 
+#endif
 
-#endif /* GCM_FIRMWARE_SRC_NODE_HPP_ */

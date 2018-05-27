@@ -18,6 +18,8 @@
 #include "shell.h"
 #include "chprintf.h"
 
+#include <uavcan/equipment/camera_gimbal/AngularCommand.hpp>
+
 namespace app {
 namespace {
 
@@ -45,8 +47,6 @@ void init() {
 
 
 }
-
-//static Node::uavcanNodeThread canNode;
 
 }
 }
@@ -171,11 +171,28 @@ static void cmd_send_to_sony(BaseSequentialStream *chp, int argc, char *argv[]) 
     chnWrite((BaseSequentialStream *) &SD3, command, i/2);
 }
 
+uint8_t char_to_int(char c) {
+    return c - '0';
+}
+
+static void cmd_gmbcontrol(BaseSequentialStream *chp, int argc, char *argv[]) {
+    (void) chp;
+//    chprintf(chp, "Usage: gmbcontrol [binary command]\r\n");
+    gimbalMessage msg;
+    msg.x = atof(argv[0]);
+    msg.y = atof(argv[1]);
+    msg.z = atof(argv[2]);
+    msg.w = atof(argv[3]);
+    msg.cmd = char_to_int(argv[4][0]);
+    Node::send_gmb_cmd(msg);
+}
+
 
 
 static const ShellCommand commands[] = {
     {"recovery", cmd_enter_recovery},
     {"sony", cmd_send_to_sony},
+    {"gmbcontrol", cmd_gmbcontrol},
     {NULL, NULL}
 };
 
@@ -225,7 +242,7 @@ BRD_voltages read_voltages() { //Function execution time ~86us
 
 int main(void) {
 
-  app::init();
+    app::init();
 
   palSetPad(GPIOC, GPIOC_RESET_IN);
   palSetPad(GPIOB, GPIOB_FORCE_RECOV);
@@ -238,6 +255,8 @@ int main(void) {
 
   adcStart(&ADCD1, NULL);
 
+  Node::init(1000000, 50, 1, 0, 0, 0, NULL);
+
   thread_t *shelltp = chThdCreateFromHeap(NULL, SHELL_WA_SIZE,
       "shell", NORMALPRIO + 1, shellThread, (void *)&shell_cfg1);
 
@@ -246,7 +265,6 @@ int main(void) {
   BRD_voltages previous_reading;
   float stable_vin_value;
   blinker.start(NORMALPRIO);
-//  app::canNode.start(LOWPRIO);
 
   systime_t time_since_recov_req = 0;
   systime_t time_since_power_btn_press = 0;
