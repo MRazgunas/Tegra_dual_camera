@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Connect_window" Height="300" Width="300">
     <Grid>
-        <TextBox x:Name="ipAdressTextBox" HorizontalAlignment="Left" Height="23" Margin="85,85,0,0" TextWrapping="Wrap" Text="192.168.8.108" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="ipAdressTextBox" HorizontalAlignment="Left" Height="23" Margin="85,85,0,0" TextWrapping="Wrap" Text="192.168.10.101" VerticalAlignment="Top" Width="120"/>
         <Button x:Name="btnConnect" Content="Connect" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="104,113,0,0" Click="btnConnect_Click"/>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="IP adress:" VerticalAlignment="Top" Margin="30,86,0,0"/>
 
