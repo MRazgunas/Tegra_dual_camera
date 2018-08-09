@@ -10,10 +10,16 @@
         <Menu HorizontalAlignment="Left" Height="20" VerticalAlignment="Top" Width="517">
             <MenuItem Header="_File" >
                 <MenuItem x:Name="ConnectMenu" Header="Connect" Click="ConnectMenu_Click"/>
+                <MenuItem x:Name="VideoWindow" Header="Video" Click="VideoWindow_Click"/>
+                <MenuItem Header="Geo POI" Click="MenuItem_Click"/>
             </MenuItem>
         </Menu>
         <RepeatButton x:Name="btnZoomIn" Content="ZoomIn" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="102,123,0,0" Click="btnZoomIn_Click" Delay="100" Interval="100"/>
         <RepeatButton x:Name="btnZoomOut" Content="ZoomOut" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="152,123,0,0" Click="btnZoomOut_Click" Delay="100" Interval="100"/>
-        <RepeatButton x:Name="btnRecording" Content="REC" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="102,148,0,0" Delay="100" Interval="100" Click="btnRecording_Click"/>
+        <RepeatButton x:Name="btnGimbalControl" Content="Test Movement" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="266,148,0,0" Delay="100" Interval="100" Click="btnGimbalControl_Click"/>
+        <CheckBox x:Name="joystickEnable" Content="Joystic" HorizontalAlignment="Left" Margin="152,227,0,0" VerticalAlignment="Top" Checked="joystickEnable_Checked" Unchecked="joystickEnable_Checked"/>
+        <Button x:Name="btnRecording1" Content="REC" HorizontalAlignment="Left" Margin="102,153,0,0" VerticalAlignment="Top" Width="75" Click="btnRecording_Click"/>
+        <Button x:Name="rgbVideoSelectButton" Content="RGB" HorizontalAlignment="Left" Margin="266,122,0,0" VerticalAlignment="Top" Width="56" Click="rgbVideoSelectButton_Click"/>
+        <Button x:Name="irVideoSelectButton" Content="IR" HorizontalAlignment="Left" Margin="327,122,0,0" VerticalAlignment="Top" Width="56" Click="irVideoSelectButton_Click"/>
     </Grid>
 </Window>

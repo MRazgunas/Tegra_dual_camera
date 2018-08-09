@@ -17,63 +17,252 @@ using System.Timers;
 using uPLibrary.Networking.M2Mqtt;
 using uPLibrary.Networking.M2Mqtt.Messages;
 using SharpDX.DirectInput;
+using System.Windows.Interop;
 
 namespace Gimbal_GCS
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+    /// 
+    public class Quaterion
+    {
+        public double x;
+        public double y;
+        public double z;
+        public double w;
+
+
+        public Quaterion()
+        {
+            x = 0.0;
+            y = 0.0;
+            z = 0.0;
+            w = 1.0;
+        }
+
+        public Quaterion(double x, double y, double z, double w)
+        {
+            this.x = x;
+            this.y = y;
+            this.z = z;
+            this.w = w;
+        }
+
+        static public Quaterion FromEulerAngles(double x, double y, double z)
+        {
+            double phi = x * 0.5;
+            double theta = y * 0.5;
+            double psi = z * 0.5;
+
+            double cphi = Math.Cos(phi);
+            double sphi = Math.Sin(phi);
+            double ctheta = Math.Cos(theta);
+            double stheta = Math.Sin(theta);
+            double cpsi = Math.Cos(psi);
+            double spsi = Math.Sin(psi);
+
+            double ww = cphi * ctheta * cpsi + sphi * stheta * spsi;
+            double xx = sphi * ctheta * cpsi - cphi * stheta * spsi;
+            double yy = cphi * stheta * cpsi + sphi * ctheta * spsi;
+            double zz = cphi * ctheta * spsi - sphi * stheta * cpsi;
+            //double cy = Math.Cos(z * 0.5);
+            //double sy = Math.Sin(z * 0.5);
+            //double cr = Math.Cos(y * 0.5);
+            //double sr = Math.Sin(y * 0.5);
+            //double cp = Math.Cos(x * 0.5);
+            //double sp = Math.Sin(x * 0.5);
+
+            //double ww = cy * cr * cp + sy * sr * sp;
+            //double xx = cy * sr * cp - sy * cr * sp;
+            //double yy = cy * cr * sp + sy * sr * cp;
+            //double zz = sy * cr * cp - cy * sr * sp;
+            return new Quaterion(xx, -yy, zz, ww);
+        }
+    }
+
     public partial class MainWindow : Window
     {
+        private const int WM_DEVICECHANGE = 0x0219;
+
         MqttClient gimbal;
-        DirectInput directInput;
-        Joystick joystick;
         private readonly System.Timers.Timer _timer;
 
         bool recording = false;
 
+        SharpDX.DirectInput.Joystick joystick;
+        DirectInput directInput = new DirectInput();
+        Guid joystickGuid = Guid.Empty;
+
+        bool joystic_enabled = false;
+
+        private VideoDisplay videoWindow;
+
+        private const int rgbPort = 5000;
+        private const int irPort = 5001;
+
+        private bool prevCamSwitchState = false;
+
+        private GeoPOI geoPOIwindow;
+
+        enum CameraSource {
+            RGB_CAMERA_SOURCE,
+            IR_CAMERA_SOURCE
+        };
+
+        private CameraSource currentCamera = CameraSource.RGB_CAMERA_SOURCE;
+
         public MainWindow()
         {
             InitializeComponent();
-            directInput = new DirectInput();
 
-            var joystickGuid = Guid.Empty;
-            foreach (var deviceInstance in directInput.GetDevices(DeviceType.Gamepad, DeviceEnumerationFlags.AllDevices))
-                joystickGuid = deviceInstance.InstanceGuid;
+            this.Closing += MainWindow_Closing;
 
-            if (joystickGuid == Guid.Empty)
-                foreach (var deviceInstance in directInput.GetDevices(DeviceType.Joystick, DeviceEnumerationFlags.AllDevices))
-                    joystickGuid = deviceInstance.InstanceGuid;
-            if (joystickGuid == Guid.Empty)
+            Find_Joystick();
+
+            setCameraVideoSource(CameraSource.RGB_CAMERA_SOURCE);
+            
+            _timer = new System.Timers.Timer(100);
+            _timer.Elapsed += new ElapsedEventHandler(Joystick_Poll);
+            _timer.Enabled = true;
+        }
+
+        private void MainWindow_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            if(videoWindow != null)
             {
-                //No joystick found
-                //return;
-            }
-            else
-            {
-
-                joystick = new Joystick(directInput, joystickGuid);
-                JoystickState stato = new JoystickState();
-
-                joystick.Properties.AxisMode = DeviceAxisMode.Absolute;
-                joystick.Acquire();
-
-                _timer = new System.Timers.Timer(100);
-                _timer.Elapsed += new ElapsedEventHandler(UpdateJoystic);
-                _timer.Enabled = true;
+                videoWindow.Close();
             }
         }
 
-        private void UpdateJoystic(object source, ElapsedEventArgs e)
+        protected override void OnSourceInitialized(EventArgs e)
         {
-            var state = new JoystickState();
-            joystick.GetCurrentState(ref state);
-            if(state.Buttons[6])
+            base.OnSourceInitialized(e);
+            HwndSource source = PresentationSource.FromVisual(this) as HwndSource;
+            source.AddHook(WndProc);
+        }
+
+        private IntPtr WndProc(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
+        {
+            // Handle messages...
+            switch(msg)
             {
-                btnZoomIn_Click(null, null);
-            } else if(state.Buttons[4])
+                case WM_DEVICECHANGE:
+                    Find_Joystick();
+                    break;
+            }
+
+            return IntPtr.Zero;
+        }
+
+        void Find_Joystick()
+        {
+
+            if (joystickGuid != Guid.Empty) return;
+
+            foreach (var deviceInstance in directInput.GetDevices(DeviceType.Gamepad, DeviceEnumerationFlags.AllDevices))
+                joystickGuid = deviceInstance.InstanceGuid;
+
+            // If Gamepad not found, look for a Joystick
+            if (joystickGuid == Guid.Empty)
+                foreach (var deviceInstance in directInput.GetDevices(DeviceType.Joystick, DeviceEnumerationFlags.AllDevices))
+                    joystickGuid = deviceInstance.InstanceGuid;
+
+            // If Joystick not found, throws an error
+            if (joystickGuid == Guid.Empty)
             {
-                btnZoomOut_Click(null, null);
+                Console.WriteLine("No joystick/Gamepad found.");
+                joystickEnable.Dispatcher.Invoke(() => {
+                    joystickEnable.IsChecked = false;
+                    joystickEnable.IsEnabled = false;
+                });
+                
+            }
+            else
+            {
+                // Instantiate the joystick
+                joystick = new SharpDX.DirectInput.Joystick(directInput, joystickGuid);
+
+                Console.WriteLine("Found Joystick/Gamepad with GUID: {0}", joystickGuid);
+
+                joystick.Properties.BufferSize = 128;
+                // Acquire the joystick
+                joystick.Acquire();
+                joystickEnable.Dispatcher.Invoke(() => {
+                    joystickEnable.IsEnabled = true;
+                });
+
+            }
+        }
+
+        void Joystick_Poll(object Sender, EventArgs e)
+        {
+            if (joystickGuid != Guid.Empty)
+            {
+                if (!directInput.IsDeviceAttached(joystickGuid))
+                {
+                    joystick.Dispose();
+                    joystick = null;
+                    joystickGuid = Guid.Empty;
+                    joystickEnable.Dispatcher.Invoke(() =>
+                    {
+                        joystickEnable.IsChecked = false;
+                        joystickEnable.IsEnabled = false;
+                    });
+                }
+            }
+
+            JoystickState state = null;
+
+            if (joystick != null)
+            {
+                joystick.Poll();
+                state = joystick.GetCurrentState();
+            }
+            if (state != null)
+            {
+                if (joystic_enabled)
+                {
+                    if (state.Buttons[6])
+                    {
+                        btnZoomIn_Click(null, null);
+                    }
+                    else if (state.Buttons[4])
+                    {
+                        btnZoomOut_Click(null, null);
+                    }
+
+                    if(state.Buttons[2] && !prevCamSwitchState)
+                    {
+                        prevCamSwitchState = true;
+                        if (currentCamera == CameraSource.RGB_CAMERA_SOURCE)
+                            setCameraVideoSource(CameraSource.IR_CAMERA_SOURCE);
+                        else if (currentCamera == CameraSource.IR_CAMERA_SOURCE)
+                            setCameraVideoSource(CameraSource.RGB_CAMERA_SOURCE);
+                        
+                    } else if(!state.Buttons[2])
+                    {
+                        prevCamSwitchState = false;
+                    }
+
+                    double pitch_cmd = 0.0;
+                    double yaw_cmd = 0.0;
+                    if (Math.Abs(state.Y - 32768) > 30)
+                    {
+                        pitch_cmd = ((state.Y - 32768.0) / 65536.0 * -2.0) * 3.14/2;
+                    } else
+                    {
+                        pitch_cmd = 0.0;
+                    }
+                    if (Math.Abs(state.X - 32768) > 30)
+                    {
+                        yaw_cmd = ((state.X - 32768.0) / 65536.0 * -2.0) * 3.14/2;
+                    } else
+                    {
+                        yaw_cmd = 0.0;
+                    }
+                    sendGimbalCommand(pitch_cmd, 0.0, yaw_cmd);
+                }
             }
         }
 
@@ -170,6 +359,120 @@ namespace Gimbal_GCS
         {
             startVideoRecording(!recording);
             recording = !recording;
+        }
+
+        private void sendGimbalCommand(double x, double y, double z)
+        {
+            if (gimbal != null)
+            {
+                if (gimbal.IsConnected)
+                {
+                    var q = Quaterion.FromEulerAngles(x, y, z);
+                    float[] quat = { (float)q.x, (float)q.y, (float)q.z, (float)q.w };
+                    var byteArray = new byte[quat.Length * 4 + 1];
+                    Buffer.BlockCopy(quat, 0, byteArray, 0, quat.Length * 4);
+                    byteArray[quat.Length * 4] = 0; //Cmd
+                    gimbal.Publish("gimbal/control", byteArray, MqttMsgBase.QOS_LEVEL_EXACTLY_ONCE, false);
+                }
+            }
+        }
+
+        private void btnGimbalControl_Click(object sender, RoutedEventArgs e)
+        {
+            //byte[] x = BitConverter.GetBytes(1.0f);
+            //byte[] y = BitConverter.GetBytes(2.0f);
+            //byte[] z = BitConverter.GetBytes(3.0f);
+            //byte[] w = BitConverter.GetBytes(4.0f);
+            //byte[] mode = BitConverter.GetBytes((char)0);
+            //byte[] message = new byte[x.Length + y.Length + z.Length + w.Length + mode.Length];
+            //System.Buffer.BlockCopy(x, 0, message, 0, x.Length);
+            //System.Buffer.BlockCopy(y, 0, message, x.Length, y.Length);
+            //System.Buffer.BlockCopy(z, 0, message, x.Length + y.Length, z.Length);
+            //System.Buffer.BlockCopy(w, 0, message, x.Length + y.Length + z.Length, w.Length);
+            //System.Buffer.BlockCopy(mode, 0, message, x.Length + y.Length + z.Length + w.Length, mode.Length);
+            if (gimbal.IsConnected)
+            {
+
+                var quter = Quaterion.FromEulerAngles(3.14, 0.0, 0.0);
+                float[] quat = { (float)quter.x, (float)quter.y, (float)quter.z, (float)quter.w};
+                var byteArray = new byte[quat.Length * 4 + 1];
+                Buffer.BlockCopy(quat, 0, byteArray, 0, quat.Length * 4);
+                byteArray[quat.Length * 4] = 0; //Cmd
+                gimbal.Publish("gimbal/control", byteArray, MqttMsgBase.QOS_LEVEL_EXACTLY_ONCE, false);
+            }
+
+        }
+
+        private void joystickEnable_Checked(object sender, RoutedEventArgs e)
+        {
+            joystic_enabled = (bool)joystickEnable.IsChecked;
+        }
+
+        private void VideoWindow_Click(object sender, RoutedEventArgs e)
+        {
+            //Open video window
+            if(videoWindow == null)
+            {
+                if (currentCamera == CameraSource.RGB_CAMERA_SOURCE)
+                    videoWindow = new VideoDisplay(rgbPort);
+                else if (currentCamera == CameraSource.IR_CAMERA_SOURCE)
+                    videoWindow = new VideoDisplay(irPort);
+;               videoWindow.FormClosing += VideoWindow_FormClosing;
+                videoWindow.Show();
+            } 
+        }
+
+        private void VideoWindow_FormClosing(object sender, System.Windows.Forms.FormClosingEventArgs e)
+        {
+            if(videoWindow != null)
+            {
+                videoWindow = null;
+            }
+        }
+
+        private void setCameraVideoSource(CameraSource cam)
+        {
+            switch(cam)
+            {
+                case CameraSource.RGB_CAMERA_SOURCE:
+                    currentCamera = cam;
+                    irVideoSelectButton.Dispatcher.Invoke(() => {
+                        irVideoSelectButton.Background = Brushes.LightGray;
+                        rgbVideoSelectButton.Background = Brushes.Green;
+                    });
+                    if (videoWindow == null) break;
+                    videoWindow.setPortNumber(rgbPort);
+                    break;
+                case CameraSource.IR_CAMERA_SOURCE:
+                    currentCamera = cam;
+                    irVideoSelectButton.Dispatcher.Invoke(() => {
+                        irVideoSelectButton.Background = Brushes.Green;
+                        rgbVideoSelectButton.Background = Brushes.LightGray;
+                    });
+                    if (videoWindow == null) break;
+                    videoWindow.setPortNumber(irPort);
+                    break;
+            }
+        }
+
+        private void irVideoSelectButton_Click(object sender, RoutedEventArgs e)
+        {
+            setCameraVideoSource(CameraSource.IR_CAMERA_SOURCE);
+
+        }
+
+        private void rgbVideoSelectButton_Click(object sender, RoutedEventArgs e)
+        {
+            setCameraVideoSource(CameraSource.RGB_CAMERA_SOURCE);
+        }
+
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            if(geoPOIwindow == null)
+            {
+                geoPOIwindow = new GeoPOI();
+                geoPOIwindow.Show();
+            }
         }
     }
 }
