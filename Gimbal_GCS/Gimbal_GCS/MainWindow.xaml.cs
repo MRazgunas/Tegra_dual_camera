@@ -18,6 +18,7 @@ using uPLibrary.Networking.M2Mqtt;
 using uPLibrary.Networking.M2Mqtt.Messages;
 using SharpDX.DirectInput;
 using System.Windows.Interop;
+using Gimbal_GCS.Utilities;
 
 namespace Gimbal_GCS
 {
@@ -110,7 +111,17 @@ namespace Gimbal_GCS
             IR_CAMERA_SOURCE
         };
 
+        public enum GimbalMode
+        {
+            MODE_RATE,
+            MODE_GEOPOI,
+            MODE_STOW,
+        };
+
         private CameraSource currentCamera = CameraSource.RGB_CAMERA_SOURCE;
+        private GimbalMode currentMode = GimbalMode.MODE_RATE;
+
+        private PointLatLngAlt geoPOITarget = PointLatLngAlt.Zero;
 
         public MainWindow()
         {
@@ -121,6 +132,7 @@ namespace Gimbal_GCS
             Find_Joystick();
 
             setCameraVideoSource(CameraSource.RGB_CAMERA_SOURCE);
+            SetGimbalMode(GimbalMode.MODE_RATE);
             
             _timer = new System.Timers.Timer(100);
             _timer.Elapsed += new ElapsedEventHandler(Joystick_Poll);
@@ -130,9 +142,9 @@ namespace Gimbal_GCS
         private void MainWindow_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
             if(videoWindow != null)
-            {
                 videoWindow.Close();
-            }
+            if (geoPOIwindow != null)
+                geoPOIwindow.Close();
         }
 
         protected override void OnSourceInitialized(EventArgs e)
@@ -245,23 +257,28 @@ namespace Gimbal_GCS
                         prevCamSwitchState = false;
                     }
 
-                    double pitch_cmd = 0.0;
-                    double yaw_cmd = 0.0;
-                    if (Math.Abs(state.Y - 32768) > 30)
+                    if (currentMode == GimbalMode.MODE_RATE)
                     {
-                        pitch_cmd = ((state.Y - 32768.0) / 65536.0 * -2.0) * 3.14/2;
-                    } else
-                    {
-                        pitch_cmd = 0.0;
+                        double pitch_cmd = 0.0;
+                        double yaw_cmd = 0.0;
+                        if (Math.Abs(state.Y - 32768) > 30)
+                        {
+                            pitch_cmd = ((state.Y - 32768.0) / 65536.0 * -2.0) * 3.14 / 2;
+                        }
+                        else
+                        {
+                            pitch_cmd = 0.0;
+                        }
+                        if (Math.Abs(state.X - 32768) > 30)
+                        {
+                            yaw_cmd = ((state.X - 32768.0) / 65536.0 * -2.0) * 3.14 / 2;
+                        }
+                        else
+                        {
+                            yaw_cmd = 0.0;
+                        }
+                        sendGimbalCommand(pitch_cmd, 0.0, yaw_cmd);
                     }
-                    if (Math.Abs(state.X - 32768) > 30)
-                    {
-                        yaw_cmd = ((state.X - 32768.0) / 65536.0 * -2.0) * 3.14/2;
-                    } else
-                    {
-                        yaw_cmd = 0.0;
-                    }
-                    sendGimbalCommand(pitch_cmd, 0.0, yaw_cmd);
                 }
             }
         }
@@ -468,10 +485,81 @@ namespace Gimbal_GCS
 
         private void MenuItem_Click(object sender, RoutedEventArgs e)
         {
-            if(geoPOIwindow == null)
+            if (geoPOIwindow == null)
             {
-                geoPOIwindow = new GeoPOI();
+                geoPOIwindow = new GeoPOI(this);
                 geoPOIwindow.Show();
+            }
+        }
+
+        public void SetGimbalMode(GimbalMode mode)
+        {
+            currentMode = mode;
+            switch (mode)
+            {
+                case GimbalMode.MODE_RATE:
+                    btnRateMode.Dispatcher.Invoke(() =>
+                    {
+                        btnRateMode.Background = Brushes.Green;
+                        btnGEOPOIMode.Background = Brushes.LightGray;
+                        btnStowMode.Background = Brushes.LightGray;
+                    });
+                    break;
+                case GimbalMode.MODE_GEOPOI:
+                    btnRateMode.Dispatcher.Invoke(() =>
+                    {
+                        btnRateMode.Background = Brushes.LightGray;
+                        btnGEOPOIMode.Background = Brushes.Green;
+                        btnStowMode.Background = Brushes.LightGray;
+                    });
+                    break;
+                case GimbalMode.MODE_STOW:
+                    btnRateMode.Dispatcher.Invoke(() =>
+                    {
+                        btnRateMode.Background = Brushes.LightGray;
+                        btnGEOPOIMode.Background = Brushes.LightGray;
+                        btnStowMode.Background = Brushes.Green;
+                    });
+                    break;
+            }
+        }
+
+        private void btnRateMode_Click(object sender, RoutedEventArgs e)
+        {
+            SetGimbalMode(GimbalMode.MODE_RATE);
+        }
+
+        private void btnGEOPOIMode_Click(object sender, RoutedEventArgs e)
+        {
+            SetGimbalMode(GimbalMode.MODE_GEOPOI);
+        }
+
+        private void btnStowMode_Click(object sender, RoutedEventArgs e)
+        {
+            SetGimbalMode(GimbalMode.MODE_STOW);
+        }
+
+        public void SetGEOPOITarget(PointLatLngAlt target)
+        {
+            if(target != PointLatLngAlt.Zero)
+            {
+                SetGimbalMode(GimbalMode.MODE_GEOPOI);
+                geoPOITarget = target;
+                SendCurrentGEOPOICommand();
+            }            
+        }
+
+        private void SendCurrentGEOPOICommand()
+        {
+            if (gimbal != null)
+            {
+                if (gimbal.IsConnected)
+                {
+                    float[] latlngalt = { (float)geoPOITarget.Lat, (float)geoPOITarget.Lng, (float)geoPOITarget.Alt};
+                    var byteArray = new byte[latlngalt.Length * 4];
+                    Buffer.BlockCopy(latlngalt, 0, byteArray, 0, latlngalt.Length * 4);
+                    gimbal.Publish("gimbal/geotarget", byteArray, MqttMsgBase.QOS_LEVEL_EXACTLY_ONCE, false);
+                }
             }
         }
     }

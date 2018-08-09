@@ -4,9 +4,15 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Gimbal_GCS"
+        xmlns:gmaps="clr-namespace:GMap.NET.WindowsPresentation;assembly=GMap.NET.WindowsPresentation"
         mc:Ignorable="d"
         Title="GeoPOI" Height="450" Width="800">
     <Grid>
-        
+        <Grid.ContextMenu>
+            <ContextMenu>
+                <MenuItem Header="Point Here" Click="PointHere_Click"/>
+            </ContextMenu>
+        </Grid.ContextMenu>
+        <gmaps:GMapControl x:Name="mapView" Loaded="mapView_Loaded" MouseDown="mapView_MouseDown" />
     </Grid>
 </Window>
