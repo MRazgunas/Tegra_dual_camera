@@ -21,6 +21,7 @@ namespace Node {
     uavcan::Node<NodePoolSize>& getNode();
     void publishKeyValue(const char *key, float value);
     void send_gmb_cmd(gimbalMessage mess);
+    void send_geo_cmd(float lat, float lng, float alt);
 
     uint32_t getCANBitRate();
 

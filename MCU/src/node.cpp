@@ -11,11 +11,16 @@
 #include <ch.hpp>
 //#include "hardware.hpp"
 #include <uavcan/equipment/camera_gimbal/AngularCommand.hpp>
+#include <uavcan/equipment/camera_gimbal/GEOPOICommand.hpp>
 
 namespace Node {
 
 uavcan::equipment::camera_gimbal::AngularCommand mot_msg;
 bool send_cmd_update = false;
+
+uavcan::equipment::camera_gimbal::GEOPOICommand geo_msg;
+bool send_geo_update = false;
+
 
 //    os::config::Param<uint8_t> node_id("node.id", 1, 0, 127); //0 - automatic detection (not supported)
 //    os::config::Param<uint32_t> bus_speed("node.speed", 1000000, 125000, 1000000);
@@ -224,6 +229,9 @@ bool send_cmd_update = false;
         uavcan::Publisher<uavcan::equipment::camera_gimbal::AngularCommand> mot_pub(getNode());
         mot_pub.init();
 
+        uavcan::Publisher<uavcan::equipment::camera_gimbal::GEOPOICommand> geo_pub(getNode());
+        geo_pub.init();
+
         getNode().setModeOperational();
 
 
@@ -234,6 +242,10 @@ bool send_cmd_update = false;
             if(send_cmd_update) {
                 mot_pub.broadcast(mot_msg);
                 send_cmd_update = false;
+            }
+            if(send_geo_update) {
+                geo_pub.broadcast(geo_msg);
+                send_geo_update = false;
             }
             //kv_pub.broadcast(kv_msg);
         }
@@ -274,6 +286,16 @@ bool send_cmd_update = false;
             mot_msg.quaternion_xyzw[3] = mess.w;
             mot_msg.mode.command_mode = mess.cmd;
             send_cmd_update = true;
+        }
+    }
+
+    void send_geo_cmd(float lat, float lng, float alt) {
+        if(!send_geo_update) {
+            geo_msg.latitude_deg_1e7 = lat * 1e7;
+            geo_msg.longitude_deg_1e7 = lng * 1e7;
+            geo_msg.height_cm = alt * 100;
+            geo_msg.height_reference = geo_msg.HEIGHT_REFERENCE_MEAN_SEA_LEVEL;
+            send_geo_update = true;
         }
     }
 

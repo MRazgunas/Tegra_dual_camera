@@ -187,12 +187,21 @@ static void cmd_gmbcontrol(BaseSequentialStream *chp, int argc, char *argv[]) {
     Node::send_gmb_cmd(msg);
 }
 
+static void cmd_gmbgeotarget(BaseSequentialStream *chp, int argc, char *argv[]) {
+    (void) chp;
+    float lat = atof(argv[0]);
+    float lng = atof(argv[1]);
+    float alt = atof(argv[2]);
+    Node::send_geo_cmd(lat, lng, alt);
+}
+
 
 
 static const ShellCommand commands[] = {
     {"recovery", cmd_enter_recovery},
     {"sony", cmd_send_to_sony},
     {"gmbcontrol", cmd_gmbcontrol},
+    {"geotarget", cmd_gmbgeotarget},
     {NULL, NULL}
 };
 
