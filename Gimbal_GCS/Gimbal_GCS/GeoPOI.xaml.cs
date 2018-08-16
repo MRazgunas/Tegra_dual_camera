@@ -61,9 +61,15 @@ namespace Gimbal_GCS
         {
             if(targetMarker == null)
             {
-                //targetMarker = new GMap.NET.WindowsPresentation.GMapMarker(target);
-                //targetMarker.Shape = new PinControl();
-                //mapView.Markers.Add(targetMarker);
+                targetMarker = new GMap.NET.WindowsPresentation.GMapMarker(target);
+                targetMarker.Shape = new Ellipse
+                {
+                    Width = 10,
+                    Height = 10,
+                    Stroke = Brushes.Red,
+                    StrokeThickness = 5
+                };
+                mapView.Markers.Add(targetMarker);
 
             } else
             {
